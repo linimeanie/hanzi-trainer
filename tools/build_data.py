@@ -41,6 +41,15 @@ if ai_path.exists():
         l = lesson_of.get(t)
         if l and not any(x['zh'] == zh for x in l['sentences']):
             l['sentences'].append({'zh': zh, 'py': py, 'ru': ru, 'en': '', 'gen': 1}); ai += 1
+mwp = root / 'data/measure_words.txt'
+mw = {}
+if mwp.exists():
+    for line in mwp.read_text(encoding='utf-8').splitlines():
+        if line.count('|') == 2 and not line.startswith('#'):
+            h, m, py = line.split('|'); mw[h] = [m, py]
+for l in lessons:
+    for w in l['words']:
+        if w['hz'] in mw: w['mw'] = mw[w['hz']]
 data = {'lessons': lessons}
 (root / 'data/words.json').write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding='utf-8')
 (root / 'app/data.js').write_text('window.ZH_DATA = ' + json.dumps(data, ensure_ascii=False) + ';\n', encoding='utf-8')

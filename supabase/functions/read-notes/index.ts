@@ -33,6 +33,8 @@ const SCHEMA = {
                 py: { type: "string", description: "Pinyin with tone marks, syllables of one word joined (e.g. tuìfáng)" },
                 ru: { type: "string", description: "Short Russian meaning" },
                 en: { type: "string", description: "Short English meaning" },
+                mw: { type: "string", description: "For a countable noun: its usual measure word (e.g. 份 for 简历); otherwise empty string" },
+                mw_py: { type: "string", description: "Pinyin of the measure word with tone mark, or empty string" },
                 memo: { type: "string", description: "One vivid Russian memory image for how the characters look (parts, pictures), max 25 words" },
                 examples: {
                   type: "array",
@@ -44,7 +46,7 @@ const SCHEMA = {
                   },
                 },
               },
-              required: ["hz", "py", "ru", "en", "memo", "examples"],
+              required: ["hz", "py", "ru", "en", "mw", "mw_py", "memo", "examples"],
               additionalProperties: false,
             },
           },

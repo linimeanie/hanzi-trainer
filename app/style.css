@@ -306,3 +306,14 @@ nav.tabs button.on { color: var(--red); }
   border-radius: 16px; padding: 14px 18px; margin-bottom: 12px; }
 .newbar b { display: block; font-size: 17px; color: var(--jade); }
 .newbar span { font-size: 13px; color: var(--mut); }
+
+/* measure word before a noun */
+.mwc { display: flex; flex-direction: column; align-items: center; gap: 2px; width: 46px; flex: none; }
+.mw-hz { height: var(--s); display: flex; align-items: center; font: 500 20px/1 var(--hz); color: var(--mut); cursor: pointer; writing-mode: vertical-rl; letter-spacing: 2px; }
+.mwc .wc-g { font-size: 10px; }
+.mw-s { font-size: 13px; color: var(--mut); margin-right: 3px; }
+.exs .exl .zh { font-size: 15.5px; line-height: 1.35; }
+.exl-s { font-size: 12px; line-height: 1.3; }
+.tl { flex-wrap: nowrap; gap: 6px; }
+.tl .ib { padding: 5px 10px; font-size: 12.5px; white-space: nowrap; }
+.tl .ib svg { width: 16px; height: 16px; }

@@ -33,7 +33,11 @@
      "hz": "京剧",
      "py": "jīngjù",
      "ru": "пекинская опера",
-     "en": "Peking opera"
+     "en": "Peking opera",
+     "mw": [
+      "出",
+      "chū"
+     ]
     },
     {
      "hz": "国",
@@ -45,19 +49,31 @@
      "hz": "国画",
      "py": "guóhuà",
      "ru": "китайская живопись",
-     "en": "Chinese painting"
+     "en": "Chinese painting",
+     "mw": [
+      "幅",
+      "fú"
+     ]
     },
     {
      "hz": "国家",
      "py": "guójiā",
      "ru": "страна, государство",
-     "en": "country"
+     "en": "country",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "球",
      "py": "qiú",
      "ru": "мяч, шар",
-     "en": "ball"
+     "en": "ball",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "地球",
@@ -69,7 +85,11 @@
      "hz": "足球",
      "py": "zúqiú",
      "ru": "футбол",
-     "en": "football"
+     "en": "football",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "迷",
@@ -81,7 +101,11 @@
      "hz": "迷宫",
      "py": "mígōng",
      "ru": "лабиринт",
-     "en": "maze"
+     "en": "maze",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "迷路",
@@ -117,7 +141,11 @@
      "hz": "阿姨",
      "py": "āyí",
      "ru": "тётя",
-     "en": "auntie"
+     "en": "auntie",
+     "mw": [
+      "位",
+      "wèi"
+     ]
     },
     {
      "hz": "阿斗",
@@ -129,7 +157,11 @@
      "hz": "叔叔",
      "py": "shūshu",
      "ru": "дядя",
-     "en": "uncle"
+     "en": "uncle",
+     "mw": [
+      "位",
+      "wèi"
+     ]
     },
     {
      "hz": "伯",
@@ -141,13 +173,21 @@
      "hz": "伯父",
      "py": "bófù",
      "ru": "дядя",
-     "en": "uncle"
+     "en": "uncle",
+     "mw": [
+      "位",
+      "wèi"
+     ]
     },
     {
      "hz": "伯母",
      "py": "bómǔ",
      "ru": "тётя",
-     "en": "auntie"
+     "en": "auntie",
+     "mw": [
+      "位",
+      "wèi"
+     ]
     },
     {
      "hz": "出土",
@@ -171,7 +211,11 @@
      "hz": "半圆",
      "py": "bànyuán",
      "ru": "полукруг",
-     "en": "semicircle"
+     "en": "semicircle",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "分",
@@ -213,7 +257,11 @@
      "hz": "豆",
      "py": "dòu",
      "ru": "боб",
-     "en": "bean"
+     "en": "bean",
+     "mw": [
+      "颗",
+      "kē"
+     ]
     },
     {
      "hz": "面",
@@ -225,19 +273,31 @@
      "hz": "面条",
      "py": "miàntiáo",
      "ru": "лапша",
-     "en": "noodles"
+     "en": "noodles",
+     "mw": [
+      "碗",
+      "wǎn"
+     ]
     },
     {
      "hz": "面包",
      "py": "miànbāo",
      "ru": "хлеб",
-     "en": "bread"
+     "en": "bread",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "勺",
      "py": "sháo",
      "ru": "ложка, черпак",
-     "en": "spoon, ladle"
+     "en": "spoon, ladle",
+     "mw": [
+      "把",
+      "bǎ"
+     ]
     },
     {
      "hz": "掌勺",
@@ -249,25 +309,41 @@
      "hz": "刀",
      "py": "dāo",
      "ru": "нож",
-     "en": "knife"
+     "en": "knife",
+     "mw": [
+      "把",
+      "bǎ"
+     ]
     },
     {
      "hz": "剪刀",
      "py": "jiǎndāo",
      "ru": "ножницы",
-     "en": "scissors"
+     "en": "scissors",
+     "mw": [
+      "把",
+      "bǎ"
+     ]
     },
     {
      "hz": "弓",
      "py": "gōng",
      "ru": "лук (оружие)",
-     "en": "bow"
+     "en": "bow",
+     "mw": [
+      "张",
+      "zhāng"
+     ]
     },
     {
      "hz": "箭",
      "py": "jiàn",
      "ru": "стрела",
-     "en": "arrow"
+     "en": "arrow",
+     "mw": [
+      "支",
+      "zhī"
+     ]
     },
     {
      "hz": "弓箭",
@@ -285,7 +361,11 @@
      "hz": "弹弓",
      "py": "dàngōng",
      "ru": "рогатка",
-     "en": "slingshot"
+     "en": "slingshot",
+     "mw": [
+      "把",
+      "bǎ"
+     ]
     },
     {
      "hz": "长",
@@ -303,7 +383,11 @@
      "hz": "城",
      "py": "chéng",
      "ru": "город, городская стена",
-     "en": "city; city wall"
+     "en": "city; city wall",
+     "mw": [
+      "座",
+      "zuò"
+     ]
     },
     {
      "hz": "长度",
@@ -327,7 +411,11 @@
      "hz": "孩子",
      "py": "háizi",
      "ru": "ребёнок",
-     "en": "child"
+     "en": "child",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "笑",
@@ -345,37 +433,61 @@
      "hz": "铃",
      "py": "líng",
      "ru": "колокольчик, звонок",
-     "en": "bell"
+     "en": "bell",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "铃铛",
      "py": "língdang",
      "ru": "колокольчик",
-     "en": "small bell"
+     "en": "small bell",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "杠铃",
      "py": "gànglíng",
      "ru": "штанга",
-     "en": "barbell"
+     "en": "barbell",
+     "mw": [
+      "副",
+      "fù"
+     ]
     },
     {
      "hz": "腿",
      "py": "tuǐ",
      "ru": "нога",
-     "en": "leg"
+     "en": "leg",
+     "mw": [
+      "条",
+      "tiáo"
+     ]
     },
     {
      "hz": "脚",
      "py": "jiǎo",
      "ru": "стопа, нога",
-     "en": "foot"
+     "en": "foot",
+     "mw": [
+      "只",
+      "zhī"
+     ]
     },
     {
      "hz": "脚印",
      "py": "jiǎoyìn",
      "ru": "след ноги",
-     "en": "footprint"
+     "en": "footprint",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "脚步",
@@ -387,19 +499,31 @@
      "hz": "大巴",
      "py": "dàbā",
      "ru": "автобус",
-     "en": "bus"
+     "en": "bus",
+     "mw": [
+      "辆",
+      "liàng"
+     ]
     },
     {
      "hz": "嘴",
      "py": "zuǐ",
      "ru": "рот",
-     "en": "mouth"
+     "en": "mouth",
+     "mw": [
+      "张",
+      "zhāng"
+     ]
     },
     {
      "hz": "嘴巴",
      "py": "zuǐba",
      "ru": "рот",
-     "en": "mouth"
+     "en": "mouth",
+     "mw": [
+      "张",
+      "zhāng"
+     ]
     },
     {
      "hz": "插嘴",
@@ -1242,13 +1366,21 @@
      "hz": "自行车",
      "py": "zìxíngchē",
      "ru": "велосипед",
-     "en": "bicycle"
+     "en": "bicycle",
+     "mw": [
+      "辆",
+      "liàng"
+     ]
     },
     {
      "hz": "出租车",
      "py": "chūzūchē",
      "ru": "такси",
-     "en": "taxi"
+     "en": "taxi",
+     "mw": [
+      "辆",
+      "liàng"
+     ]
     },
     {
      "hz": "就",
@@ -1266,7 +1398,11 @@
      "hz": "问题",
      "py": "wèntí",
      "ru": "вопрос",
-     "en": "question"
+     "en": "question",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "天黑",
@@ -1278,7 +1414,11 @@
      "hz": "苹果",
      "py": "píngguǒ",
      "ru": "яблоко",
-     "en": "apple"
+     "en": "apple",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "莓",
@@ -1290,7 +1430,11 @@
      "hz": "草莓",
      "py": "cǎoméi",
      "ru": "клубника",
-     "en": "strawberry"
+     "en": "strawberry",
+     "mw": [
+      "颗",
+      "kē"
+     ]
     },
     {
      "hz": "树莓",
@@ -1302,7 +1446,11 @@
      "hz": "蓝莓",
      "py": "lánméi",
      "ru": "голубика, черника",
-     "en": "blueberry"
+     "en": "blueberry",
+     "mw": [
+      "颗",
+      "kē"
+     ]
     },
     {
      "hz": "黑莓",
@@ -1338,19 +1486,31 @@
      "hz": "糕点",
      "py": "gāodiǎn",
      "ru": "выпечка",
-     "en": "pastry, baked goods"
+     "en": "pastry, baked goods",
+     "mw": [
+      "块",
+      "kuài"
+     ]
     },
     {
      "hz": "蛋糕",
      "py": "dàngāo",
      "ru": "торт, кекс",
-     "en": "cake"
+     "en": "cake",
+     "mw": [
+      "块",
+      "kuài"
+     ]
     },
     {
      "hz": "鸡蛋",
      "py": "jīdàn",
      "ru": "куриное яйцо",
-     "en": "chicken egg"
+     "en": "chicken egg",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "生日",
@@ -1362,13 +1522,21 @@
      "hz": "床铺",
      "py": "chuángpù",
      "ru": "койка, спальное место",
-     "en": "bed, bunk"
+     "en": "bed, bunk",
+     "mw": [
+      "张",
+      "zhāng"
+     ]
     },
     {
      "hz": "床单",
      "py": "chuángdān",
      "ru": "простыня",
-     "en": "bedsheet"
+     "en": "bedsheet",
+     "mw": [
+      "条",
+      "tiáo"
+     ]
     },
     {
      "hz": "玉",
@@ -1380,13 +1548,21 @@
      "hz": "玉石",
      "py": "yùshí",
      "ru": "драгоценный камень, нефрит",
-     "en": "jade stone"
+     "en": "jade stone",
+     "mw": [
+      "块",
+      "kuài"
+     ]
     },
     {
      "hz": "玉米",
      "py": "yùmǐ",
      "ru": "кукуруза",
-     "en": "corn"
+     "en": "corn",
+     "mw": [
+      "根",
+      "gēn"
+     ]
     },
     {
      "hz": "双",
@@ -1398,7 +1574,11 @@
      "hz": "眼睛",
      "py": "yǎnjing",
      "ru": "глаза",
-     "en": "eyes"
+     "en": "eyes",
+     "mw": [
+      "双",
+      "shuāng"
+     ]
     },
     {
      "hz": "双方",
@@ -1416,25 +1596,41 @@
      "hz": "房间",
      "py": "fángjiān",
      "ru": "комната",
-     "en": "room"
+     "en": "room",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "号码",
      "py": "hàomǎ",
      "ru": "номер",
-     "en": "number"
+     "en": "number",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "银行",
      "py": "yínháng",
      "ru": "банк",
-     "en": "bank"
+     "en": "bank",
+     "mw": [
+      "家",
+      "jiā"
+     ]
     },
     {
      "hz": "卡",
      "py": "kǎ",
      "ru": "карта",
-     "en": "card"
+     "en": "card",
+     "mw": [
+      "张",
+      "zhāng"
+     ]
     },
     {
      "hz": "颗",
@@ -1446,19 +1642,31 @@
      "hz": "牙",
      "py": "yá",
      "ru": "зуб",
-     "en": "tooth"
+     "en": "tooth",
+     "mw": [
+      "颗",
+      "kē"
+     ]
     },
     {
      "hz": "心",
      "py": "xīn",
      "ru": "сердце",
-     "en": "heart"
+     "en": "heart",
+     "mw": [
+      "颗",
+      "kē"
+     ]
     },
     {
      "hz": "星星",
      "py": "xīngxing",
      "ru": "звезда",
-     "en": "star"
+     "en": "star",
+     "mw": [
+      "颗",
+      "kē"
+     ]
     }
    ],
    "sentences": [
@@ -1946,31 +2154,51 @@
      "hz": "图",
      "py": "tú",
      "ru": "картина, рисунок",
-     "en": "picture"
+     "en": "picture",
+     "mw": [
+      "张",
+      "zhāng"
+     ]
     },
     {
      "hz": "图画",
      "py": "túhuà",
      "ru": "рисунок",
-     "en": "drawing"
+     "en": "drawing",
+     "mw": [
+      "幅",
+      "fú"
+     ]
     },
     {
      "hz": "地图",
      "py": "dìtú",
      "ru": "карта",
-     "en": "map"
+     "en": "map",
+     "mw": [
+      "张",
+      "zhāng"
+     ]
     },
     {
      "hz": "图片",
      "py": "túpiàn",
      "ru": "картинка, фото",
-     "en": "picture, image"
+     "en": "picture, image",
+     "mw": [
+      "张",
+      "zhāng"
+     ]
     },
     {
      "hz": "图书馆",
      "py": "túshūguǎn",
      "ru": "библиотека",
-     "en": "library"
+     "en": "library",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "馆",
@@ -1982,19 +2210,31 @@
      "hz": "蓝图",
      "py": "lántú",
      "ru": "чертёж, план",
-     "en": "blueprint"
+     "en": "blueprint",
+     "mw": [
+      "张",
+      "zhāng"
+     ]
     },
     {
      "hz": "题",
      "py": "tí",
      "ru": "вопрос, задача",
-     "en": "question, problem"
+     "en": "question, problem",
+     "mw": [
+      "道",
+      "dào"
+     ]
     },
     {
      "hz": "数学题",
      "py": "shùxué tí",
      "ru": "математическая задача",
-     "en": "math problem"
+     "en": "math problem",
+     "mw": [
+      "道",
+      "dào"
+     ]
     },
     {
      "hz": "答题",
@@ -2030,7 +2270,11 @@
      "hz": "句子",
      "py": "jùzi",
      "ru": "предложение",
-     "en": "sentence"
+     "en": "sentence",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "得",
@@ -2138,7 +2382,11 @@
      "hz": "围巾",
      "py": "wéijīn",
      "ru": "шарф",
-     "en": "scarf"
+     "en": "scarf",
+     "mw": [
+      "条",
+      "tiáo"
+     ]
     },
     {
      "hz": "包围",
@@ -2156,31 +2404,51 @@
      "hz": "布",
      "py": "bù",
      "ru": "ткань",
-     "en": "cloth"
+     "en": "cloth",
+     "mw": [
+      "块",
+      "kuài"
+     ]
     },
     {
      "hz": "纱布",
      "py": "shābù",
      "ru": "марля",
-     "en": "gauze"
+     "en": "gauze",
+     "mw": [
+      "块",
+      "kuài"
+     ]
     },
     {
      "hz": "婚纱",
      "py": "hūnshā",
      "ru": "свадебное платье",
-     "en": "wedding dress"
+     "en": "wedding dress",
+     "mw": [
+      "件",
+      "jiàn"
+     ]
     },
     {
      "hz": "纱窗",
      "py": "shāchuāng",
      "ru": "москитная сетка",
-     "en": "window screen"
+     "en": "window screen",
+     "mw": [
+      "扇",
+      "shàn"
+     ]
     },
     {
      "hz": "面纱",
      "py": "miànshā",
      "ru": "вуаль",
-     "en": "veil"
+     "en": "veil",
+     "mw": [
+      "块",
+      "kuài"
+     ]
     },
     {
      "hz": "喊",
@@ -2300,7 +2568,11 @@
      "hz": "朋友",
      "py": "péngyou",
      "ru": "друг",
-     "en": "friend"
+     "en": "friend",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "送给",
@@ -2342,13 +2614,21 @@
      "hz": "客",
      "py": "kè",
      "ru": "гость",
-     "en": "guest"
+     "en": "guest",
+     "mw": [
+      "位",
+      "wèi"
+     ]
     },
     {
      "hz": "茶",
      "py": "chá",
      "ru": "чай",
-     "en": "tea"
+     "en": "tea",
+     "mw": [
+      "杯",
+      "bēi"
+     ]
     },
     {
      "hz": "茶叶",
@@ -2366,7 +2646,11 @@
      "hz": "名",
      "py": "míng",
      "ru": "имя",
-     "en": "name"
+     "en": "name",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "您",
@@ -2420,13 +2704,21 @@
      "hz": "饭",
      "py": "fàn",
      "ru": "еда, рис",
-     "en": "meal; rice"
+     "en": "meal; rice",
+     "mw": [
+      "顿",
+      "dùn"
+     ]
     },
     {
      "hz": "饭店",
      "py": "fàndiàn",
      "ru": "ресторан, отель",
-     "en": "restaurant; hotel"
+     "en": "restaurant; hotel",
+     "mw": [
+      "家",
+      "jiā"
+     ]
     },
     {
      "hz": "条",
@@ -2438,7 +2730,11 @@
      "hz": "条件",
      "py": "tiáojiàn",
      "ru": "условие",
-     "en": "condition"
+     "en": "condition",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "生活条件",
@@ -2450,7 +2746,11 @@
      "hz": "柿子",
      "py": "shìzi",
      "ru": "хурма",
-     "en": "persimmon"
+     "en": "persimmon",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "冬",
@@ -2468,7 +2768,11 @@
      "hz": "冬瓜",
      "py": "dōngguā",
      "ru": "восковая тыква",
-     "en": "winter melon"
+     "en": "winter melon",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "芽",
@@ -2516,25 +2820,41 @@
      "hz": "汤",
      "py": "tāng",
      "ru": "суп",
-     "en": "soup"
+     "en": "soup",
+     "mw": [
+      "碗",
+      "wǎn"
+     ]
     },
     {
      "hz": "鸡",
      "py": "jī",
      "ru": "курица",
-     "en": "chicken"
+     "en": "chicken",
+     "mw": [
+      "只",
+      "zhī"
+     ]
     },
     {
      "hz": "鸡汤",
      "py": "jītāng",
      "ru": "куриный суп",
-     "en": "chicken soup"
+     "en": "chicken soup",
+     "mw": [
+      "碗",
+      "wǎn"
+     ]
     },
     {
      "hz": "枪",
      "py": "qiāng",
      "ru": "пистолет, ружьё",
-     "en": "gun"
+     "en": "gun",
+     "mw": [
+      "把",
+      "bǎ"
+     ]
     },
     {
      "hz": "枪支",
@@ -2552,7 +2872,11 @@
      "hz": "钓竿",
      "py": "diàogān",
      "ru": "удочка",
-     "en": "fishing rod"
+     "en": "fishing rod",
+     "mw": [
+      "根",
+      "gēn"
+     ]
     },
     {
      "hz": "垂钓",
@@ -2576,7 +2900,11 @@
      "hz": "课",
      "py": "kè",
      "ru": "урок",
-     "en": "lesson"
+     "en": "lesson",
+     "mw": [
+      "节",
+      "jié"
+     ]
     },
     {
      "hz": "上课",
@@ -2588,7 +2916,11 @@
      "hz": "课文",
      "py": "kèwén",
      "ru": "текст урока",
-     "en": "lesson text"
+     "en": "lesson text",
+     "mw": [
+      "篇",
+      "piān"
+     ]
     },
     {
      "hz": "圈",
@@ -2600,7 +2932,11 @@
      "hz": "线",
      "py": "xiàn",
      "ru": "нить, линия",
-     "en": "thread; line"
+     "en": "thread; line",
+     "mw": [
+      "根",
+      "gēn"
+     ]
     },
     {
      "hz": "线圈",
@@ -2612,13 +2948,21 @@
      "hz": "电线",
      "py": "diànxiàn",
      "ru": "провод, кабель",
-     "en": "electric wire"
+     "en": "electric wire",
+     "mw": [
+      "根",
+      "gēn"
+     ]
     },
     {
      "hz": "地铁线",
      "py": "dìtiě xiàn",
      "ru": "линия метро",
-     "en": "metro line"
+     "en": "metro line",
+     "mw": [
+      "条",
+      "tiáo"
+     ]
     }
    ],
    "sentences": [
@@ -4189,7 +4533,11 @@
      "hz": "公司",
      "py": "gōngsī",
      "ru": "компания",
-     "en": "company"
+     "en": "company",
+     "mw": [
+      "家",
+      "jiā"
+     ]
     },
     {
      "hz": "里",
@@ -4201,7 +4549,11 @@
      "hz": "路",
      "py": "lù",
      "ru": "дорога",
-     "en": "road"
+     "en": "road",
+     "mw": [
+      "条",
+      "tiáo"
+     ]
     },
     {
      "hz": "心里",
@@ -4213,7 +4565,11 @@
      "hz": "包",
      "py": "bāo",
      "ru": "сумка",
-     "en": "bag"
+     "en": "bag",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "里面",
@@ -4243,7 +4599,11 @@
      "hz": "东西",
      "py": "dōngxi",
      "ru": "вещь",
-     "en": "thing"
+     "en": "thing",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "少",
@@ -4291,7 +4651,11 @@
      "hz": "车站",
      "py": "chēzhàn",
      "ru": "станция",
-     "en": "station"
+     "en": "station",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "吐",
@@ -4339,7 +4703,11 @@
      "hz": "电视",
      "py": "diànshì",
      "ru": "телевизор",
-     "en": "TV"
+     "en": "TV",
+     "mw": [
+      "台",
+      "tái"
+     ]
     },
     {
      "hz": "光明",
@@ -4363,13 +4731,21 @@
      "hz": "皮包",
      "py": "píbāo",
      "ru": "кожаная сумка",
-     "en": "leather bag"
+     "en": "leather bag",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "皮带",
      "py": "pídài",
      "ru": "ремень",
-     "en": "belt"
+     "en": "belt",
+     "mw": [
+      "条",
+      "tiáo"
+     ]
     },
     {
      "hz": "红",
@@ -4399,7 +4775,11 @@
      "hz": "公里",
      "py": "gōnglǐ",
      "ru": "километр",
-     "en": "kilometer"
+     "en": "kilometer",
+     "mw": [
+      "公里",
+      "gōnglǐ"
+     ]
     },
     {
      "hz": "看见",
@@ -4411,13 +4791,21 @@
      "hz": "井",
      "py": "jǐng",
      "ru": "колодец",
-     "en": "well"
+     "en": "well",
+     "mw": [
+      "口",
+      "kǒu"
+     ]
     },
     {
      "hz": "衣",
      "py": "yī",
      "ru": "одежда",
-     "en": "clothes"
+     "en": "clothes",
+     "mw": [
+      "件",
+      "jiàn"
+     ]
     }
    ],
    "sentences": [
@@ -4983,13 +5371,21 @@
      "hz": "地方",
      "py": "dìfang",
      "ru": "место",
-     "en": "place"
+     "en": "place",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "方法",
      "py": "fāngfǎ",
      "ru": "метод",
-     "en": "method"
+     "en": "method",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "方形",
@@ -5043,13 +5439,21 @@
      "hz": "椅子",
      "py": "yǐzi",
      "ru": "стул",
-     "en": "chair"
+     "en": "chair",
+     "mw": [
+      "把",
+      "bǎ"
+     ]
     },
     {
      "hz": "星期",
      "py": "xīngqī",
      "ru": "неделя",
-     "en": "week"
+     "en": "week",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "期",
@@ -5145,7 +5549,11 @@
      "hz": "篮球",
      "py": "lánqiú",
      "ru": "баскетбол",
-     "en": "basketball"
+     "en": "basketball",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "喝",
@@ -5663,7 +6071,11 @@
      "hz": "店",
      "py": "diàn",
      "ru": "магазин",
-     "en": "shop"
+     "en": "shop",
+     "mw": [
+      "家",
+      "jiā"
+     ]
     },
     {
      "hz": "商",
@@ -5675,13 +6087,21 @@
      "hz": "商店",
      "py": "shāngdiàn",
      "ru": "магазин",
-     "en": "shop"
+     "en": "shop",
+     "mw": [
+      "家",
+      "jiā"
+     ]
     },
     {
      "hz": "商场",
      "py": "shāngchǎng",
      "ru": "торговый центр",
-     "en": "mall"
+     "en": "mall",
+     "mw": [
+      "家",
+      "jiā"
+     ]
     },
     {
      "hz": "商业",
@@ -5693,13 +6113,21 @@
      "hz": "商人",
      "py": "shāngrén",
      "ru": "бизнесмен",
-     "en": "businessman"
+     "en": "businessman",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "商品",
      "py": "shāngpǐn",
      "ru": "товар",
-     "en": "goods"
+     "en": "goods",
+     "mw": [
+      "件",
+      "jiàn"
+     ]
     },
     {
      "hz": "品",
@@ -5717,7 +6145,11 @@
      "hz": "产品",
      "py": "chǎnpǐn",
      "ru": "изделие, продукт",
-     "en": "product"
+     "en": "product",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "食品",
@@ -5747,7 +6179,11 @@
      "hz": "牛",
      "py": "niú",
      "ru": "корова, бык",
-     "en": "cow, ox"
+     "en": "cow, ox",
+     "mw": [
+      "头",
+      "tóu"
+     ]
     },
     {
      "hz": "食物",
@@ -5759,25 +6195,41 @@
      "hz": "动物园",
      "py": "dòngwùyuán",
      "ru": "зоопарк",
-     "en": "zoo"
+     "en": "zoo",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "礼物",
      "py": "lǐwù",
      "ru": "подарок",
-     "en": "gift"
+     "en": "gift",
+     "mw": [
+      "份",
+      "fèn"
+     ]
     },
     {
      "hz": "动物",
      "py": "dòngwù",
      "ru": "животное",
-     "en": "animal"
+     "en": "animal",
+     "mw": [
+      "只",
+      "zhī"
+     ]
     },
     {
      "hz": "植物",
      "py": "zhíwù",
      "ru": "растение",
-     "en": "plant"
+     "en": "plant",
+     "mw": [
+      "棵",
+      "kē"
+     ]
     },
     {
      "hz": "库",
@@ -5789,13 +6241,21 @@
      "hz": "仓库",
      "py": "cāngkù",
      "ru": "склад",
-     "en": "warehouse"
+     "en": "warehouse",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "车库",
      "py": "chēkù",
      "ru": "гараж",
-     "en": "garage"
+     "en": "garage",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "图库",
@@ -5813,7 +6273,11 @@
      "hz": "庙",
      "py": "miào",
      "ru": "храм",
-     "en": "temple"
+     "en": "temple",
+     "mw": [
+      "座",
+      "zuò"
+     ]
     },
     {
      "hz": "政",
@@ -5849,19 +6313,31 @@
      "hz": "森林",
      "py": "sēnlín",
      "ru": "лес",
-     "en": "forest"
+     "en": "forest",
+     "mw": [
+      "片",
+      "piàn"
+     ]
     },
     {
      "hz": "板",
      "py": "bǎn",
      "ru": "доска",
-     "en": "board"
+     "en": "board",
+     "mw": [
+      "块",
+      "kuài"
+     ]
     },
     {
      "hz": "黑板",
      "py": "hēibǎn",
      "ru": "школьная доска",
-     "en": "blackboard"
+     "en": "blackboard",
+     "mw": [
+      "块",
+      "kuài"
+     ]
     },
     {
      "hz": "地板",
@@ -5879,43 +6355,71 @@
      "hz": "树",
      "py": "shù",
      "ru": "дерево",
-     "en": "tree"
+     "en": "tree",
+     "mw": [
+      "棵",
+      "kē"
+     ]
     },
     {
      "hz": "苹果树",
      "py": "píngguǒ shù",
      "ru": "яблоня",
-     "en": "apple tree"
+     "en": "apple tree",
+     "mw": [
+      "棵",
+      "kē"
+     ]
     },
     {
      "hz": "杯子",
      "py": "bēizi",
      "ru": "стакан",
-     "en": "cup, glass"
+     "en": "cup, glass",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "桌子",
      "py": "zhuōzi",
      "ru": "стол",
-     "en": "table"
+     "en": "table",
+     "mw": [
+      "张",
+      "zhāng"
+     ]
     },
     {
      "hz": "柜子",
      "py": "guìzi",
      "ru": "шкаф, комод",
-     "en": "cabinet"
+     "en": "cabinet",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "书柜",
      "py": "shūguì",
      "ru": "книжный шкаф",
-     "en": "bookcase"
+     "en": "bookcase",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "衣柜",
      "py": "yīguì",
      "ru": "платяной шкаф",
-     "en": "wardrobe"
+     "en": "wardrobe",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "竹",
@@ -5927,7 +6431,11 @@
      "hz": "寺",
      "py": "sì",
      "ru": "храм",
-     "en": "temple"
+     "en": "temple",
+     "mw": [
+      "座",
+      "zuò"
+     ]
     },
     {
      "hz": "等",
@@ -5957,13 +6465,21 @@
      "hz": "弟弟",
      "py": "dìdi",
      "ru": "младший брат",
-     "en": "younger brother"
+     "en": "younger brother",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "笔",
      "py": "bǐ",
      "ru": "ручка, карандаш",
-     "en": "pen, pencil"
+     "en": "pen, pencil",
+     "mw": [
+      "支",
+      "zhī"
+     ]
     },
     {
      "hz": "毛",
@@ -5975,19 +6491,31 @@
      "hz": "箱子",
      "py": "xiāngzi",
      "ru": "коробка, ящик",
-     "en": "box"
+     "en": "box",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "行李箱",
      "py": "xínglixiāng",
      "ru": "чемодан",
-     "en": "suitcase"
+     "en": "suitcase",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "行李",
      "py": "xíngli",
      "ru": "багаж",
-     "en": "luggage"
+     "en": "luggage",
+     "mw": [
+      "件",
+      "jiàn"
+     ]
     },
     {
      "hz": "休息",
@@ -5999,7 +6527,11 @@
      "hz": "伙伴",
      "py": "huǒbàn",
      "ru": "товарищ, партнёр",
-     "en": "partner, companion"
+     "en": "partner, companion",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "陪",
@@ -6017,19 +6549,31 @@
      "hz": "狗",
      "py": "gǒu",
      "ru": "собака",
-     "en": "dog"
+     "en": "dog",
+     "mw": [
+      "只",
+      "zhī"
+     ]
     },
     {
      "hz": "老人",
      "py": "lǎorén",
      "ru": "пожилой человек",
-     "en": "elderly person"
+     "en": "elderly person",
+     "mw": [
+      "位",
+      "wèi"
+     ]
     },
     {
      "hz": "街道",
      "py": "jiēdào",
      "ru": "улица",
-     "en": "street"
+     "en": "street",
+     "mw": [
+      "条",
+      "tiáo"
+     ]
     },
     {
      "hz": "道",
@@ -6047,31 +6591,51 @@
      "hz": "汉字",
      "py": "Hànzì",
      "ru": "китайский иероглиф",
-     "en": "Chinese character"
+     "en": "Chinese character",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "字",
      "py": "zì",
      "ru": "иероглиф, знак",
-     "en": "character"
+     "en": "character",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "姐姐",
      "py": "jiějie",
      "ru": "старшая сестра",
-     "en": "older sister"
+     "en": "older sister",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "妹妹",
      "py": "mèimei",
      "ru": "младшая сестра",
-     "en": "younger sister"
+     "en": "younger sister",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "哥哥",
      "py": "gēge",
      "ru": "старший брат",
-     "en": "older brother"
+     "en": "older brother",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "婚",
@@ -6083,7 +6647,11 @@
      "hz": "婚礼",
      "py": "hūnlǐ",
      "ru": "свадебная церемония",
-     "en": "wedding"
+     "en": "wedding",
+     "mw": [
+      "场",
+      "chǎng"
+     ]
     },
     {
      "hz": "昏",
@@ -6101,19 +6669,31 @@
      "hz": "家",
      "py": "jiā",
      "ru": "дом, семья",
-     "en": "home, family"
+     "en": "home, family",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "猪",
      "py": "zhū",
      "ru": "свинья",
-     "en": "pig"
+     "en": "pig",
+     "mw": [
+      "头",
+      "tóu"
+     ]
     },
     {
      "hz": "猫",
      "py": "māo",
      "ru": "кошка",
-     "en": "cat"
+     "en": "cat",
+     "mw": [
+      "只",
+      "zhī"
+     ]
     },
     {
      "hz": "安静",
@@ -6155,13 +6735,21 @@
      "hz": "客厅",
      "py": "kètīng",
      "ru": "гостиная",
-     "en": "living room"
+     "en": "living room",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "客人",
      "py": "kèrén",
      "ru": "гость",
-     "en": "guest"
+     "en": "guest",
+     "mw": [
+      "位",
+      "wèi"
+     ]
     },
     {
      "hz": "顾",
@@ -6173,7 +6761,11 @@
      "hz": "顾客",
      "py": "gùkè",
      "ru": "клиент",
-     "en": "customer"
+     "en": "customer",
+     "mw": [
+      "位",
+      "wèi"
+     ]
     },
     {
      "hz": "餐",
@@ -6185,37 +6777,61 @@
      "hz": "餐厅",
      "py": "cāntīng",
      "ru": "столовая, ресторан",
-     "en": "canteen, restaurant"
+     "en": "canteen, restaurant",
+     "mw": [
+      "家",
+      "jiā"
+     ]
     },
     {
      "hz": "早餐",
      "py": "zǎocān",
      "ru": "завтрак",
-     "en": "breakfast"
+     "en": "breakfast",
+     "mw": [
+      "顿",
+      "dùn"
+     ]
     },
     {
      "hz": "晚餐",
      "py": "wǎncān",
      "ru": "ужин",
-     "en": "dinner"
+     "en": "dinner",
+     "mw": [
+      "顿",
+      "dùn"
+     ]
     },
     {
      "hz": "宿舍",
      "py": "sùshè",
      "ru": "общежитие",
-     "en": "dormitory"
+     "en": "dormitory",
+     "mw": [
+      "间",
+      "jiān"
+     ]
     },
     {
      "hz": "花",
      "py": "huā",
      "ru": "цветок; тратить",
-     "en": "flower; spend"
+     "en": "flower; spend",
+     "mw": [
+      "朵",
+      "duǒ"
+     ]
     },
     {
      "hz": "花园",
      "py": "huāyuán",
      "ru": "сад",
-     "en": "garden"
+     "en": "garden",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "花生",
@@ -6227,7 +6843,11 @@
      "hz": "药",
      "py": "yào",
      "ru": "лекарство",
-     "en": "medicine"
+     "en": "medicine",
+     "mw": [
+      "种",
+      "zhǒng"
+     ]
     },
     {
      "hz": "吃药",
@@ -6239,19 +6859,31 @@
      "hz": "药店",
      "py": "yàodiàn",
      "ru": "аптека",
-     "en": "pharmacy"
+     "en": "pharmacy",
+     "mw": [
+      "家",
+      "jiā"
+     ]
     },
     {
      "hz": "草",
      "py": "cǎo",
      "ru": "трава",
-     "en": "grass"
+     "en": "grass",
+     "mw": [
+      "棵",
+      "kē"
+     ]
     },
     {
      "hz": "葡萄",
      "py": "pútao",
      "ru": "виноград",
-     "en": "grape"
+     "en": "grape",
+     "mw": [
+      "串",
+      "chuàn"
+     ]
     }
    ],
    "sentences": [
@@ -7508,25 +8140,41 @@
      "hz": "香水",
      "py": "xiāngshuǐ",
      "ru": "духи",
-     "en": "perfume"
+     "en": "perfume",
+     "mw": [
+      "瓶",
+      "píng"
+     ]
     },
     {
      "hz": "香蕉",
      "py": "xiāngjiāo",
      "ru": "банан",
-     "en": "banana"
+     "en": "banana",
+     "mw": [
+      "根",
+      "gēn"
+     ]
     },
     {
      "hz": "河",
      "py": "hé",
      "ru": "река",
-     "en": "river"
+     "en": "river",
+     "mw": [
+      "条",
+      "tiáo"
+     ]
     },
     {
      "hz": "海",
      "py": "hǎi",
      "ru": "море",
-     "en": "sea"
+     "en": "sea",
+     "mw": [
+      "片",
+      "piàn"
+     ]
     },
     {
      "hz": "海洋",
@@ -7544,13 +8192,21 @@
      "hz": "鱼",
      "py": "yú",
      "ru": "рыба",
-     "en": "fish"
+     "en": "fish",
+     "mw": [
+      "条",
+      "tiáo"
+     ]
     },
     {
      "hz": "活动",
      "py": "huódòng",
      "ru": "мероприятие, активность",
-     "en": "activity, event"
+     "en": "activity, event",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "婉",
@@ -7568,7 +8224,11 @@
      "hz": "菜",
      "py": "cài",
      "ru": "блюдо; овощи",
-     "en": "dish; vegetable"
+     "en": "dish; vegetable",
+     "mw": [
+      "道",
+      "dào"
+     ]
     },
     {
      "hz": "骑自行车",
@@ -7592,7 +8252,11 @@
      "hz": "对话",
      "py": "duìhuà",
      "ru": "диалог",
-     "en": "dialogue"
+     "en": "dialogue",
+     "mw": [
+      "段",
+      "duàn"
+     ]
     },
     {
      "hz": "下面",
@@ -7610,7 +8274,11 @@
      "hz": "音乐",
      "py": "yīnyuè",
      "ru": "музыка",
-     "en": "music"
+     "en": "music",
+     "mw": [
+      "首",
+      "shǒu"
+     ]
     },
     {
      "hz": "听懂",
@@ -7628,7 +8296,11 @@
      "hz": "兔子",
      "py": "tùzi",
      "ru": "кролик",
-     "en": "rabbit"
+     "en": "rabbit",
+     "mw": [
+      "只",
+      "zhī"
+     ]
     },
     {
      "hz": "那儿",
@@ -7700,7 +8372,11 @@
      "hz": "咖啡",
      "py": "kāfēi",
      "ru": "кофе",
-     "en": "coffee"
+     "en": "coffee",
+     "mw": [
+      "杯",
+      "bēi"
+     ]
     },
     {
      "hz": "游泳",
@@ -7730,7 +8406,11 @@
      "hz": "男生",
      "py": "nánshēng",
      "ru": "парень",
-     "en": "guy, boy"
+     "en": "guy, boy",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "知道",
@@ -7748,7 +8428,11 @@
      "hz": "电影",
      "py": "diànyǐng",
      "ru": "фильм",
-     "en": "movie"
+     "en": "movie",
+     "mw": [
+      "部",
+      "bù"
+     ]
     },
     {
      "hz": "九月",
@@ -7778,7 +8462,11 @@
      "hz": "学校",
      "py": "xuéxiào",
      "ru": "школа",
-     "en": "school"
+     "en": "school",
+     "mw": [
+      "所",
+      "suǒ"
+     ]
     },
     {
      "hz": "右边",
@@ -7790,13 +8478,21 @@
      "hz": "手机",
      "py": "shǒujī",
      "ru": "мобильный телефон",
-     "en": "mobile phone"
+     "en": "mobile phone",
+     "mw": [
+      "部",
+      "bù"
+     ]
     },
     {
      "hz": "颜色",
      "py": "yánsè",
      "ru": "цвет",
-     "en": "color"
+     "en": "color",
+     "mw": [
+      "种",
+      "zhǒng"
+     ]
     },
     {
      "hz": "冬天",
@@ -7826,7 +8522,11 @@
      "hz": "季节",
      "py": "jìjié",
      "ru": "время года",
-     "en": "season"
+     "en": "season",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "季",
@@ -7886,7 +8586,11 @@
      "hz": "雨伞",
      "py": "yǔsǎn",
      "ru": "зонтик",
-     "en": "umbrella"
+     "en": "umbrella",
+     "mw": [
+      "把",
+      "bǎ"
+     ]
     },
     {
      "hz": "打伞",
@@ -7898,19 +8602,31 @@
      "hz": "雨",
      "py": "yǔ",
      "ru": "дождь",
-     "en": "rain"
+     "en": "rain",
+     "mw": [
+      "场",
+      "chǎng"
+     ]
     },
     {
      "hz": "门",
      "py": "mén",
      "ru": "дверь",
-     "en": "door"
+     "en": "door",
+     "mw": [
+      "扇",
+      "shàn"
+     ]
     },
     {
      "hz": "门票",
      "py": "ménpiào",
      "ru": "входной билет",
-     "en": "admission ticket"
+     "en": "admission ticket",
+     "mw": [
+      "张",
+      "zhāng"
+     ]
     },
     {
      "hz": "飞",
@@ -7928,13 +8644,21 @@
      "hz": "飞机",
      "py": "fēijī",
      "ru": "самолёт",
-     "en": "airplane"
+     "en": "airplane",
+     "mw": [
+      "架",
+      "jià"
+     ]
     },
     {
      "hz": "飞行员",
      "py": "fēixíngyuán",
      "ru": "пилот",
-     "en": "pilot"
+     "en": "pilot",
+     "mw": [
+      "位",
+      "wèi"
+     ]
     },
     {
      "hz": "坐",
@@ -8042,7 +8766,11 @@
      "hz": "外语",
      "py": "wàiyǔ",
      "ru": "иностранный язык",
-     "en": "foreign language"
+     "en": "foreign language",
+     "mw": [
+      "门",
+      "mén"
+     ]
     },
     {
      "hz": "外卖",
@@ -9202,7 +9930,11 @@
      "hz": "羊",
      "py": "yáng",
      "ru": "овца",
-     "en": "sheep"
+     "en": "sheep",
+     "mw": [
+      "只",
+      "zhī"
+     ]
     },
     {
      "hz": "牛肉",
@@ -9214,7 +9946,11 @@
      "hz": "头",
      "py": "tóu",
      "ru": "голова; (счётное для скота)",
-     "en": "head; (measure word for livestock)"
+     "en": "head; (measure word for livestock)",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "但是",
@@ -9232,7 +9968,11 @@
      "hz": "时间",
      "py": "shíjiān",
      "ru": "время",
-     "en": "time"
+     "en": "time",
+     "mw": [
+      "段",
+      "duàn"
+     ]
     },
     {
      "hz": "不过",
@@ -9322,7 +10062,11 @@
      "hz": "教室",
      "py": "jiàoshì",
      "ru": "класс (комната)",
-     "en": "classroom"
+     "en": "classroom",
+     "mw": [
+      "间",
+      "jiān"
+     ]
     },
     {
      "hz": "教",
@@ -9364,7 +10108,11 @@
      "hz": "事实",
      "py": "shìshí",
      "ru": "факт",
-     "en": "fact"
+     "en": "fact",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "实话",
@@ -9821,7 +10569,11 @@
      "hz": "公司",
      "py": "gōngsī",
      "ru": "компания",
-     "en": "company"
+     "en": "company",
+     "mw": [
+      "家",
+      "jiā"
+     ]
     },
     {
      "hz": "合适",
@@ -9833,7 +10585,11 @@
      "hz": "衣服",
      "py": "yīfu",
      "ru": "одежда",
-     "en": "clothes"
+     "en": "clothes",
+     "mw": [
+      "件",
+      "jiàn"
+     ]
     },
     {
      "hz": "会",
@@ -9875,7 +10631,11 @@
      "hz": "身体",
      "py": "shēntǐ",
      "ru": "тело, здоровье",
-     "en": "body; health"
+     "en": "body; health",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "跟",
@@ -9929,7 +10689,11 @@
      "hz": "考试",
      "py": "kǎoshì",
      "ru": "экзамен",
-     "en": "exam"
+     "en": "exam",
+     "mw": [
+      "场",
+      "chǎng"
+     ]
     },
     {
      "hz": "考大学",
@@ -9947,7 +10711,11 @@
      "hz": "病",
      "py": "bìng",
      "ru": "болезнь",
-     "en": "illness"
+     "en": "illness",
+     "mw": [
+      "场",
+      "chǎng"
+     ]
     },
     {
      "hz": "米",
@@ -10223,7 +10991,11 @@
      "hz": "马路",
      "py": "mǎlù",
      "ru": "дорога, улица",
-     "en": "road"
+     "en": "road",
+     "mw": [
+      "条",
+      "tiáo"
+     ]
     },
     {
      "hz": "过年",
@@ -10241,7 +11013,11 @@
      "hz": "云",
      "py": "yún",
      "ru": "облако",
-     "en": "cloud"
+     "en": "cloud",
+     "mw": [
+      "朵",
+      "duǒ"
+     ]
     },
     {
      "hz": "千",
@@ -10289,7 +11065,11 @@
      "hz": "文件",
      "py": "wénjiàn",
      "ru": "документ, файл",
-     "en": "document, file"
+     "en": "document, file",
+     "mw": [
+      "份",
+      "fèn"
+     ]
     },
     {
      "hz": "校",
@@ -10307,13 +11087,21 @@
      "hz": "信",
      "py": "xìn",
      "ru": "письмо",
-     "en": "letter"
+     "en": "letter",
+     "mw": [
+      "封",
+      "fēng"
+     ]
     },
     {
      "hz": "消息",
      "py": "xiāoxi",
      "ru": "новость, сообщение",
-     "en": "news, message"
+     "en": "news, message",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "开车",
@@ -10367,13 +11155,21 @@
      "hz": "语言",
      "py": "yǔyán",
      "ru": "язык",
-     "en": "language"
+     "en": "language",
+     "mw": [
+      "种",
+      "zhǒng"
+     ]
     },
     {
      "hz": "门",
      "py": "mén",
      "ru": "(счётное для языков, предметов)",
-     "en": "(measure word for languages, subjects)"
+     "en": "(measure word for languages, subjects)",
+     "mw": [
+      "扇",
+      "shàn"
+     ]
     },
     {
      "hz": "种",
@@ -10397,7 +11193,11 @@
      "hz": "体育馆",
      "py": "tǐyùguǎn",
      "ru": "спортзал",
-     "en": "gym"
+     "en": "gym",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "育",
@@ -10427,7 +11227,11 @@
      "hz": "晚会",
      "py": "wǎnhuì",
      "ru": "вечеринка",
-     "en": "evening party"
+     "en": "evening party",
+     "mw": [
+      "场",
+      "chǎng"
+     ]
     },
     {
      "hz": "还",
@@ -10463,13 +11267,21 @@
      "hz": "作业",
      "py": "zuòyè",
      "ru": "домашнее задание",
-     "en": "homework"
+     "en": "homework",
+     "mw": [
+      "份",
+      "fèn"
+     ]
     },
     {
      "hz": "头发",
      "py": "tóufa",
      "ru": "волосы",
-     "en": "hair"
+     "en": "hair",
+     "mw": [
+      "根",
+      "gēn"
+     ]
     },
     {
      "hz": "洗",
@@ -10511,19 +11323,31 @@
      "hz": "瓶",
      "py": "píng",
      "ru": "бутылка",
-     "en": "bottle"
+     "en": "bottle",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "可乐",
      "py": "kělè",
      "ru": "кола",
-     "en": "cola"
+     "en": "cola",
+     "mw": [
+      "瓶",
+      "píng"
+     ]
     },
     {
      "hz": "鞋",
      "py": "xié",
      "ru": "обувь",
-     "en": "shoes"
+     "en": "shoes",
+     "mw": [
+      "双",
+      "shuāng"
+     ]
     },
     {
      "hz": "好看",
@@ -10535,13 +11359,21 @@
      "hz": "运动鞋",
      "py": "yùndòngxié",
      "ru": "кроссовки",
-     "en": "sneakers"
+     "en": "sneakers",
+     "mw": [
+      "双",
+      "shuāng"
+     ]
     },
     {
      "hz": "皮鞋",
      "py": "píxié",
      "ru": "кожаная обувь",
-     "en": "leather shoes"
+     "en": "leather shoes",
+     "mw": [
+      "双",
+      "shuāng"
+     ]
     },
     {
      "hz": "换鞋",
@@ -10601,19 +11433,31 @@
      "hz": "同事",
      "py": "tóngshì",
      "ru": "коллега",
-     "en": "colleague"
+     "en": "colleague",
+     "mw": [
+      "位",
+      "wèi"
+     ]
     },
     {
      "hz": "城市",
      "py": "chéngshì",
      "ru": "город",
-     "en": "city"
+     "en": "city",
+     "mw": [
+      "座",
+      "zuò"
+     ]
     },
     {
      "hz": "外国人",
      "py": "wàiguórén",
      "ru": "иностранец",
-     "en": "foreigner"
+     "en": "foreigner",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "市",
@@ -10625,7 +11469,11 @@
      "hz": "题目",
      "py": "tímù",
      "ru": "задание, тема",
-     "en": "topic; question"
+     "en": "topic; question",
+     "mw": [
+      "道",
+      "dào"
+     ]
     },
     {
      "hz": "新鲜",
@@ -11549,13 +12397,21 @@
      "hz": "房子",
      "py": "fángzi",
      "ru": "дом, квартира",
-     "en": "house, apartment"
+     "en": "house, apartment",
+     "mw": [
+      "套",
+      "tào"
+     ]
     },
     {
      "hz": "手机套",
      "py": "shǒujītào",
      "ru": "чехол для телефона",
-     "en": "phone case"
+     "en": "phone case",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "散步",
@@ -11591,7 +12447,11 @@
      "hz": "护照",
      "py": "hùzhào",
      "ru": "паспорт",
-     "en": "passport"
+     "en": "passport",
+     "mw": [
+      "本",
+      "běn"
+     ]
     },
     {
      "hz": "护照号",
@@ -11603,7 +12463,11 @@
      "hz": "照片",
      "py": "zhàopiàn",
      "ru": "фотография",
-     "en": "photo"
+     "en": "photo",
+     "mw": [
+      "张",
+      "zhāng"
+     ]
     },
     {
      "hz": "前面",
@@ -11657,7 +12521,11 @@
      "hz": "烤鱼",
      "py": "kǎoyú",
      "ru": "жареная рыба",
-     "en": "grilled fish"
+     "en": "grilled fish",
+     "mw": [
+      "条",
+      "tiáo"
+     ]
     },
     {
      "hz": "拷",
@@ -11687,7 +12555,11 @@
      "hz": "困难",
      "py": "kùnnan",
      "ru": "трудность",
-     "en": "difficulty"
+     "en": "difficulty",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "好久不见",
@@ -12066,37 +12938,61 @@
      "hz": "熊猫",
      "py": "xióngmāo",
      "ru": "панда",
-     "en": "panda"
+     "en": "panda",
+     "mw": [
+      "只",
+      "zhī"
+     ]
     },
     {
      "hz": "鸭",
      "py": "yā",
      "ru": "утка",
-     "en": "duck"
+     "en": "duck",
+     "mw": [
+      "只",
+      "zhī"
+     ]
     },
     {
      "hz": "烤鸭",
      "py": "kǎoyā",
      "ru": "утка по-пекински",
-     "en": "roast duck"
+     "en": "roast duck",
+     "mw": [
+      "只",
+      "zhī"
+     ]
     },
     {
      "hz": "司机",
      "py": "sījī",
      "ru": "водитель",
-     "en": "driver"
+     "en": "driver",
+     "mw": [
+      "位",
+      "wèi"
+     ]
     },
     {
      "hz": "出租车司机",
      "py": "chūzūchē sījī",
      "ru": "таксист",
-     "en": "taxi driver"
+     "en": "taxi driver",
+     "mw": [
+      "位",
+      "wèi"
+     ]
     },
     {
      "hz": "空姐",
      "py": "kōngjiě",
      "ru": "стюардесса",
-     "en": "flight attendant (female)"
+     "en": "flight attendant (female)",
+     "mw": [
+      "位",
+      "wèi"
+     ]
     },
     {
      "hz": "空少",
@@ -12502,7 +13398,11 @@
      "hz": "舞蹈",
      "py": "wǔdǎo",
      "ru": "танец",
-     "en": "dance"
+     "en": "dance",
+     "mw": [
+      "支",
+      "zhī"
+     ]
     },
     {
      "hz": "清真",
@@ -12520,7 +13420,11 @@
      "hz": "清真寺",
      "py": "qīngzhēnsì",
      "ru": "мечеть",
-     "en": "mosque"
+     "en": "mosque",
+     "mw": [
+      "座",
+      "zuò"
+     ]
     },
     {
      "hz": "穆斯林",
@@ -12532,7 +13436,11 @@
      "hz": "水果",
      "py": "shuǐguǒ",
      "ru": "фрукты",
-     "en": "fruit"
+     "en": "fruit",
+     "mw": [
+      "种",
+      "zhǒng"
+     ]
     },
     {
      "hz": "销售",
@@ -12574,7 +13482,11 @@
      "hz": "日记",
      "py": "rìjì",
      "ru": "дневник",
-     "en": "diary"
+     "en": "diary",
+     "mw": [
+      "篇",
+      "piān"
+     ]
     },
     {
      "hz": "写",
@@ -12592,7 +13504,11 @@
      "hz": "故事",
      "py": "gùshi",
      "ru": "история, рассказ",
-     "en": "story"
+     "en": "story",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "爱情",
@@ -12604,7 +13520,11 @@
      "hz": "照相机",
      "py": "zhàoxiàngjī",
      "ru": "фотоаппарат",
-     "en": "camera"
+     "en": "camera",
+     "mw": [
+      "台",
+      "tái"
+     ]
     },
     {
      "hz": "台",
@@ -12628,7 +13548,11 @@
      "hz": "脸",
      "py": "liǎn",
      "ru": "лицо",
-     "en": "face"
+     "en": "face",
+     "mw": [
+      "张",
+      "zhāng"
+     ]
     },
     {
      "hz": "成",
@@ -12664,7 +13588,11 @@
      "hz": "比赛",
      "py": "bǐsài",
      "ru": "соревнование",
-     "en": "competition, match"
+     "en": "competition, match",
+     "mw": [
+      "场",
+      "chǎng"
+     ]
     },
     {
      "hz": "胖",
@@ -13124,7 +14052,11 @@
      "hz": "细菌",
      "py": "xìjūn",
      "ru": "бактерия",
-     "en": "bacteria"
+     "en": "bacteria",
+     "mw": [
+      "种",
+      "zhǒng"
+     ]
     },
     {
      "hz": "细",
@@ -13202,7 +14134,11 @@
      "hz": "裙子",
      "py": "qúnzi",
      "ru": "юбка",
-     "en": "skirt"
+     "en": "skirt",
+     "mw": [
+      "条",
+      "tiáo"
+     ]
     },
     {
      "hz": "检查",
@@ -13220,7 +14156,11 @@
      "hz": "啤酒",
      "py": "píjiǔ",
      "ru": "пиво",
-     "en": "beer"
+     "en": "beer",
+     "mw": [
+      "瓶",
+      "píng"
+     ]
     },
     {
      "hz": "差不多",
@@ -13322,13 +14262,21 @@
      "hz": "眼镜",
      "py": "yǎnjìng",
      "ru": "очки",
-     "en": "glasses"
+     "en": "glasses",
+     "mw": [
+      "副",
+      "fù"
+     ]
     },
     {
      "hz": "手表",
      "py": "shǒubiǎo",
      "ru": "наручные часы",
-     "en": "watch"
+     "en": "watch",
+     "mw": [
+      "块",
+      "kuài"
+     ]
     }
    ],
    "sentences": [
@@ -13878,13 +14826,21 @@
      "hz": "帽子",
      "py": "màozi",
      "ru": "шапка",
-     "en": "hat"
+     "en": "hat",
+     "mw": [
+      "顶",
+      "dǐng"
+     ]
     },
     {
      "hz": "手套",
      "py": "shǒutào",
      "ru": "перчатки",
-     "en": "gloves"
+     "en": "gloves",
+     "mw": [
+      "双",
+      "shuāng"
+     ]
     },
     {
      "hz": "一样",
@@ -13902,19 +14858,31 @@
      "hz": "太阳",
      "py": "tàiyáng",
      "ru": "солнце",
-     "en": "sun"
+     "en": "sun",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "月亮",
      "py": "yuèliang",
      "ru": "луна",
-     "en": "moon"
+     "en": "moon",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "短裤",
      "py": "duǎnkù",
      "ru": "шорты",
-     "en": "shorts"
+     "en": "shorts",
+     "mw": [
+      "条",
+      "tiáo"
+     ]
     },
     {
      "hz": "裤",
@@ -13950,7 +14918,11 @@
      "hz": "墨镜",
      "py": "mòjìng",
      "ru": "солнцезащитные очки",
-     "en": "sunglasses"
+     "en": "sunglasses",
+     "mw": [
+      "副",
+      "fù"
+     ]
     },
     {
      "hz": "冻死了",
@@ -13974,7 +14946,11 @@
      "hz": "伞",
      "py": "sǎn",
      "ru": "зонт",
-     "en": "umbrella"
+     "en": "umbrella",
+     "mw": [
+      "把",
+      "bǎ"
+     ]
     },
     {
      "hz": "什么鬼天气",
@@ -13986,13 +14962,21 @@
      "hz": "船",
      "py": "chuán",
      "ru": "лодка, корабль",
-     "en": "boat, ship"
+     "en": "boat, ship",
+     "mw": [
+      "条",
+      "tiáo"
+     ]
     },
     {
      "hz": "景点",
      "py": "jǐngdiǎn",
      "ru": "достопримечательность",
-     "en": "tourist attraction"
+     "en": "tourist attraction",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "预报",
@@ -14046,13 +15030,21 @@
      "hz": "地区",
      "py": "dìqū",
      "ru": "регион",
-     "en": "region"
+     "en": "region",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "小区",
      "py": "xiǎoqū",
      "ru": "жилой квартал, двор",
-     "en": "residential compound"
+     "en": "residential compound",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "市区",
@@ -14070,7 +15062,11 @@
      "hz": "文化",
      "py": "wénhuà",
      "ru": "культура",
-     "en": "culture"
+     "en": "culture",
+     "mw": [
+      "种",
+      "zhǒng"
+     ]
     }
    ],
    "sentences": [
@@ -14567,7 +15563,11 @@
      "hz": "计划",
      "py": "jìhuà",
      "ru": "план; планировать",
-     "en": "plan"
+     "en": "plan",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "打算",
@@ -14615,13 +15615,21 @@
      "hz": "古城",
      "py": "gǔchéng",
      "ru": "древний город",
-     "en": "ancient city"
+     "en": "ancient city",
+     "mw": [
+      "座",
+      "zuò"
+     ]
     },
     {
      "hz": "宾馆",
      "py": "bīnguǎn",
      "ru": "гостиница",
-     "en": "hotel"
+     "en": "hotel",
+     "mw": [
+      "家",
+      "jiā"
+     ]
     },
     {
      "hz": "宾",
@@ -14996,7 +16004,11 @@
      "hz": "墙",
      "py": "qiáng",
      "ru": "стена",
-     "en": "wall"
+     "en": "wall",
+     "mw": [
+      "面",
+      "miàn"
+     ]
     },
     {
      "hz": "张",
@@ -15020,7 +16032,11 @@
      "hz": "玩笑",
      "py": "wánxiào",
      "ru": "шутка",
-     "en": "joke"
+     "en": "joke",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "找到",
@@ -15062,7 +16078,11 @@
      "hz": "茄子",
      "py": "qiézi",
      "ru": "баклажан",
-     "en": "eggplant"
+     "en": "eggplant",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "牛肉末",
@@ -15098,7 +16118,11 @@
      "hz": "花椰菜",
      "py": "huāyēcài",
      "ru": "цветная капуста",
-     "en": "cauliflower"
+     "en": "cauliflower",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "用",
@@ -15651,7 +16675,11 @@
      "hz": "块",
      "py": "kuài",
      "ru": "кусок",
-     "en": "piece"
+     "en": "piece",
+     "mw": [
+      "块",
+      "kuài"
+     ]
     },
     {
      "hz": "先",
@@ -15669,7 +16697,11 @@
      "hz": "锅",
      "py": "guō",
      "ru": "сковорода, кастрюля",
-     "en": "pan, pot"
+     "en": "pan, pot",
+     "mw": [
+      "口",
+      "kǒu"
+     ]
     },
     {
      "hz": "放进",
@@ -15741,7 +16773,11 @@
      "hz": "洞",
      "py": "dòng",
      "ru": "дыра, лунка",
-     "en": "hole"
+     "en": "hole",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "离",
@@ -16167,7 +17203,11 @@
      "hz": "网络",
      "py": "wǎngluò",
      "ru": "интернет, сеть",
-     "en": "internet, network"
+     "en": "internet, network",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "必须",
@@ -16191,7 +17231,11 @@
      "hz": "二维码",
      "py": "èrwéimǎ",
      "ru": "QR-код",
-     "en": "QR code"
+     "en": "QR code",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "维",
@@ -16227,13 +17271,21 @@
      "hz": "词典",
      "py": "cídiǎn",
      "ru": "словарь",
-     "en": "dictionary"
+     "en": "dictionary",
+     "mw": [
+      "本",
+      "běn"
+     ]
     },
     {
      "hz": "词",
      "py": "cí",
      "ru": "слово",
-     "en": "word"
+     "en": "word",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "典",
@@ -16251,7 +17303,11 @@
      "hz": "电视剧",
      "py": "diànshìjù",
      "ru": "сериал",
-     "en": "TV series"
+     "en": "TV series",
+     "mw": [
+      "部",
+      "bù"
+     ]
     },
     {
      "hz": "剧",
@@ -16263,7 +17319,11 @@
      "hz": "歌剧",
      "py": "gējù",
      "ru": "опера",
-     "en": "opera"
+     "en": "opera",
+     "mw": [
+      "部",
+      "bù"
+     ]
     },
     {
      "hz": "字幕",
@@ -16281,7 +17341,11 @@
      "hz": "风扇",
      "py": "fēngshàn",
      "ru": "вентилятор",
-     "en": "fan"
+     "en": "fan",
+     "mw": [
+      "台",
+      "tái"
+     ]
     },
     {
      "hz": "扇",
@@ -16311,7 +17375,11 @@
      "hz": "湖",
      "py": "hú",
      "ru": "озеро",
-     "en": "lake"
+     "en": "lake",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "湖边",
@@ -16779,7 +17847,11 @@
      "hz": "银行卡",
      "py": "yínhángkǎ",
      "ru": "банковская карта",
-     "en": "bank card"
+     "en": "bank card",
+     "mw": [
+      "张",
+      "zhāng"
+     ]
     },
     {
      "hz": "预订",
@@ -16809,19 +17881,31 @@
      "hz": "毕业证书",
      "py": "bìyè zhèngshū",
      "ru": "диплом",
-     "en": "diploma"
+     "en": "diploma",
+     "mw": [
+      "张",
+      "zhāng"
+     ]
     },
     {
      "hz": "证书",
      "py": "zhèngshū",
      "ru": "свидетельство",
-     "en": "certificate"
+     "en": "certificate",
+     "mw": [
+      "张",
+      "zhāng"
+     ]
     },
     {
      "hz": "论文",
      "py": "lùnwén",
      "ru": "диссертация",
-     "en": "thesis"
+     "en": "thesis",
+     "mw": [
+      "篇",
+      "piān"
+     ]
     },
     {
      "hz": "答辩",
@@ -16839,7 +17923,11 @@
      "hz": "学位",
      "py": "xuéwèi",
      "ru": "учёная степень",
-     "en": "academic degree"
+     "en": "academic degree",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "位",
@@ -16851,7 +17939,11 @@
      "hz": "邮局",
      "py": "yóujú",
      "ru": "почта",
-     "en": "post office"
+     "en": "post office",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "最近",
@@ -16911,13 +18003,21 @@
      "hz": "伤口",
      "py": "shāngkǒu",
      "ru": "рана",
-     "en": "wound"
+     "en": "wound",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "住处",
      "py": "zhùchù",
      "ru": "место жительства",
-     "en": "residence"
+     "en": "residence",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "处理",
@@ -17361,7 +18461,11 @@
      "hz": "酒吧",
      "py": "jiǔbā",
      "ru": "бар",
-     "en": "bar"
+     "en": "bar",
+     "mw": [
+      "家",
+      "jiā"
+     ]
     },
     {
      "hz": "酒",
@@ -17385,7 +18489,11 @@
      "hz": "象棋",
      "py": "xiàngqí",
      "ru": "китайские шахматы",
-     "en": "Chinese chess"
+     "en": "Chinese chess",
+     "mw": [
+      "副",
+      "fù"
+     ]
     },
     {
      "hz": "下象棋",
@@ -17409,7 +18517,11 @@
      "hz": "钟楼",
      "py": "zhōnglóu",
      "ru": "колокольня",
-     "en": "bell tower"
+     "en": "bell tower",
+     "mw": [
+      "座",
+      "zuò"
+     ]
     },
     {
      "hz": "座",
@@ -17463,13 +18575,21 @@
      "hz": "窗",
      "py": "chuāng",
      "ru": "окно",
-     "en": "window"
+     "en": "window",
+     "mw": [
+      "扇",
+      "shàn"
+     ]
     },
     {
      "hz": "山",
      "py": "shān",
      "ru": "гора",
-     "en": "mountain"
+     "en": "mountain",
+     "mw": [
+      "座",
+      "zuò"
+     ]
     },
     {
      "hz": "独立",
@@ -17969,7 +19089,11 @@
      "hz": "酒店",
      "py": "jiǔdiàn",
      "ru": "отель",
-     "en": "hotel"
+     "en": "hotel",
+     "mw": [
+      "家",
+      "jiā"
+     ]
     },
     {
      "hz": "接口",
@@ -17993,13 +19117,21 @@
      "hz": "部门",
      "py": "bùmén",
      "ru": "отдел",
-     "en": "department"
+     "en": "department",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "老板",
      "py": "lǎobǎn",
      "ru": "босс",
-     "en": "boss"
+     "en": "boss",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "本科",
@@ -18387,7 +19519,11 @@
      "hz": "块",
      "py": "kuài",
      "ru": "юань (разг.)",
-     "en": "yuan (colloquial)"
+     "en": "yuan (colloquial)",
+     "mw": [
+      "块",
+      "kuài"
+     ]
     },
     {
      "hz": "游览",
@@ -18411,7 +19547,11 @@
      "hz": "画",
      "py": "huà",
      "ru": "картина",
-     "en": "painting"
+     "en": "painting",
+     "mw": [
+      "幅",
+      "fú"
+     ]
     },
     {
      "hz": "放着",
@@ -18429,7 +19569,11 @@
      "hz": "楼",
      "py": "lóu",
      "ru": "этаж; здание",
-     "en": "floor; building"
+     "en": "floor; building",
+     "mw": [
+      "栋",
+      "dòng"
+     ]
     },
     {
      "hz": "无",
@@ -18459,7 +19603,11 @@
      "hz": "服务员",
      "py": "fúwùyuán",
      "ru": "официант",
-     "en": "waiter"
+     "en": "waiter",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "员",
@@ -18471,7 +19619,11 @@
      "hz": "包",
      "py": "bāo",
      "ru": "включать",
-     "en": "include"
+     "en": "include",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "退房",
@@ -18825,7 +19977,11 @@
      "hz": "夹克",
      "py": "jiākè",
      "ru": "куртка, жакет",
-     "en": "jacket"
+     "en": "jacket",
+     "mw": [
+      "件",
+      "jiàn"
+     ]
     },
     {
      "hz": "不一样",
@@ -18979,7 +20135,11 @@
      "hz": "拖鞋",
      "py": "tuōxié",
      "ru": "тапочки",
-     "en": "slippers"
+     "en": "slippers",
+     "mw": [
+      "双",
+      "shuāng"
+     ]
     },
     {
      "hz": "垃圾",
@@ -18991,7 +20151,11 @@
      "hz": "毛孩子",
      "py": "máoháizi",
      "ru": "питомец («пушистый ребёнок»)",
-     "en": "fur baby (pet)"
+     "en": "fur baby (pet)",
+     "mw": [
+      "只",
+      "zhī"
+     ]
     },
     {
      "hz": "选",
@@ -19021,7 +20185,11 @@
      "hz": "药方",
      "py": "yàofāng",
      "ru": "рецепт (на лекарство)",
-     "en": "prescription"
+     "en": "prescription",
+     "mw": [
+      "张",
+      "zhāng"
+     ]
     },
     {
      "hz": "要点",
@@ -19501,7 +20669,11 @@
      "hz": "简历",
      "py": "jiǎnlì",
      "ru": "резюме",
-     "en": "CV"
+     "en": "CV",
+     "mw": [
+      "份",
+      "fèn"
+     ]
     },
     {
      "hz": "投",
@@ -19513,19 +20685,31 @@
      "hz": "求职信",
      "py": "qiúzhíxìn",
      "ru": "сопроводительное письмо",
-     "en": "cover letter"
+     "en": "cover letter",
+     "mw": [
+      "封",
+      "fēng"
+     ]
     },
     {
      "hz": "大使馆",
      "py": "dàshǐguǎn",
      "ru": "посольство",
-     "en": "embassy"
+     "en": "embassy",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "签证",
      "py": "qiānzhèng",
      "ru": "виза",
-     "en": "visa"
+     "en": "visa",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "申请",
@@ -19537,13 +20721,21 @@
      "hz": "居留证",
      "py": "jūliúzhèng",
      "ru": "вид на жительство",
-     "en": "residence permit"
+     "en": "residence permit",
+     "mw": [
+      "张",
+      "zhāng"
+     ]
     },
     {
      "hz": "见证人",
      "py": "jiànzhèngrén",
      "ru": "свидетель",
-     "en": "witness"
+     "en": "witness",
+     "mw": [
+      "位",
+      "wèi"
+     ]
     },
     {
      "hz": "海牙认证",
@@ -19597,7 +20789,11 @@
      "hz": "间谍",
      "py": "jiàndié",
      "ru": "шпион",
-     "en": "spy"
+     "en": "spy",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "出轨",
@@ -19615,7 +20811,11 @@
      "hz": "行业",
      "py": "hángyè",
      "ru": "отрасль",
-     "en": "industry"
+     "en": "industry",
+     "mw": [
+      "个",
+      "gè"
+     ]
     },
     {
      "hz": "物流",

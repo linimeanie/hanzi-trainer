@@ -50,7 +50,7 @@ function rebuild() {
   const groups = {};
   for (const c of S.custom) if (!c.del) {
     const g = groups[c.grp || c.added] ||= { date: c.gdate || c.added, sort: (c.added || '') + (c.grp || ''), photo: !!c.grp, words: [], sentences: [] };
-    g.words.push({ hz: c.hz, py: c.py, ru: c.ru, en: c.en || '', memo: c.memo || '', custom: true });
+    g.words.push({ hz: c.hz, py: c.py, ru: c.ru, en: c.en || '', memo: c.memo || '', mw: c.mw || null, custom: true });
     for (const e of c.ex || []) g.sentences.push({ zh: e.zh, py: e.py, ru: e.ru, en: '', gen: 1 });
   }
   const extra = Object.entries(groups).sort((a, b) => a[1].sort.localeCompare(b[1].sort))
@@ -307,7 +307,7 @@ function hero(w, id, max) {
 }
 function wordView(w, id, maxPx) {
   const chars = [...w.hz], han = chars.filter(isHan), sy = sylls(w.py), aligned = sy.length === han.length;
-  const avail = Math.min(innerWidth, 640) - 40 - (han.length - 1) * 10;
+  const avail = Math.min(innerWidth, 640) - 40 - (han.length - 1) * 10 - (w.mw && w.mw[0] ? 56 : 0);
   const sz = Math.floor(Math.min(maxPx, avail / Math.max(1, han.length)));
   let k = 0;
   const cells = chars.map(c => {
@@ -319,7 +319,9 @@ function wordView(w, id, maxPx) {
       <div class="tzg" data-c="${esc(c)}">${GRID}<span class="ch">${esc(c)}</span></div>
       ${g ? `<span class="wc-g">${esc(g)}</span>` : ''}</div>`;
   }).join('');
-  return `<div class="wv"><div class="tzgrow wv-row" id="${id}" style="--s:${sz}px">${cells}</div>
+  const mw = w.mw && w.mw[0] ? `<div class="mwc" title="счётное слово"><span class="wc-py">${pyHtml(w.mw[1] || '')}</span>
+      <span class="mw-hz" data-say="一${esc(w.mw[0])}">一${esc(w.mw[0])}</span><span class="wc-g">сч. слово</span></div>` : '';
+  return `<div class="wv"><div class="tzgrow wv-row" id="${id}" style="--s:${sz}px">${mw}${cells}</div>
     <div class="wv-parts" id="${id}-parts"></div></div>`;
 }
 function partsUnfold(c) {
@@ -421,12 +423,12 @@ function renderCard() {
 // full explanation after a mistake: stroke order plays by itself
 function sheet(w, ok) {
   const n = [...w.hz].filter(isHan).length, room = innerHeight;
-  const boxMax = Math.min(n === 1 ? 170 : 130, room * (n === 1 ? .2 : .17));
+  const boxMax = Math.min(n === 1 ? 150 : 115, room * (n === 1 ? .18 : .14));
   screen(`<div class="status ${ok ? 'ok' : 'bad'}">${ok ? 'верно' : 'запомни'}</div>
     ${wordView(w, 'sr', boxMax)}
     <div class="wm">${esc(w.ru)}${S.settings.en && w.en ? ` <span class="big-en">${esc(w.en)}</span>` : ''}</div>
     ${tools(w.hz, 'sr')}
-    <div class="exs">${exLines(w, 3)}</div>
+    <div class="exs">${exLines(w, 5)}</div>
     ${lookLine(w.hz)}`,
     `<button class="btn primary" data-a="next">Дальше</button>`, 'top-al fit');
   SES.view = () => sheet(w, ok);
@@ -475,14 +477,14 @@ const CARDS = {
   },
   flash(w) {
     selfCard(w, `<div id="fwrap">${charRow(w.hz)}</div><div class="hint" id="fh">Вспомни чтение и значение</div>`,
-      `<div class="big-ru">${esc(w.ru)}</div>${enLine(w)}<div class="exs">${exLines(w, 3)}</div>`, 'Показать',
+      `<div class="big-ru">${esc(w.ru)}</div>${enLine(w)}<div class="exs">${exLines(w, 5)}</div>`, 'Показать',
       () => { $('#fh').remove(); $('#fwrap').innerHTML = wordView(w, 'fr', Math.min(160, innerHeight * .19)); });
   },
   pen(w) {
     selfCard(w, `<div class="big-ru">${esc(w.ru)}</div>${enLine(w)}
       <div class="icons" id="penTools">${spkBtn(w.hz, 'Послушать')}<button class="ib" data-a="pyhint">Пиньинь</button></div>
       <div class="hint" id="pyh">Напиши в тетради, потом проверь</div>`,
-      wordView(w, 'pr', Math.min(170, innerHeight * .2)) + `<div class="exs">${exLines(w, 3)}</div>`,
+      wordView(w, 'pr', Math.min(170, innerHeight * .2)) + `<div class="exs">${exLines(w, 5)}</div>`,
       'Проверить', () => { $('#pyh').remove(); $('#penTools').innerHTML = strokeBtn('pr') + spkBtn(w.hz); setTimeout(() => strokeOrder($('#pr')), 300); });
     $('[data-a=pyhint]').onclick = e => { $('#pyh').innerHTML = `<span class="big-py">${pyHtml(w.py)}</span>`; e.currentTarget.remove(); };
   },
@@ -525,7 +527,7 @@ function learnRender() {
       <div class="wm">${esc(w.ru)}${S.settings.en && w.en ? ` <span class="big-en">${esc(w.en)}</span>` : ''}</div>
       ${tools(w.hz, 'lw')}
       ${memos.length ? `<div class="memo">${memos.map(([c, m]) => `<div><span class="hz">${esc(c)}</span> ${esc(m)}</div>`).join('')}</div>` : ''}
-      <div class="exs">${exLines(w, 2)}</div>`,
+      <div class="exs">${exLines(w, 5)}</div>`,
       `<button class="btn primary" data-a="lnext">Запомнила →</button>`);
     speak(w.hz); setTimeout(() => strokeOrder($('#lw')), 300); setTimeout(() => LRN === L && speak(w.hz, .5), 2200);
     $('[data-a=lnext]').onclick = () => { L.i++; L.done++; learnRender(); };
@@ -727,7 +729,7 @@ function startLesson(l, boss) {
 }
 function wordList(words) {
   return `<div class="list">${words.map(w => { const s = ws(w.hz), lv = Math.min(s.b, MASTERED);
-    return `<button class="wrow" data-word="${esc(w.hz)}"><span class="dot c-${tierOf(w.lesson)}"></span><span class="hz">${esc(w.hz)}</span>
+    return `<button class="wrow" data-word="${esc(w.hz)}"><span class="dot c-${tierOf(w.lesson)}"></span><span class="hz">${w.mw && w.mw[0] ? `<small class="mw-s">一${esc(w.mw[0])}</small>` : ''}${esc(w.hz)}</span>
       <span class="t"><span class="py">${pyHtml(w.py)}</span><span>${esc(w.ru)}</span></span>
       <span class="lv">${s.t ? '●'.repeat(lv) + '○'.repeat(MASTERED - lv) : ''}</span></button>`; }).join('') || '<p class="muted">Ничего не найдено</p>'}</div>`;
 }
@@ -810,7 +812,7 @@ function reviewPhotoWords(data) {
     if (!picked.length) return toast('Ничего не отмечено');
     for (const w of picked) {
       S.custom = S.custom.filter(x => x.hz !== w.hz);
-      S.custom.push({ hz: w.hz, py: w.py, ru: w.ru, en: w.en || '', memo: w.memo || '', added: today(), gdate: w.date || '', grp: `P${stamp}-${w.li}`,
+      S.custom.push({ hz: w.hz, py: w.py, ru: w.ru, en: w.en || '', memo: w.memo || '', mw: w.mw ? [w.mw, w.mw_py || ''] : null, added: today(), gdate: w.date || '', grp: `P${stamp}-${w.li}`,
         ex: (w.examples || []).slice(0, 5), t: now });
       ensureChars(w.hz);
     }
