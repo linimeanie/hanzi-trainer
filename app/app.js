@@ -47,15 +47,20 @@ const DEC = window.ZH_DECOMP || { chars: {}, info: {} };
 let LESSONS, LATEST, WORDS, LIST, SENT;
 function rebuild() {
   const baseMax = Math.max(...BASE.map(l => l.n));
-  const byDate = {};
-  for (const c of S.custom) if (!c.del) (byDate[c.added] ||= []).push({ hz: c.hz, py: c.py, ru: c.ru, en: c.en || '', custom: true });
-  const extra = Object.keys(byDate).sort().map((d, i) => ({ n: baseMax + 1 + i, key: 'C' + d, date: d, custom: true, words: byDate[d], sentences: [] }));
+  const groups = {};
+  for (const c of S.custom) if (!c.del) {
+    const g = groups[c.grp || c.added] ||= { date: c.gdate || c.added, sort: (c.added || '') + (c.grp || ''), photo: !!c.grp, words: [], sentences: [] };
+    g.words.push({ hz: c.hz, py: c.py, ru: c.ru, en: c.en || '', custom: true });
+    for (const e of c.ex || []) g.sentences.push({ zh: e.zh, py: e.py, ru: e.ru, en: '', gen: 1 });
+  }
+  const extra = Object.entries(groups).sort((a, b) => a[1].sort.localeCompare(b[1].sort))
+    .map(([k, g], i) => ({ n: baseMax + 1 + i, key: 'C' + k, date: g.date, custom: true, photo: g.photo, words: g.words, sentences: g.sentences }));
   LESSONS = [...BASE.map(l => ({ ...l, key: 'L' + l.n })), ...extra];
   LATEST = Math.max(...LESSONS.map(l => l.n));
   WORDS = new Map();
   for (const l of LESSONS) for (const w of l.words) WORDS.set(w.hz, { ...w, lesson: l.n });
   LIST = [...WORDS.values()];
-  SENT = BASE.flatMap(l => l.sentences.map(s => ({ ...s, lesson: l.n })));
+  SENT = LESSONS.flatMap(l => l.sentences.map(s => ({ ...s, lesson: l.n })));
 }
 rebuild();
 // green = newest notebook class + words added in the app since then; orange = the 3 lessons before; red = older
@@ -75,7 +80,7 @@ const tierSub = t => { const ls = LESSONS.filter(l => tierOf(l.n) === t).map(l =
   const r = nums.length ? (nums.length === 1 ? `урок ${nums[0]}` : `уроки ${Math.min(...nums)}–${Math.max(...nums)}`) : '';
   return [r, ...extra].filter(Boolean).join(' + '); };
 const lessonWords = l => [...new Set(l.words.map(w => w.hz))].map(h => WORDS.get(h)).filter(Boolean);
-const lessonName = l => l.custom ? 'Мои слова' : `Урок ${l.n}`;
+const lessonName = l => l.custom ? (l.photo ? 'Урок из фото' : 'Мои слова') : `Урок ${l.n}`;
 const fmtDate = d => d ? new Date(d + 'T12:00').toLocaleDateString('ru', { day: 'numeric', month: 'long' }) : 'без даты';
 
 // ---------- choosing words ----------
@@ -630,7 +635,7 @@ let lastQuery = '';
 function wordsTab() {
   CUR = wordsTab;
   page(`<div class="ptitle"><div class="seal">词</div><div><h1>Слова</h1><div class="sub">${LIST.length} слов</div></div></div>
-    <button class="btn primary" data-a="add" style="margin-bottom:14px">＋ Добавить слово</button>
+    <div class="row2" style="margin-bottom:14px"><button class="btn primary" data-a="photo">Из фото</button><button class="btn" data-a="add">＋ Слово</button></div>
     <input class="search" id="q" placeholder="汉字, pinyin или по-русски" autocomplete="off" value="${esc(lastQuery)}"><div id="dl"></div>`);
   const draw = () => {
     const q = noTones(lastQuery = $('#q').value.trim()), qs = q.replace(/\s/g, '');
@@ -640,6 +645,78 @@ function wordsTab() {
   };
   $('#q').oninput = draw; draw();
   $('[data-a=add]').onclick = addWord;
+  $('[data-a=photo]').onclick = photoAdd;
+}
+// ---------- add words from photos: Claude reads the notes (Supabase function "read-notes") ----------
+function shrink(file, max = 1800) {
+  return new Promise((res, rej) => {
+    const img = new Image(), url = URL.createObjectURL(file);
+    img.onload = () => {
+      const k = Math.min(1, max / Math.max(img.width, img.height)), c = document.createElement('canvas');
+      c.width = Math.round(img.width * k); c.height = Math.round(img.height * k);
+      c.getContext('2d').drawImage(img, 0, 0, c.width, c.height); URL.revokeObjectURL(url);
+      res({ media_type: 'image/jpeg', data: c.toDataURL('image/jpeg', .85).split(',')[1], preview: c.toDataURL('image/jpeg', .5) });
+    };
+    img.onerror = rej; img.src = url;
+  });
+}
+async function photoAdd() {
+  CUR = photoAdd;
+  const ready = sb && user;
+  page(`<button class="back" data-tab="words">‹ Слова</button>
+    <div class="ptitle"><div class="seal">图</div><div><h1>Слова из фото</h1><div class="sub">Claude прочитает тетрадь или скриншот и найдёт новые слова</div></div></div>
+    ${ready ? `<label class="btn" style="display:block">Выбрать фото<input type="file" id="ph" accept="image/*" multiple hidden></label>
+      <div class="thumbs" id="th"></div>
+      <label class="field"><span>Подсказка (необязательно)</span><input id="hint" placeholder="например: начиная с красной черты"></label>
+      <button class="btn primary" data-a="read" disabled>Распознать</button>
+      <div id="res"></div>`
+    : `<p class="muted">Чтобы распознавать фото, войди в синхронизацию в настройках — так никто, кроме тебя, не сможет тратить твой ключ Claude.</p>
+       <button class="btn" data-tab="settings">Открыть настройки</button>`}`);
+  if (!ready) return;
+  let imgs = [];
+  $('#ph').onchange = async e => {
+    imgs = await Promise.all([...e.target.files].slice(0, 6).map(f => shrink(f)));
+    $('#th').innerHTML = imgs.map(i => `<img src="${i.preview}">`).join('');
+    $('[data-a=read]').disabled = !imgs.length;
+  };
+  $('[data-a=read]').onclick = async () => {
+    const btn = $('[data-a=read]'); btn.disabled = true; btn.textContent = 'Claude читает… обычно 30–90 секунд';
+    const { data, error } = await sb.functions.invoke('read-notes', {
+      body: { images: imgs.map(({ media_type, data }) => ({ media_type, data })), known: LIST.map(w => w.hz), hint: $('#hint').value.trim() }
+    });
+    btn.disabled = false; btn.textContent = 'Распознать ещё раз';
+    if (error || !data || data.error) {
+      let msg = (data && data.error) || (error && error.message) || 'ошибка';
+      try { const b = await error.context.json(); msg = b.error || msg; } catch (e) {}
+      $('#res').innerHTML = `<p class="muted">Не получилось: ${esc(msg)}</p>`; return;
+    }
+    reviewPhotoWords(data);
+  };
+}
+function reviewPhotoWords(data) {
+  const lessons = (data.lessons || []).filter(l => l.words && l.words.length);
+  let k = 0;
+  $('#res').innerHTML = (data.note ? `<p class="muted" style="font-size:13px">Заметка Claude: ${esc(data.note)}</p>` : '') +
+    (lessons.length ? lessons.map((l, li) => `<div class="sec">Урок ${li + 1}${l.date ? ' · ' + esc(fmtDate(l.date)) : ''}</div><div class="list">${l.words.map(w => {
+      const have = WORDS.has(w.hz), i = k++;
+      return `<label class="wrow pick"><input type="checkbox" data-i="${i}" ${have ? '' : 'checked'}><span class="hz">${esc(w.hz)}</span>
+        <span class="t"><span class="py">${pyHtml(w.py)}</span><span>${esc(w.ru)}${have ? ' <span class="src">· уже есть</span>' : ''}</span></span><span></span></label>`;
+    }).join('')}</div>`).join('') + `<button class="btn primary" data-a="addsel" style="margin-top:16px">Добавить отмеченные</button>`
+    : '<p class="muted">Новых слов не нашлось.</p>');
+  const flat = lessons.flatMap((l, li) => l.words.map(w => ({ ...w, li, date: l.date })));
+  $('[data-a=addsel]') && ($('[data-a=addsel]').onclick = () => {
+    const stamp = Date.now().toString(36), now = Date.now();
+    const picked = $$('#res input[data-i]:checked').map(x => flat[+x.dataset.i]);
+    if (!picked.length) return toast('Ничего не отмечено');
+    for (const w of picked) {
+      S.custom = S.custom.filter(x => x.hz !== w.hz);
+      S.custom.push({ hz: w.hz, py: w.py, ru: w.ru, en: w.en || '', added: today(), gdate: w.date || '', grp: `P${stamp}-${w.li}`,
+        ex: (w.examples || []).slice(0, 5), t: now });
+      ensureChars(w.hz);
+    }
+    save(); rebuild(); computeTiers();
+    toast(`Добавлено слов: ${picked.length}`); go('lessons');
+  });
 }
 let CUR = null;
 function wordPage(hz, quiet) {

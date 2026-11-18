@@ -287,3 +287,9 @@ nav.tabs button.on { color: var(--red); }
 .ll-i .la-g { width: 40px; height: 40px; } .ll-i .la-g svg { width: 40px; height: 40px; } .ll-i .la-g .hz { font-size: 32px; }
 .ll-i small { font-size: 10.5px; line-height: 1.15; text-align: center; }
 .ll-i small .py { display: block; font-size: 11px; }
+
+/* photo import */
+.thumbs { display: flex; gap: 8px; flex-wrap: wrap; margin: 12px 0; }
+.thumbs img { width: 72px; height: 96px; object-fit: cover; border-radius: 8px; border: 1.5px solid var(--line); }
+.wrow.pick { grid-template-columns: 22px auto 1fr auto; cursor: pointer; }
+.wrow.pick input { width: 20px; height: 20px; accent-color: var(--red); }

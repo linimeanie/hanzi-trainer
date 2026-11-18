@@ -38,6 +38,16 @@ Alternative with no account setup: drag the `app` folder onto https://app.netlif
 Progress syncs automatically a few seconds after each answer and when the app is reopened.
 Without sync, progress lives in that browser only; ⚙︎ → *Скачать прогресс* makes a backup file.
 
+## 3b. Words from photos (Claude reads your notes)
+
+The app's «Слова → Из фото» sends photos to a Supabase Edge Function, which calls the Claude API.
+The API key stays in Supabase; only accounts listed in ALLOWED_EMAILS can use it.
+
+1. Get a Claude API key at console.anthropic.com → API Keys (add a few dollars of credit; one photo costs a few cents).
+2. Supabase → Edge Functions → Deploy a new function → Via editor. Name: `read-notes`.
+   Paste the code of `supabase/functions/read-notes/index.ts` and deploy.
+3. Supabase → Edge Functions → Secrets: add `ANTHROPIC_API_KEY` (the key) and `ALLOWED_EMAILS` (your login email).
+
 ## 4. Adding words
 
 **In the app:** Слова → «＋ Добавить слово». Pinyin fills itself (check the tones). Added words are stored in your progress (synced), shown as «Мои слова» and count as 🟢 together with the newest notebook class.
