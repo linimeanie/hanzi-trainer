@@ -127,6 +127,13 @@ def info_of(c):
     if m: i['m'] = ''.join(str(x[0]) if x else '-' for x in m)
     return i
 la_all = json.loads(la_path.read_text(encoding='utf-8')) if la_path.exists() else {}
+extra = {}   # look-alikes outside the notebook: a common word and an example (data/lookalike_words.tsv)
+lw_path = root / 'data/lookalike_words.tsv'
+if lw_path.exists():
+    for line in lw_path.read_text(encoding='utf-8').splitlines():
+        if line.strip() and not line.startswith('#'):
+            f = line.split('\t')
+            extra[f[0]] = {'w': f[1:4], 'x': f[4:7]}
 shards = {}
 for c in dic:
     if not is_han(c):
@@ -134,7 +141,9 @@ for c in dic:
     r = rec_of(c)
     lst = la_all.get(c, [])
     related = {c, *r['p'], *(r.get(k) for k in 'msr' if r.get(k)), *(x for x, _ in lst)}
-    shards.setdefault(format(ord(c) >> 7, 'x'), {})[c] = {'d': r, 'l': lst, 'i': {x: info_of(x) for x in related if x}}
+    entry = {'d': r, 'l': lst, 'i': {x: info_of(x) for x in related if x}}
+    if c in extra: entry.update(extra[c])
+    shards.setdefault(format(ord(c) >> 7, 'x'), {})[c] = entry
 chars_dir = root / 'app/chars'
 chars_dir.mkdir(exist_ok=True)
 for old in chars_dir.glob('*.json'):

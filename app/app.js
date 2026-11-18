@@ -252,6 +252,7 @@ async function ensureChars(hz) {
   for (const c of need) {
     const r = (await shardCache.get(shardKey(c)) || {})[c]; if (!r) continue;
     DEC.chars[c] = r.d; if (r.l && r.l.length) (DEC.look ||= {})[c] = r.l;
+    if (r.w) (DEC.extra ||= {})[c] = { w: r.w, x: r.x };
     for (const [x, i] of Object.entries(r.i)) if (!DEC.info[x]) DEC.info[x] = i;
     added = true;
   }
@@ -566,6 +567,12 @@ function wordPage(hz, quiet) {
   const w = WORDS.get(hz) || { hz, py: (DEC.info[hz] || {}).py || '', ru: (DEC.info[hz] || {}).g || '', en: '', lesson: null, part: true };
   const s = ws(hz), lv = Math.min(s.b, MASTERED), bd = breakdown(hz), ex = exampleHtml(w, 4), la = lookHtml(hz);
   const inWords = [...hz].length === 1 ? LIST.filter(x => x.hz !== hz && x.hz.includes(hz)).slice(0, 12) : [];
+  const xt = !WORDS.get(hz) && (DEC.extra || {})[hz];
+  const xtHtml = xt ? `<div class="box"><h3>Частое слово</h3>
+      <div class="ex" data-say="${esc(xt.w[0])}"><span class="zh">${esc(xt.w[0])}</span> <span class="ib" style="padding:4px 10px;vertical-align:middle">${SPK}</span>
+        <div class="p">${pyHtml(xt.w[1])}</div><div class="r">${esc(xt.w[2])}</div></div>
+      <div class="ex" data-say="${esc(xt.x[0])}"><span class="zh">${esc(xt.x[0])}</span> <span class="ib" style="padding:4px 10px;vertical-align:middle">${SPK}</span>
+        <div class="p">${pyHtml(xt.x[1])}</div><div class="r">${esc(xt.x[2])}</div></div></div>` : '';
   const back = `<button class="back" data-a="back">‹ Назад</button>`;
   const prevTab = TAB;
   page(`${back}
@@ -576,6 +583,7 @@ function wordPage(hz, quiet) {
       ${partsRow(w)}
       <div class="tag">${w.lesson ? `<span class="dot c-${tierOf(w.lesson)}"></span>${w.custom ? 'мои слова' : 'урок ' + w.lesson} · ${s.t ? `уровень ${'●'.repeat(lv)}${'○'.repeat(MASTERED - lv)}` : 'ещё не тренировалось'}` : 'отдельный иероглиф'}</div>
     </div>
+    ${xtHtml}
     ${ex ? `<div class="box"><h3>Примеры</h3>${ex}</div>` : ''}
     ${inWords.length ? `<div class="box"><h3>Встречается в словах</h3>${wordList(inWords)}</div>` : ''}
     ${bd ? `<div class="box"><h3>Из чего состоит</h3>${bd}</div>` : ''}
