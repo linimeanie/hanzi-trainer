@@ -293,3 +293,7 @@ nav.tabs button.on { color: var(--red); }
 .thumbs img { width: 72px; height: 96px; object-fit: cover; border-radius: 8px; border: 1.5px solid var(--line); }
 .wrow.pick { grid-template-columns: 22px auto 1fr auto; cursor: pointer; }
 .wrow.pick input { width: 20px; height: 20px; accent-color: var(--red); }
+.exl.more { display: none; }
+.exl-more { align-self: flex-start; padding: 3px 12px; font-size: 12px; }
+.exs .exl .zh { font-size: 16.5px; }
+.exs { gap: 4px; }

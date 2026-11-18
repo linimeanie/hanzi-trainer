@@ -336,9 +336,12 @@ function lookLine(hz) {
     return `<button class="ll-i" data-open="${esc(x)}"><span class="la-g" data-glyph="${esc(x)}" data-idx="${idx}"><span class="hz">${esc(x)}</span></span>
       <small><span class="py">${pyHtml(inf.py)}</span> ${esc(shortG(inf.g))}</small></button>`; }).join('')}</div></div>`;
 }
-function exLines(w, n) {
-  return examples(w).slice(0, n).map(ex => `<div class="exl" data-say="${esc(ex.zh)}"><div class="zh">${esc(ex.zh)}</div>
-    <div class="exl-s"><span class="py">${pyHtml(ex.py)}</span> · ${esc(ex.ru)}</div></div>`).join('');
+function exLines(w, n, max = 5) {
+  const all = examples(w).slice(0, max);
+  const line = (ex, hidden) => `<div class="exl${hidden ? ' more' : ''}" data-say="${esc(ex.zh)}"><div class="zh">${esc(ex.zh)}</div>
+    <div class="exl-s"><span class="py">${pyHtml(ex.py)}</span> · ${esc(ex.ru)}</div></div>`;
+  return all.map((ex, i) => line(ex, i >= n)).join('') +
+    (all.length > n ? `<button class="ib exl-more" data-a="moreex">ещё ${all.length - n}</button>` : '');
 }
 const tools = (hz, id) => `<div class="tl">${spkBtn(hz)}${slowBtn(hz)}${strokeBtn(id)}</div>`;
 // compact horizontal strip of look-alikes
@@ -414,12 +417,12 @@ function renderCard() {
 // full explanation after a mistake: stroke order plays by itself
 function sheet(w, ok) {
   const n = [...w.hz].filter(isHan).length, room = innerHeight;
-  const boxMax = Math.min(n === 1 ? 190 : 150, room * (n === 1 ? .24 : .2));
+  const boxMax = Math.min(n === 1 ? 170 : 130, room * (n === 1 ? .2 : .17));
   screen(`<div class="status ${ok ? 'ok' : 'bad'}">${ok ? 'верно' : 'запомни'}</div>
     ${wordView(w, 'sr', boxMax)}
     <div class="wm">${esc(w.ru)}${S.settings.en && w.en ? ` <span class="big-en">${esc(w.en)}</span>` : ''}</div>
     ${tools(w.hz, 'sr')}
-    <div class="exs">${exLines(w, room > 760 ? 2 : 1)}</div>
+    <div class="exs">${exLines(w, 3)}</div>
     ${lookLine(w.hz)}`,
     `<button class="btn primary" data-a="next">Дальше</button>`, 'top-al fit');
   SES.view = () => sheet(w, ok);
@@ -468,14 +471,14 @@ const CARDS = {
   },
   flash(w) {
     selfCard(w, `<div id="fwrap">${charRow(w.hz)}</div><div class="hint" id="fh">Вспомни чтение и значение</div>`,
-      `<div class="big-ru">${esc(w.ru)}</div>${enLine(w)}`, 'Показать',
-      () => { $('#fh').remove(); $('#fwrap').innerHTML = wordView(w, 'fr', Math.min(200, innerHeight * .26)); });
+      `<div class="big-ru">${esc(w.ru)}</div>${enLine(w)}<div class="exs">${exLines(w, 3)}</div>`, 'Показать',
+      () => { $('#fh').remove(); $('#fwrap').innerHTML = wordView(w, 'fr', Math.min(160, innerHeight * .19)); });
   },
   pen(w) {
     selfCard(w, `<div class="big-ru">${esc(w.ru)}</div>${enLine(w)}
       <div class="icons" id="penTools">${spkBtn(w.hz, 'Послушать')}<button class="ib" data-a="pyhint">Пиньинь</button></div>
       <div class="hint" id="pyh">Напиши в тетради, потом проверь</div>`,
-      wordView(w, 'pr', Math.min(220, innerHeight * .26)),
+      wordView(w, 'pr', Math.min(170, innerHeight * .2)) + `<div class="exs">${exLines(w, 3)}</div>`,
       'Проверить', () => { $('#pyh').remove(); $('#penTools').innerHTML = strokeBtn('pr') + spkBtn(w.hz); setTimeout(() => strokeOrder($('#pr')), 300); });
     $('[data-a=pyhint]').onclick = e => { $('#pyh').innerHTML = `<span class="big-py">${pyHtml(w.py)}</span>`; e.currentTarget.remove(); };
   },
@@ -945,6 +948,7 @@ document.addEventListener('click', e => {
     return wordPage(target);
   }
   const a = t.closest('[data-a]')?.dataset.a;
+  if (a === 'moreex') { const box = t.closest('.exs'); $$('.exl.more', box).forEach(x => x.classList.remove('more')); t.closest('[data-a]').remove(); return; }
   if (a === 'next') next();
   else if (a === 'home') go('learn');
   else if (a === 'quit') { if (!SES.res.length || confirm('Закончить? Ответы уже сохранены.')) SES.res.length ? finish() : go('learn'); }
