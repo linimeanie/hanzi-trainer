@@ -33,6 +33,7 @@ const SCHEMA = {
                 py: { type: "string", description: "Pinyin with tone marks, syllables of one word joined (e.g. tuìfáng)" },
                 ru: { type: "string", description: "Short Russian meaning" },
                 en: { type: "string", description: "Short English meaning" },
+                memo: { type: "string", description: "One vivid Russian memory image for how the characters look (parts, pictures), max 25 words" },
                 examples: {
                   type: "array",
                   items: {
@@ -43,7 +44,7 @@ const SCHEMA = {
                   },
                 },
               },
-              required: ["hz", "py", "ru", "en", "examples"],
+              required: ["hz", "py", "ru", "en", "memo", "examples"],
               additionalProperties: false,
             },
           },
@@ -65,6 +66,7 @@ Extract the vocabulary I studied so I can add it to my flashcard trainer.
 - Characters are often written several times for practice: list each word once.
 - Prefer my own translation from the notes (Russian or English); otherwise give a short one. Russian is the main language.
 - Pinyin: full tone marks. My notes may show only tone arrows — use them to check the reading.
+- For each word add "memo": a short, vivid Russian memory image based on how the characters look — which parts they are built from and what picture that makes (e.g. 休 = человек 亻 прислонился к дереву 木 — отдыхает).
 - Phrases I wrote as a whole (e.g. 大姨妈来了) can be one entry.
 - For each word write 3 short, natural example sentences (simplified Chinese, pinyin with tone marks, Russian), using simple everyday vocabulary — prefer words from these notes and from the "already known" list.
 - Skip words in the "already known" list unless the notes clearly give them a new meaning.

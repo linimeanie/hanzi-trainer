@@ -93,11 +93,18 @@ for c in need:
     m = (dic.get(c) or {}).get('matches')
     if m and len(c) == 1:
         strokes_of[c] = ''.join(str(x[0]) if x else '-' for x in m)
+memo = {}
+mp = root / 'data/mnemonics_ru.txt'
+if mp.exists():
+    for line in mp.read_text(encoding='utf-8').splitlines():
+        if '|' in line and not line.startswith('#'):
+            c, t = line.split('|', 1); memo[c] = t
 info = {}
 for c in sorted(need):
     py = (dic.get(c) or {}).get('pinyin') or []
     info[c] = {'g': gloss.get(c, ''), 'py': py[0] if py else ''}
     if c in strokes_of: info[c]['m'] = strokes_of[c]
+    if c in memo: info[c]['mn'] = memo[c]
 nogloss = [c for c in sorted(need) if not gloss.get(c)]
 (root / 'app/decomp.js').write_text('window.ZH_DECOMP = ' + json.dumps({'chars': out, 'info': info, 'look': look}, ensure_ascii=False) + ';\n', encoding='utf-8')
 pinyin = {c: d['pinyin'][0] for c, d in dic.items() if d.get('pinyin') and is_han(c)}
@@ -125,6 +132,7 @@ def info_of(c):
         i['g'] = d['definition'].split(';')[0][:40]; i['e'] = 1
     m = d.get('matches')
     if m: i['m'] = ''.join(str(x[0]) if x else '-' for x in m)
+    if c in memo: i['mn'] = memo[c]
     return i
 la_all = json.loads(la_path.read_text(encoding='utf-8')) if la_path.exists() else {}
 extra = {}   # look-alikes outside the notebook: a common word and an example (data/lookalike_words.tsv)

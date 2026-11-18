@@ -1,6 +1,6 @@
 // Offline support: app files are network-first (so updates show up),
 // stroke data from the CDN is cache-first (works offline once seen).
-const CACHE = 'zh-trainer-v10';
+const CACHE = 'zh-trainer-v11';
 const SHELL = ['./', 'index.html', 'style.css', 'app.js', 'data.js', 'decomp.js', 'pinyin.js', 'config.js', 'icon.svg', 'manifest.webmanifest'];
 
 self.addEventListener('install', e => {
