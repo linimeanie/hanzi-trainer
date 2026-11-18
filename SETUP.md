@@ -54,6 +54,13 @@ then runs `python3 tools/build_data.py` (regenerates `app/data.js`), commits and
 The newest notebook class (plus words added in the app since then) is 🟢, the three lessons before it 🟠, everything older 🔴.
 New Russian glosses for character parts go into `data/glosses_ru.txt`; the build script lists any that are missing.
 
+## Data pieces
+
+- `data/examples_ai.tsv` — 431 example sentences Claude wrote from the user's own vocabulary (shown without the «из тетради» mark).
+- `tools/lookalikes.py` → `data/lookalikes.json` — up to 5 look-alike characters per character (shared main part, classic pairs like 未/末).
+- `data/glosses_ru.txt` — short Russian meanings for single characters, parts and look-alikes.
+- Voice: the browser's built-in Chinese voice; the best installed one is picked automatically (⚙︎ → Голос to change it).
+
 ## How words are chosen
 
 - **Тренировка дня**: 60% from the latest lesson, 25% from the three before, 15% older.

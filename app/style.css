@@ -187,3 +187,31 @@ nav.tabs button.on { color: var(--red); }
 @keyframes shake { 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
 @keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 .main > * { animation: fade .22s both; }
+
+/* tone colours: 1 red · 2 amber · 3 green · 4 blue · neutral grey */
+.t1 { color: #c0392b; } .t2 { color: #c97a14; } .t3 { color: #3d8a4e; } .t4 { color: #2f64ad; } .t5 { color: var(--mut); }
+@media (prefers-color-scheme: dark) { .t1 { color: #ef6f5e; } .t2 { color: #f0a94a; } .t3 { color: #7cc48a; } .t4 { color: #79a8ef; } }
+.tone-legend { display: inline-flex; align-items: center; gap: 6px; font-size: 18px; }
+.src { color: var(--mut); font-size: 12px; }
+.ex { cursor: pointer; }
+[data-say] .tzgrow { cursor: pointer; }
+
+/* each character of a word */
+.pcs { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 4px; }
+.pc { display: flex; flex-direction: column; align-items: center; min-width: 74px; max-width: 120px; padding: 8px 10px;
+  border: 1.5px solid var(--line); border-radius: 12px; background: var(--card); }
+.pc .hz { font-size: 30px; line-height: 1.15; }
+.pc .py { font-size: 14px; }
+.pc small { font-size: 12px; line-height: 1.25; text-align: center; color: var(--ink); }
+
+/* look-alikes */
+.la-row { margin-bottom: 12px; }
+.la-for { font-size: 13px; color: var(--mut); margin-bottom: 6px; } .la-for .hz { font-size: 20px; color: var(--ink); }
+.la-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(92px, 1fr)); gap: 8px; }
+.la { display: flex; flex-direction: column; align-items: center; padding: 8px 6px; border: 1.5px solid var(--line);
+  border-radius: 12px; background: var(--card); }
+.la-g { width: 52px; height: 52px; display: flex; align-items: center; justify-content: center; }
+.la-g .hz { font-size: 42px; line-height: 1; }
+.la-g svg { width: 52px; height: 52px; }
+.la .py { font-size: 13px; }
+.la small { font-size: 11.5px; line-height: 1.2; text-align: center; }

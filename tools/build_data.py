@@ -8,6 +8,7 @@ Outputs:
   app/data.js    lessons, words, sentences
   app/decomp.js  character breakdown (parts, meaning part, sound part) for every character used
   app/pinyin.js  pinyin for ~9000 characters (auto-fill when adding a word in the app)
+Example sentences written by Claude live in data/examples_ai.tsv; look-alikes come from tools/lookalikes.py.
 Russian glosses for parts live in data/glosses_ru.txt (char|meaning); missing ones are reported.
 Run:  python3 tools/build_data.py
 """
@@ -25,6 +26,21 @@ for line in (root / 'data/words.tsv').read_text(encoding='utf-8').splitlines():
         cur['sentences'].append({'zh': p[1], 'py': p[2], 'ru': p[3], 'en': p[4]})
     else:
         cur['words'].append({'hz': p[0], 'py': p[1], 'ru': p[2], 'en': p[3]})
+# example sentences written by Claude (data/examples_ai.tsv) go to the lesson of their target word
+lesson_of = {}
+for l in lessons:
+    for w in l['words']:
+        lesson_of[w['hz']] = l
+ai = 0
+ai_path = root / 'data/examples_ai.tsv'
+if ai_path.exists():
+    for line in ai_path.read_text(encoding='utf-8').splitlines():
+        if not line.strip() or line.startswith('#'):
+            continue
+        t, zh, py, ru = line.split('\t')[:4]
+        l = lesson_of.get(t)
+        if l and not any(x['zh'] == zh for x in l['sentences']):
+            l['sentences'].append({'zh': zh, 'py': py, 'ru': ru, 'en': '', 'gen': 1}); ai += 1
 data = {'lessons': lessons}
 (root / 'data/words.json').write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding='utf-8')
 (root / 'app/data.js').write_text('window.ZH_DATA = ' + json.dumps(data, ensure_ascii=False) + ';\n', encoding='utf-8')
@@ -63,15 +79,30 @@ for c in chars:
     if d.get('radical') and d['radical'] != c: rec['r'] = d['radical']
     out[c] = rec
     need.add(c); need.update(p for p in parts if p.strip()); need.update(x for x in (rec.get('m'), rec.get('s'), rec.get('r')) if x)
+look = {}
+la_path = root / 'data/lookalikes.json'
+if la_path.exists():
+    la = json.loads(la_path.read_text(encoding='utf-8'))
+    for c, lst in la.items():
+        if c in out:
+            look[c] = lst
+            for x, idx in lst:
+                need.add(x)
+strokes_of = {}
+for c in need:
+    m = (dic.get(c) or {}).get('matches')
+    if m and len(c) == 1:
+        strokes_of[c] = ''.join(str(x[0]) if x else '-' for x in m)
 info = {}
 for c in sorted(need):
     py = (dic.get(c) or {}).get('pinyin') or []
     info[c] = {'g': gloss.get(c, ''), 'py': py[0] if py else ''}
+    if c in strokes_of: info[c]['m'] = strokes_of[c]
 nogloss = [c for c in sorted(need) if not gloss.get(c)]
-(root / 'app/decomp.js').write_text('window.ZH_DECOMP = ' + json.dumps({'chars': out, 'info': info}, ensure_ascii=False) + ';\n', encoding='utf-8')
+(root / 'app/decomp.js').write_text('window.ZH_DECOMP = ' + json.dumps({'chars': out, 'info': info, 'look': look}, ensure_ascii=False) + ';\n', encoding='utf-8')
 pinyin = {c: d['pinyin'][0] for c, d in dic.items() if d.get('pinyin') and is_han(c)}
 (root / 'app/pinyin.js').write_text('window.ZH_PINYIN = ' + json.dumps(pinyin, ensure_ascii=False, separators=(',', ':')) + ';\n', encoding='utf-8')
 print(f"{len(lessons)} lessons, {sum(len(l['words']) for l in lessons)} words, {sum(len(l['sentences']) for l in lessons)} sentences, "
-      f"{len(out)} characters with breakdown")
+      f"({ai} written by Claude), {len(out)} characters with breakdown, {len(look)} with look-alikes")
 if missing: print('not in dictionary:', ''.join(missing))
 if nogloss: print('need a Russian gloss in data/glosses_ru.txt:', ''.join(nogloss))

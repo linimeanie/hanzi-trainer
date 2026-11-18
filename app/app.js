@@ -23,7 +23,7 @@ const GRID = `<svg class="grid" viewBox="0 0 100 100" preserveAspectRatio="none"
 
 // ---------- state ----------
 const LS = 'zh-trainer-v1';
-const fresh = () => ({ w: {}, custom: [], daily: { date: null, n: 0 }, boss: {}, settings: { size: 20, goal: 30, en: true }, updated: 0 });
+const fresh = () => ({ w: {}, custom: [], daily: { date: null, n: 0 }, boss: {}, settings: { size: 20, goal: 30, en: true, tc: true, rate: .8, voice: '' }, updated: 0 });
 let S = (() => {
   try { const s = JSON.parse(localStorage.getItem(LS)); if (s) { const f = fresh(); return { ...f, ...s, settings: { ...f.settings, ...s.settings }, custom: s.custom || [] }; } } catch (e) {}
   return fresh();
@@ -100,7 +100,8 @@ function pickWords(n, tier) {
   if (out.length < n) out.push(...byPriority(LIST.filter(w => !out.includes(w))).slice(0, n - out.length));
   return shuffle(out);
 }
-const examples = w => { const k = w.hz.replace(/…/g, ''); return SENT.filter(s => s.zh.includes(k)).sort((a, b) => (b.lesson === w.lesson) - (a.lesson === w.lesson)); };
+function hasWord(zh, hz) { let i = 0; for (const part of hz.split('…').filter(Boolean)) { const j = zh.indexOf(part, i); if (j < 0) return false; i = j + part.length; } return true; }
+const examples = w => SENT.filter(s => hasWord(s.zh, w.hz)).sort((a, b) => ((b.lesson === w.lesson) - (a.lesson === w.lesson)) || ((a.gen || 0) - (b.gen || 0)));
 function distractors(w, key, n = 3) {
   const len = [...w.hz].length;
   const pool = shuffle(LIST.filter(x => x.hz !== w.hz && x[key] !== w[key]));
@@ -131,14 +132,26 @@ function toneVariants(py) {
 }
 
 // ---------- speech ----------
-let zhVoice = null;
-function loadVoice() { const v = speechSynthesis.getVoices(); zhVoice = v.find(x => /zh[-_]CN/i.test(x.lang)) || v.find(x => /^zh/i.test(x.lang)) || null; }
+let zhVoice = null, ZH_VOICES = [];
+function voiceScore(v) {
+  let s = 0;
+  if (/zh[-_]CN/i.test(v.lang)) s += 3; else if (/zh[-_]TW/i.test(v.lang)) s += 1;
+  if (/premium|natural|neural/i.test(v.name)) s += 6;
+  if (/enhanced|улучш|erweitert/i.test(v.name)) s += 5;
+  if (/online|google/i.test(v.name)) s += 3;
+  if (/xiaoxiao|yunxi|lili|lilian|yu-shu|tingting|meijia/i.test(v.name)) s += 1;
+  return s;
+}
+function loadVoice() {
+  ZH_VOICES = speechSynthesis.getVoices().filter(v => /^(zh|cmn)/i.test(v.lang) && !/HK|yue/i.test(v.lang + v.name)).sort((a, b) => voiceScore(b) - voiceScore(a));
+  zhVoice = ZH_VOICES.find(v => v.name === S.settings.voice) || ZH_VOICES[0] || null;
+}
 if ('speechSynthesis' in window) { loadVoice(); speechSynthesis.onvoiceschanged = loadVoice; }
-function speak(text) {
+function speak(text, rate) {
   if (!('speechSynthesis' in window)) return toast('Озвучка недоступна в этом браузере');
   speechSynthesis.cancel();
   const u = new SpeechSynthesisUtterance(text.replace(/…/g, '，'));
-  u.lang = 'zh-CN'; if (zhVoice) u.voice = zhVoice; u.rate = .8;
+  u.lang = 'zh-CN'; if (zhVoice) u.voice = zhVoice; u.rate = rate || S.settings.rate || .8;
   speechSynthesis.speak(u);
 }
 
@@ -201,9 +214,52 @@ function breakdown(hz) {
   return blocks.join('');
 }
 function exampleHtml(w, max = 2) {
-  return examples(w).slice(0, max).map(ex => `<div class="ex"><span class="zh">${esc(ex.zh)}</span>
-    <button class="ib" data-say="${esc(ex.zh)}" style="padding:4px 10px;vertical-align:middle">${SPK}</button>
-    <div class="p">${esc(ex.py)}</div><div class="r">${esc(ex.ru)}</div></div>`).join('');
+  return examples(w).slice(0, max).map(ex => `<div class="ex" data-say="${esc(ex.zh)}"><span class="zh">${esc(ex.zh)}</span>
+    <span class="ib" style="padding:4px 10px;vertical-align:middle">${SPK}</span>
+    <div class="p">${pyHtml(ex.py)}</div><div class="r">${esc(ex.ru)}${ex.gen ? '' : ' <span class="src">· из тетради</span>'}</div></div>`).join('');
+}
+
+// ---------- pinyin: syllables, tone colours ----------
+const PYV = 'aeiouüvāáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ';
+const SYL = new RegExp(`(?:zh|ch|sh|[bpmfdtnlgkhjqxrzcsyw])?[${PYV}]+(?:ng(?![${PYV}])|n(?![${PYV}])|r(?![${PYV}]))?`, 'gi');
+function toneOf(syl) { for (const ch of syl) { const m = MARK[ch.toLowerCase()]; if (m) return m[1] + 1; } return 5; }
+const sylls = py => [...(py || '').matchAll(SYL)].map(m => m[0]);
+function pyHtml(py) {
+  py = py || '';
+  if (!S.settings.tc) return esc(py);
+  let out = '', last = 0;
+  for (const m of py.matchAll(SYL)) { out += esc(py.slice(last, m.index)) + `<span class="t${toneOf(m[0])}">${esc(m[0])}</span>`; last = m.index + m[0].length; }
+  return out + esc(py.slice(last));
+}
+// each character of a word on its own: its syllable from the word, its own meaning
+function partsRow(w) {
+  const cs = [...w.hz].filter(isHan); if (cs.length < 2) return '';
+  const sy = sylls(w.py), aligned = sy.length === cs.length;
+  return `<div class="pcs">${cs.map((c, i) => { const inf = DEC.info[c] || {};
+    return `<button class="pc" data-open="${esc(c)}" data-say="${esc(c)}"><span class="hz">${esc(c)}</span>
+      <span class="py">${pyHtml(aligned ? sy[i] : inf.py)}</span><small>${esc(inf.g || '')}</small></button>`; }).join('')}</div>`;
+}
+// up to 5 characters that look almost the same; the differing part is drawn in red
+function lookHtml(hz) {
+  const cs = [...new Set([...hz].filter(isHan))].filter(c => (DEC.look || {})[c]);
+  return cs.map(c => `<div class="la-row">${[...hz].length > 1 ? `<div class="la-for"><span class="hz">${esc(c)}</span> похож на:</div>` : ''}
+    <div class="la-list">${DEC.look[c].map(([x, idx]) => { const inf = DEC.info[x] || {};
+      return `<button class="la" data-open="${esc(x)}"><span class="la-g" data-glyph="${esc(x)}" data-idx="${idx}"><span class="hz">${esc(x)}</span></span>
+        <span class="py">${pyHtml(inf.py)}</span><small>${esc(inf.g || '')}</small></button>`; }).join('')}</div></div>`).join('');
+}
+const glyphCache = new Map();
+function strokeData(c) {
+  if (!glyphCache.has(c)) glyphCache.set(c, fetch(`https://cdn.jsdelivr.net/npm/hanzi-writer-data@2.0/${encodeURIComponent(c)}.json`).then(r => r.ok ? r.json() : null).catch(() => null));
+  return glyphCache.get(c);
+}
+async function paintGlyphs(root = document) {
+  for (const el of $$('[data-glyph]', root)) {
+    const c = el.dataset.glyph, idx = el.dataset.idx, m = (DEC.info[c] || {}).m;
+    if (idx === '-1' || !m) continue;
+    const d = await strokeData(c); if (!d || !document.body.contains(el)) continue;
+    el.innerHTML = `<svg viewBox="0 0 1024 1024"><g transform="scale(1,-1) translate(0,-900)">${d.strokes.map((p, i) =>
+      `<path d="${p}" fill="${m[i] === idx ? 'var(--red)' : 'var(--ink)'}"/>`).join('')}</g></svg>`;
+  }
 }
 
 // ---------- UI bits ----------
@@ -211,7 +267,8 @@ let toastT;
 function toast(msg) { const t = $('#toast'); t.textContent = msg; t.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => t.hidden = true, 2600); }
 const tag = w => `<div class="tag"><span class="dot c-${tierOf(w.lesson)}"></span>${w.custom ? 'мои слова' : 'урок ' + w.lesson}${ws(w.hz).t ? '' : ' · новое'}</div>`;
 const enLine = w => S.settings.en && w.en ? `<div class="big-en">${esc(w.en)}</div>` : '';
-const spkBtn = (t, label = '') => `<button class="ib" data-say="${esc(t)}">${SPK}${label}</button>`;
+const spkBtn = (t, label = 'Слушать') => `<button class="ib" data-say="${esc(t)}">${SPK}${label}</button>`;
+const slowBtn = t => `<button class="ib" data-slow="${esc(t)}">Медленно</button>`;
 const strokeBtn = id => `<button class="ib" data-stroke="${id}">${PLAY}Порядок черт</button>`;
 
 // ---------- session ----------
@@ -246,6 +303,7 @@ function screen(main, bottom = '', mainCls = '') {
   window.scrollTo(0, 0);
 }
 function renderCard() {
+  SES.view = null;
   if (SES.i >= SES.items.length) return finish();
   const { w, kind } = SES.items[SES.i];
   CARDS[kind](w);
@@ -254,12 +312,16 @@ function renderCard() {
 function sheet(w, ok) {
   const bd = breakdown(w.hz), ex = exampleHtml(w);
   screen(`<div class="status ${ok ? 'ok' : 'bad'}">${ok ? 'ВЕРНО' : 'ЗАПОМНИ'}</div>
-    ${charRow(w.hz, Math.min(260, innerHeight * .3), 'sr')}
-    <div class="icons">${strokeBtn('sr')}${spkBtn(w.hz)}</div>
-    <div class="big-py">${esc(w.py)}</div><div class="info-ru">${esc(w.ru)}</div>${enLine(w)}
+    <div data-say="${esc(w.hz)}">${charRow(w.hz, Math.min(260, innerHeight * .3), 'sr')}</div>
+    <div class="icons">${spkBtn(w.hz)}${slowBtn(w.hz)}${strokeBtn('sr')}</div>
+    <div class="big-py" data-say="${esc(w.hz)}">${pyHtml(w.py)}</div><div class="info-ru">${esc(w.ru)}</div>${enLine(w)}
+    ${partsRow(w)}
+    ${ex ? `<div class="box"><h3>Пример</h3>${ex}</div>` : ''}
     ${bd ? `<div class="box"><h3>Из чего состоит</h3>${bd}</div>` : ''}
-    ${ex ? `<div class="box"><h3>Пример</h3>${ex}</div>` : ''}`,
+    ${lookHtml(w.hz) ? `<div class="box"><h3>Не перепутай — похожие</h3>${lookHtml(w.hz)}</div>` : ''}`,
     `<button class="btn primary" data-a="next">Дальше</button>`, 'top-al');
+  SES.view = () => sheet(w, ok);
+  paintGlyphs();
   speak(w.hz);
   if (!ok) setTimeout(() => strokeOrder($('#sr')), 350);
 }
@@ -272,7 +334,7 @@ function mcCard(w, main, options, correct, cls = '') {
     if (!ok) { b.classList.add('wrong'); answer(false); return setTimeout(() => sheet(w, false), 650); }
     answer(true); speak(w.hz);
     $('.bottom').insertAdjacentHTML('afterbegin', `<div class="banner"><span class="hz">${esc(w.hz)}</span>
-      <div class="t"><span class="py">${esc(w.py)}</span><br>${esc(w.ru)}</div></div>`);
+      <div class="t"><span class="py">${pyHtml(w.py)}</span><br>${esc(w.ru)}</div></div>`);
     $('.opts').outerHTML = `<div class="row2"><button class="btn" data-a="more">Подробнее</button><button class="btn primary" data-a="next">Дальше</button></div>`;
     $('[data-a=more]').onclick = () => sheet(w, true);
   });
@@ -304,16 +366,16 @@ const CARDS = {
   },
   flash(w) {
     selfCard(w, `${charRow(w.hz)}<div class="hint" id="fh">Вспомни чтение и значение</div>`,
-      `<div class="big-py">${esc(w.py)}</div><div class="big-ru">${esc(w.ru)}</div>${enLine(w)}`, 'Показать',
+      `<div class="big-py">${pyHtml(w.py)}</div><div class="big-ru">${esc(w.ru)}</div>${enLine(w)}${partsRow(w)}`, 'Показать',
       () => $('#fh').remove());
   },
   pen(w) {
     selfCard(w, `<div class="big-ru">${esc(w.ru)}</div>${enLine(w)}
       <div class="icons" id="penTools">${spkBtn(w.hz, 'Послушать')}<button class="ib" data-a="pyhint">Пиньинь</button></div>
       <div class="hint" id="pyh">Напиши в тетради, потом проверь</div>`,
-      `${charRow(w.hz, Math.min(280, innerHeight * .34), 'pr')}<div class="big-py">${esc(w.py)}</div>`,
+      `<div data-say="${esc(w.hz)}">${charRow(w.hz, Math.min(280, innerHeight * .34), 'pr')}</div><div class="big-py">${pyHtml(w.py)}</div>${partsRow(w)}`,
       'Проверить', () => { $('#pyh').remove(); $('#penTools').innerHTML = strokeBtn('pr') + spkBtn(w.hz); setTimeout(() => strokeOrder($('#pr')), 300); });
-    $('[data-a=pyhint]').onclick = e => { $('#pyh').innerHTML = `<span class="big-py">${esc(w.py)}</span>`; e.currentTarget.remove(); };
+    $('[data-a=pyhint]').onclick = e => { $('#pyh').innerHTML = `<span class="big-py">${pyHtml(w.py)}</span>`; e.currentTarget.remove(); };
   },
   trace(w) { traceCard(w); }
 };
@@ -323,7 +385,7 @@ function traceable(w) { const c = [...w.hz].filter(isHan); return c.length > 0 &
 async function traceCard(w) {
   const chars = [...w.hz].filter(isHan);
   const s = Math.floor(Math.min(Math.min(innerWidth, 640) - 40, innerHeight * .46, 340));
-  screen(`${tag(w)}<div class="big-ru" style="font-size:24px">${esc(w.ru)}</div><div class="big-py" style="font-size:22px">${esc(w.py)}</div>
+  screen(`${tag(w)}<div class="big-ru" style="font-size:24px">${esc(w.ru)}</div><div class="big-py" style="font-size:22px">${pyHtml(w.py)}</div>
     <div class="hint" id="tri" style="font-size:13px">Рисуй пальцем, черта за чертой</div>
     <div class="tzg trace-box" style="--s:${s}px">${GRID}<div class="hw" id="hw"></div></div>`,
     `<div class="row2"><button class="btn" data-a="outline">Подсказка</button><button class="btn" data-a="skip">Не знаю</button></div>`);
@@ -376,6 +438,7 @@ function renderMatch() {
 // ---------- results ----------
 function finish() {
   clearInterval(timer);
+  SES.view = () => finish();
   const n = SES.res.length, ok = SES.res.filter(r => r.ok).length;
   let boss = '';
   if (SES.boss && n) {
@@ -390,7 +453,7 @@ function finish() {
     <div class="hint">${n && ok / n >= .9 ? '很好！Отлично' : ok / Math.max(n, 1) >= .6 ? '不错 — неплохо' : '加油 — продолжай'}</div>${boss}
     ${wrong.length ? `<div class="box"><h3>Ошибки — нажми, чтобы разобрать</h3><div class="list">${wrong.map(w =>
       `<button class="wrow" data-word="${esc(w.hz)}"><span class="dot c-${tierOf(w.lesson)}"></span><span class="hz">${esc(w.hz)}</span>
-        <span class="t"><span class="py">${esc(w.py)}</span><span>${esc(w.ru)}</span></span><span></span></button>`).join('')}</div></div>` : ''}
+        <span class="t"><span class="py">${pyHtml(w.py)}</span><span>${esc(w.ru)}</span></span><span></span></button>`).join('')}</div></div>` : ''}
     </div><div class="bottom">
       ${wrong.length ? `<button class="btn primary" data-a="redo">Повторить ошибки (${wrong.length})</button>` : ''}
       <button class="btn ${wrong.length ? '' : 'primary'}" data-a="again">Ещё раунд</button>
@@ -463,7 +526,7 @@ function startLesson(l, boss) {
 function wordList(words) {
   return `<div class="list">${words.map(w => { const s = ws(w.hz), lv = Math.min(s.b, MASTERED);
     return `<button class="wrow" data-word="${esc(w.hz)}"><span class="dot c-${tierOf(w.lesson)}"></span><span class="hz">${esc(w.hz)}</span>
-      <span class="t"><span class="py">${esc(w.py)}</span><span>${esc(w.ru)}</span></span>
+      <span class="t"><span class="py">${pyHtml(w.py)}</span><span>${esc(w.ru)}</span></span>
       <span class="lv">${s.t ? '●'.repeat(lv) + '○'.repeat(MASTERED - lv) : ''}</span></button>`; }).join('') || '<p class="muted">Ничего не найдено</p>'}</div>`;
 }
 let lastQuery = '';
@@ -484,18 +547,22 @@ function wordsTab() {
 let CUR = null;
 function wordPage(hz) {
   const w = WORDS.get(hz) || { hz, py: (DEC.info[hz] || {}).py || '', ru: (DEC.info[hz] || {}).g || '', en: '', lesson: null, part: true };
-  const s = ws(hz), lv = Math.min(s.b, MASTERED), bd = breakdown(hz), ex = exampleHtml(w, 4);
+  const s = ws(hz), lv = Math.min(s.b, MASTERED), bd = breakdown(hz), ex = exampleHtml(w, 4), la = lookHtml(hz);
+  const inWords = [...hz].length === 1 ? LIST.filter(x => x.hz !== hz && x.hz.includes(hz)).slice(0, 12) : [];
   const back = `<button class="back" data-a="back">‹ Назад</button>`;
   const prevTab = TAB;
   page(`${back}
     <div style="display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center">
-      ${charRow(hz, Math.min(260, innerHeight * .32), 'wr')}
-      <div class="icons">${strokeBtn('wr')}${spkBtn(hz)}</div>
-      <div class="big-py">${esc(w.py)}</div><div class="info-ru">${esc(w.ru)}</div>${w.en ? `<div class="big-en">${esc(w.en)}</div>` : ''}
-      <div class="tag">${w.lesson ? `<span class="dot c-${tierOf(w.lesson)}"></span>${w.custom ? 'мои слова' : 'урок ' + w.lesson} · ${s.t ? `уровень ${'●'.repeat(lv)}${'○'.repeat(MASTERED - lv)}` : 'ещё не тренировалось'}` : 'часть иероглифа'}</div>
+      <div data-say="${esc(hz)}">${charRow(hz, Math.min(260, innerHeight * .32), 'wr')}</div>
+      <div class="icons">${spkBtn(hz)}${slowBtn(hz)}${strokeBtn('wr')}</div>
+      <div class="big-py" data-say="${esc(hz)}">${pyHtml(w.py)}</div><div class="info-ru">${esc(w.ru)}</div>${w.en ? `<div class="big-en">${esc(w.en)}</div>` : ''}
+      ${partsRow(w)}
+      <div class="tag">${w.lesson ? `<span class="dot c-${tierOf(w.lesson)}"></span>${w.custom ? 'мои слова' : 'урок ' + w.lesson} · ${s.t ? `уровень ${'●'.repeat(lv)}${'○'.repeat(MASTERED - lv)}` : 'ещё не тренировалось'}` : 'отдельный иероглиф'}</div>
     </div>
+    ${ex ? `<div class="box"><h3>Примеры</h3>${ex}</div>` : ''}
+    ${inWords.length ? `<div class="box"><h3>Встречается в словах</h3>${wordList(inWords)}</div>` : ''}
     ${bd ? `<div class="box"><h3>Из чего состоит</h3>${bd}</div>` : ''}
-    ${ex ? `<div class="box"><h3>Примеры из тетради</h3>${ex}</div>` : ''}
+    ${la ? `<div class="box"><h3>Не перепутай — похожие</h3>${la}</div>` : ''}
     ${w.custom ? `<div class="box"><button class="btn ghost" data-a="del" style="color:var(--bad)">Удалить слово</button></div>` : ''}`);
   CUR = () => wordPage(hz);
   $('[data-a=back]').onclick = () => PREV.length ? PREV.pop()() : go(prevTab);
@@ -504,6 +571,8 @@ function wordPage(hz) {
     const c = S.custom.find(x => x.hz === hz); if (c) { c.del = true; c.t = Date.now(); }
     save(); rebuild(); computeTiers(); go('words');
   });
+  paintGlyphs();
+  speak(hz);
   setTimeout(() => strokeOrder($('#wr')), 400);
 }
 const PREV = [];
@@ -549,6 +618,16 @@ function settings() {
       <label>Слов в тренировке <select id="size">${[10, 15, 20, 30, 40].map(n => `<option ${n === S.settings.size ? 'selected' : ''}>${n}</option>`).join('')}</select></label>
       <label>Цель на день, карточек <select id="goal">${[20, 30, 50, 80].map(n => `<option ${n === S.settings.goal ? 'selected' : ''}>${n}</option>`).join('')}</select></label>
       <label>Показывать английский <input type="checkbox" id="en" ${S.settings.en ? 'checked' : ''}></label>
+      <label>Тоны цветом <span class="tone-legend"><span class="t1">ā</span> <span class="t2">á</span> <span class="t3">ǎ</span> <span class="t4">à</span> <input type="checkbox" id="tc" ${S.settings.tc ? 'checked' : ''}></span></label>
+    </div>
+    <div class="set"><b>Голос</b>
+      <label>Голос <select id="voice">${ZH_VOICES.length ? ZH_VOICES.map(v => `<option value="${esc(v.name)}" ${zhVoice && v.name === zhVoice.name ? 'selected' : ''}>${esc(v.name)}</option>`).join('') : '<option>по умолчанию</option>'}</select></label>
+      <label>Скорость <select id="rate">${[[.6, 'очень медленно'], [.7, 'медленно'], [.8, 'спокойно'], [.9, 'почти обычно'], [1, 'обычно']].map(([r, n]) => `<option value="${r}" ${r === S.settings.rate ? 'selected' : ''}>${n}</option>`).join('')}</select></label>
+      <button class="btn" data-say="妈，麻，马，骂。你好，我在学习汉语。">Проверить: mā má mǎ mà</button>
+      <p>Голос берётся из телефона. Самые живые — «улучшенные» голоса.<br>
+        <b>iPhone:</b> Настройки → Универсальный доступ → Устный контент → Голоса → Китайский (материковый Китай) → скачай <b>Lilian (улучшенный)</b> или <b>Yu-shu (улучшенный)</b>, затем выбери его здесь.<br>
+        <b>Mac:</b> Системные настройки → Универсальный доступ → Устный контент → Системный голос → Управление голосами → Китайский.<br>
+        <b>Windows/Edge:</b> голоса «Xiaoxiao Online (Natural)» уже звучат естественно.</p>
     </div>
     <div class="set"><b>Синхронизация</b>
       ${!configured ? `<p>Прогресс хранится только на этом устройстве.</p>`
@@ -566,6 +645,9 @@ function settings() {
   $('#size').onchange = e => { S.settings.size = +e.target.value; save(); };
   $('#goal').onchange = e => { S.settings.goal = +e.target.value; save(); };
   $('#en').onchange = e => { S.settings.en = e.target.checked; save(); };
+  $('#tc').onchange = e => { S.settings.tc = e.target.checked; save(); };
+  $('#voice').onchange = e => { S.settings.voice = e.target.value; save(); loadVoice(); speak('你好'); };
+  $('#rate').onchange = e => { S.settings.rate = +e.target.value; save(); speak('你好，很高兴认识你。'); };
   $('[data-a=login]') && ($('[data-a=login]').onclick = login);
   $('[data-a=logout]') && ($('[data-a=logout]').onclick = async () => { await sb.auth.signOut(); settings(); });
   $('[data-a=syncnow]') && ($('[data-a=syncnow]').onclick = async () => { await syncNow(); settings(); });
@@ -636,13 +718,15 @@ document.addEventListener('visibilitychange', () => { if (document.visibilitySta
 // ---------- global handlers ----------
 document.addEventListener('click', e => {
   const t = e.target;
-  const say = t.closest('[data-say]'); if (say) speak(say.dataset.say);
+  const slow = t.closest('[data-slow]'); if (slow) speak(slow.dataset.slow, .5);
+  const say = !slow && !(t.closest('[data-open]') && (!SES || SES.view)) && t.closest('[data-say]'); if (say) speak(say.dataset.say);
   const st = t.closest('[data-stroke]'); if (st) strokeOrder(document.getElementById(st.dataset.stroke));
   const tab = t.closest('[data-tab]'); if (tab) return go(tab.dataset.tab);
   const wd = t.closest('[data-word]');
-  if (wd || (t.closest('[data-open]') && !SES)) {
-    const target = wd ? wd.dataset.word : t.closest('[data-open]').dataset.open;
-    const s = SES; PREV.push(s ? () => { SES = s; finish(); } : CUR);
+  const op = t.closest('[data-open]');
+  if (wd || (op && (!SES || SES.view))) {
+    const target = wd ? wd.dataset.word : op.dataset.open;
+    const s = SES; PREV.push(s ? () => { SES = s; s.view(); } : CUR);
     return wordPage(target);
   }
   const a = t.closest('[data-a]')?.dataset.a;
