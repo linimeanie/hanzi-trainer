@@ -38,9 +38,11 @@ Alternative with no account setup: drag the `app` folder onto https://app.netlif
 Progress syncs automatically a few seconds after each answer and when the app is reopened.
 Without sync, progress lives in that browser only; ⚙︎ → *Скачать прогресс* makes a backup file.
 
-## 4. Adding a new class
+## 4. Adding words
 
-Send Claude the photo/screenshot of the new notes. It appends a block to `data/words.tsv`:
+**In the app:** Слова → «＋ Добавить слово». Pinyin fills itself (check the tones). Added words are stored in your progress (synced), shown as «Мои слова» and count as 🟢 together with the newest notebook class.
+
+**From photos:** send Claude the photo/screenshot of the new notes. It appends a block to `data/words.tsv`:
 
 ```
 #L	24	C-01	2026-11-20
@@ -49,7 +51,8 @@ S	例句。	Lìjù.	Пример.	Example.
 ```
 
 then runs `python3 tools/build_data.py` (regenerates `app/data.js`), commits and pushes — the site updates in about a minute.
-The newest lesson automatically becomes 🟢, the three before it 🟠, everything older 🔴.
+The newest notebook class (plus words added in the app since then) is 🟢, the three lessons before it 🟠, everything older 🔴.
+New Russian glosses for character parts go into `data/glosses_ru.txt`; the build script lists any that are missing.
 
 ## How words are chosen
 

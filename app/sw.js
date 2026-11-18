@@ -1,7 +1,7 @@
 // Offline support: app files are network-first (so updates show up),
 // stroke data from the CDN is cache-first (works offline once seen).
-const CACHE = 'zh-trainer-v1';
-const SHELL = ['./', 'index.html', 'style.css', 'app.js', 'data.js', 'config.js', 'icon.svg', 'manifest.webmanifest'];
+const CACHE = 'zh-trainer-v2';
+const SHELL = ['./', 'index.html', 'style.css', 'app.js', 'data.js', 'decomp.js', 'pinyin.js', 'config.js', 'icon.svg', 'manifest.webmanifest'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).then(() => self.skipWaiting()));
@@ -19,7 +19,7 @@ self.addEventListener('fetch', e => {
     e.respondWith(fetch(req).then(res => {
       const copy = res.clone(); caches.open(CACHE).then(c => c.put(req, copy)); return res;
     }).catch(() => caches.match(req).then(r => r || caches.match('index.html'))));
-  } else if (url.hostname === 'cdn.jsdelivr.net') {
+  } else if (['cdn.jsdelivr.net', 'fonts.googleapis.com', 'fonts.gstatic.com'].includes(url.hostname)) {
     e.respondWith(caches.match(req).then(hit => hit || fetch(req).then(res => {
       const copy = res.clone(); caches.open(CACHE).then(c => c.put(req, copy)); return res;
     })));
