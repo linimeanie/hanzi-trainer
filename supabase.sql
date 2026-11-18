@@ -10,3 +10,6 @@ alter table public.progress enable row level security;
 
 create policy "own progress" on public.progress
   for all using (auth.uid() = user_id) with check (auth.uid() = user_id);
+
+-- Newer projects don't grant table access to logged-in users automatically:
+grant select, insert, update on public.progress to authenticated;
