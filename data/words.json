@@ -1,0 +1,8191 @@
+{
+ "lessons": [
+  {
+   "n": 1,
+   "page": "A-01",
+   "date": null,
+   "words": [
+    {
+     "hz": "兴",
+     "py": "xìng",
+     "ru": "интерес, возбуждение",
+     "en": "interest; excitement"
+    },
+    {
+     "hz": "高兴",
+     "py": "gāoxìng",
+     "ru": "радостный, довольный",
+     "en": "happy"
+    },
+    {
+     "hz": "京",
+     "py": "jīng",
+     "ru": "столица",
+     "en": "capital"
+    },
+    {
+     "hz": "北京",
+     "py": "Běijīng",
+     "ru": "Пекин",
+     "en": "Beijing"
+    },
+    {
+     "hz": "京剧",
+     "py": "jīngjù",
+     "ru": "пекинская опера",
+     "en": "Peking opera"
+    },
+    {
+     "hz": "国",
+     "py": "guó",
+     "ru": "страна",
+     "en": "country"
+    },
+    {
+     "hz": "国画",
+     "py": "guóhuà",
+     "ru": "китайская живопись",
+     "en": "Chinese painting"
+    },
+    {
+     "hz": "国家",
+     "py": "guójiā",
+     "ru": "страна, государство",
+     "en": "country"
+    },
+    {
+     "hz": "球",
+     "py": "qiú",
+     "ru": "мяч, шар",
+     "en": "ball"
+    },
+    {
+     "hz": "地球",
+     "py": "dìqiú",
+     "ru": "Земля, планета",
+     "en": "the Earth; planet"
+    },
+    {
+     "hz": "足球",
+     "py": "zúqiú",
+     "ru": "футбол",
+     "en": "football"
+    },
+    {
+     "hz": "迷",
+     "py": "mí",
+     "ru": "путаться, теряться",
+     "en": "be lost; fan"
+    },
+    {
+     "hz": "迷宫",
+     "py": "mígōng",
+     "ru": "лабиринт",
+     "en": "maze"
+    },
+    {
+     "hz": "迷路",
+     "py": "mílù",
+     "ru": "заблудиться",
+     "en": "get lost"
+    },
+    {
+     "hz": "视",
+     "py": "shì",
+     "ru": "смотреть",
+     "en": "see, watch"
+    },
+    {
+     "hz": "忽",
+     "py": "hū",
+     "ru": "внезапно; пренебрегать",
+     "en": "suddenly; neglect"
+    },
+    {
+     "hz": "忽视",
+     "py": "hūshì",
+     "ru": "игнорировать",
+     "en": "ignore"
+    },
+    {
+     "hz": "阿",
+     "py": "ā",
+     "ru": "(префикс к именам)",
+     "en": "(name prefix)"
+    },
+    {
+     "hz": "阿姨",
+     "py": "āyí",
+     "ru": "тётя",
+     "en": "auntie"
+    },
+    {
+     "hz": "阿斗",
+     "py": "Ādǒu",
+     "ru": "простофиля, идиот",
+     "en": "idiot (from a historical figure)"
+    },
+    {
+     "hz": "叔叔",
+     "py": "shūshu",
+     "ru": "дядя",
+     "en": "uncle"
+    },
+    {
+     "hz": "伯",
+     "py": "bó",
+     "ru": "дядя (старший брат отца)",
+     "en": "father's elder brother"
+    },
+    {
+     "hz": "伯父",
+     "py": "bófù",
+     "ru": "дядя",
+     "en": "uncle"
+    },
+    {
+     "hz": "伯母",
+     "py": "bómǔ",
+     "ru": "тётя",
+     "en": "auntie"
+    },
+    {
+     "hz": "出土",
+     "py": "chūtǔ",
+     "ru": "прорасти из земли; быть раскопанным",
+     "en": "sprout; be unearthed"
+    },
+    {
+     "hz": "半",
+     "py": "bàn",
+     "ru": "половина",
+     "en": "half"
+    },
+    {
+     "hz": "半边",
+     "py": "bànbiān",
+     "ru": "половина, одна сторона",
+     "en": "half; one side"
+    },
+    {
+     "hz": "半圆",
+     "py": "bànyuán",
+     "ru": "полукруг",
+     "en": "semicircle"
+    },
+    {
+     "hz": "分",
+     "py": "fēn",
+     "ru": "делить",
+     "en": "divide"
+    },
+    {
+     "hz": "分开",
+     "py": "fēnkāi",
+     "ru": "разделить",
+     "en": "separate"
+    },
+    {
+     "hz": "分别",
+     "py": "fēnbié",
+     "ru": "расстаться; по отдельности",
+     "en": "part; separately"
+    },
+    {
+     "hz": "气",
+     "py": "qì",
+     "ru": "воздух, газ",
+     "en": "air; gas"
+    },
+    {
+     "hz": "空气",
+     "py": "kōngqì",
+     "ru": "воздух, атмосфера",
+     "en": "air; atmosphere"
+    },
+    {
+     "hz": "空",
+     "py": "kōng",
+     "ru": "пустой; небо",
+     "en": "empty; sky"
+    },
+    {
+     "hz": "豆",
+     "py": "dòu",
+     "ru": "боб",
+     "en": "bean"
+    },
+    {
+     "hz": "面",
+     "py": "miàn",
+     "ru": "лапша; мука; лицо",
+     "en": "noodles; flour; face"
+    },
+    {
+     "hz": "面条",
+     "py": "miàntiáo",
+     "ru": "лапша",
+     "en": "noodles"
+    },
+    {
+     "hz": "面包",
+     "py": "miànbāo",
+     "ru": "хлеб",
+     "en": "bread"
+    },
+    {
+     "hz": "勺",
+     "py": "sháo",
+     "ru": "ложка, черпак",
+     "en": "spoon, ladle"
+    },
+    {
+     "hz": "掌勺",
+     "py": "zhǎngsháo",
+     "ru": "быть шеф-поваром",
+     "en": "be the head chef"
+    },
+    {
+     "hz": "刀",
+     "py": "dāo",
+     "ru": "нож",
+     "en": "knife"
+    },
+    {
+     "hz": "剪刀",
+     "py": "jiǎndāo",
+     "ru": "ножницы",
+     "en": "scissors"
+    },
+    {
+     "hz": "弓",
+     "py": "gōng",
+     "ru": "лук (оружие)",
+     "en": "bow"
+    },
+    {
+     "hz": "箭",
+     "py": "jiàn",
+     "ru": "стрела",
+     "en": "arrow"
+    },
+    {
+     "hz": "弓箭",
+     "py": "gōngjiàn",
+     "ru": "лук со стрелами",
+     "en": "bow and arrow"
+    },
+    {
+     "hz": "前",
+     "py": "qián",
+     "ru": "перед, впереди",
+     "en": "front"
+    },
+    {
+     "hz": "弹弓",
+     "py": "dàngōng",
+     "ru": "рогатка",
+     "en": "slingshot"
+    },
+    {
+     "hz": "长",
+     "py": "cháng",
+     "ru": "длинный",
+     "en": "long"
+    },
+    {
+     "hz": "长城",
+     "py": "Chángchéng",
+     "ru": "Великая стена",
+     "en": "the Great Wall"
+    },
+    {
+     "hz": "城",
+     "py": "chéng",
+     "ru": "город, городская стена",
+     "en": "city; city wall"
+    },
+    {
+     "hz": "长度",
+     "py": "chángdù",
+     "ru": "длина",
+     "en": "length"
+    },
+    {
+     "hz": "度",
+     "py": "dù",
+     "ru": "степень, градус",
+     "en": "degree"
+    },
+    {
+     "hz": "高",
+     "py": "gāo",
+     "ru": "высокий",
+     "en": "tall, high"
+    },
+    {
+     "hz": "孩子",
+     "py": "háizi",
+     "ru": "ребёнок",
+     "en": "child"
+    },
+    {
+     "hz": "笑",
+     "py": "xiào",
+     "ru": "смеяться",
+     "en": "laugh, smile"
+    },
+    {
+     "hz": "笑声",
+     "py": "xiàoshēng",
+     "ru": "смех",
+     "en": "laughter"
+    },
+    {
+     "hz": "铃",
+     "py": "líng",
+     "ru": "колокольчик, звонок",
+     "en": "bell"
+    },
+    {
+     "hz": "铃铛",
+     "py": "língdang",
+     "ru": "колокольчик",
+     "en": "small bell"
+    },
+    {
+     "hz": "杠铃",
+     "py": "gànglíng",
+     "ru": "штанга",
+     "en": "barbell"
+    },
+    {
+     "hz": "腿",
+     "py": "tuǐ",
+     "ru": "нога",
+     "en": "leg"
+    },
+    {
+     "hz": "脚",
+     "py": "jiǎo",
+     "ru": "стопа, нога",
+     "en": "foot"
+    },
+    {
+     "hz": "脚印",
+     "py": "jiǎoyìn",
+     "ru": "след ноги",
+     "en": "footprint"
+    },
+    {
+     "hz": "脚步",
+     "py": "jiǎobù",
+     "ru": "шаг",
+     "en": "step"
+    },
+    {
+     "hz": "大巴",
+     "py": "dàbā",
+     "ru": "автобус",
+     "en": "bus"
+    },
+    {
+     "hz": "嘴",
+     "py": "zuǐ",
+     "ru": "рот",
+     "en": "mouth"
+    },
+    {
+     "hz": "嘴巴",
+     "py": "zuǐba",
+     "ru": "рот",
+     "en": "mouth"
+    },
+    {
+     "hz": "插嘴",
+     "py": "chāzuǐ",
+     "ru": "перебивать",
+     "en": "interrupt"
+    }
+   ],
+   "sentences": [
+    {
+     "zh": "我迷路了。",
+     "py": "Wǒ mílù le.",
+     "ru": "Я заблудился.",
+     "en": "I'm lost."
+    },
+    {
+     "zh": "我们坐大巴去北京。",
+     "py": "Wǒmen zuò dàbā qù Běijīng.",
+     "ru": "Мы едем в Пекин на автобусе.",
+     "en": "We take the bus to Beijing."
+    },
+    {
+     "zh": "别插嘴！",
+     "py": "Bié chāzuǐ!",
+     "ru": "Не перебивай!",
+     "en": "Don't interrupt!"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "page": "A-02",
+   "date": null,
+   "words": [
+    {
+     "hz": "辆",
+     "py": "liàng",
+     "ru": "(счётное для машин)",
+     "en": "(measure word for vehicles)"
+    },
+    {
+     "hz": "自行车",
+     "py": "zìxíngchē",
+     "ru": "велосипед",
+     "en": "bicycle"
+    },
+    {
+     "hz": "出租车",
+     "py": "chūzūchē",
+     "ru": "такси",
+     "en": "taxi"
+    },
+    {
+     "hz": "就",
+     "py": "jiù",
+     "ru": "сразу; именно; тогда",
+     "en": "right away; exactly; then"
+    },
+    {
+     "hz": "问",
+     "py": "wèn",
+     "ru": "спрашивать",
+     "en": "ask"
+    },
+    {
+     "hz": "问题",
+     "py": "wèntí",
+     "ru": "вопрос",
+     "en": "question"
+    },
+    {
+     "hz": "天黑",
+     "py": "tiān hēi",
+     "ru": "стемнело",
+     "en": "it gets dark"
+    },
+    {
+     "hz": "苹果",
+     "py": "píngguǒ",
+     "ru": "яблоко",
+     "en": "apple"
+    },
+    {
+     "hz": "莓",
+     "py": "méi",
+     "ru": "ягода",
+     "en": "berry"
+    },
+    {
+     "hz": "草莓",
+     "py": "cǎoméi",
+     "ru": "клубника",
+     "en": "strawberry"
+    },
+    {
+     "hz": "树莓",
+     "py": "shùméi",
+     "ru": "малина",
+     "en": "raspberry"
+    },
+    {
+     "hz": "蓝莓",
+     "py": "lánméi",
+     "ru": "голубика, черника",
+     "en": "blueberry"
+    },
+    {
+     "hz": "黑莓",
+     "py": "hēiméi",
+     "ru": "ежевика",
+     "en": "blackberry"
+    },
+    {
+     "hz": "个子",
+     "py": "gèzi",
+     "ru": "рост",
+     "en": "height (of a person)"
+    },
+    {
+     "hz": "个性",
+     "py": "gèxìng",
+     "ru": "индивидуальность, характер",
+     "en": "personality"
+    },
+    {
+     "hz": "性",
+     "py": "xìng",
+     "ru": "характер, пол",
+     "en": "nature; sex"
+    },
+    {
+     "hz": "糕",
+     "py": "gāo",
+     "ru": "пирожное",
+     "en": "cake"
+    },
+    {
+     "hz": "糕点",
+     "py": "gāodiǎn",
+     "ru": "выпечка",
+     "en": "pastry, baked goods"
+    },
+    {
+     "hz": "蛋糕",
+     "py": "dàngāo",
+     "ru": "торт, кекс",
+     "en": "cake"
+    },
+    {
+     "hz": "鸡蛋",
+     "py": "jīdàn",
+     "ru": "куриное яйцо",
+     "en": "chicken egg"
+    },
+    {
+     "hz": "生日",
+     "py": "shēngrì",
+     "ru": "день рождения",
+     "en": "birthday"
+    },
+    {
+     "hz": "床铺",
+     "py": "chuángpù",
+     "ru": "койка, спальное место",
+     "en": "bed, bunk"
+    },
+    {
+     "hz": "床单",
+     "py": "chuángdān",
+     "ru": "простыня",
+     "en": "bedsheet"
+    },
+    {
+     "hz": "玉",
+     "py": "yù",
+     "ru": "нефрит",
+     "en": "jade"
+    },
+    {
+     "hz": "玉石",
+     "py": "yùshí",
+     "ru": "драгоценный камень, нефрит",
+     "en": "jade stone"
+    },
+    {
+     "hz": "玉米",
+     "py": "yùmǐ",
+     "ru": "кукуруза",
+     "en": "corn"
+    },
+    {
+     "hz": "双",
+     "py": "shuāng",
+     "ru": "пара",
+     "en": "pair"
+    },
+    {
+     "hz": "眼睛",
+     "py": "yǎnjing",
+     "ru": "глаза",
+     "en": "eyes"
+    },
+    {
+     "hz": "双方",
+     "py": "shuāngfāng",
+     "ru": "обе стороны",
+     "en": "both sides"
+    },
+    {
+     "hz": "号",
+     "py": "hào",
+     "ru": "число; номер",
+     "en": "date; number"
+    },
+    {
+     "hz": "房间",
+     "py": "fángjiān",
+     "ru": "комната",
+     "en": "room"
+    },
+    {
+     "hz": "号码",
+     "py": "hàomǎ",
+     "ru": "номер",
+     "en": "number"
+    },
+    {
+     "hz": "银行",
+     "py": "yínháng",
+     "ru": "банк",
+     "en": "bank"
+    },
+    {
+     "hz": "卡",
+     "py": "kǎ",
+     "ru": "карта",
+     "en": "card"
+    },
+    {
+     "hz": "颗",
+     "py": "kē",
+     "ru": "(счётное для мелких круглых предметов)",
+     "en": "(measure word for small round things)"
+    },
+    {
+     "hz": "牙",
+     "py": "yá",
+     "ru": "зуб",
+     "en": "tooth"
+    },
+    {
+     "hz": "心",
+     "py": "xīn",
+     "ru": "сердце",
+     "en": "heart"
+    },
+    {
+     "hz": "星星",
+     "py": "xīngxing",
+     "ru": "звезда",
+     "en": "star"
+    }
+   ],
+   "sentences": [
+    {
+     "zh": "我一到家就吃饭。",
+     "py": "Wǒ yí dào jiā jiù chī fàn.",
+     "ru": "Как только прихожу домой, сразу ем.",
+     "en": "As soon as I get home I eat."
+    },
+    {
+     "zh": "我就想问你一个问题。",
+     "py": "Wǒ jiù xiǎng wèn nǐ yí ge wèntí.",
+     "ru": "Я как раз хочу задать тебе вопрос.",
+     "en": "I just want to ask you a question."
+    },
+    {
+     "zh": "我不去，你就不去。",
+     "py": "Wǒ bú qù, nǐ jiù bú qù.",
+     "ru": "Если я не иду, тогда и ты не идёшь.",
+     "en": "If I don't go, then you don't go."
+    },
+    {
+     "zh": "天黑了，我们就回家吧。",
+     "py": "Tiān hēi le, wǒmen jiù huí jiā ba.",
+     "ru": "Стемнело, пойдём домой.",
+     "en": "It's dark, let's go home."
+    },
+    {
+     "zh": "他个子很高。",
+     "py": "Tā gèzi hěn gāo.",
+     "ru": "Он высокий.",
+     "en": "He is tall."
+    },
+    {
+     "zh": "她很有个性。",
+     "py": "Tā hěn yǒu gèxìng.",
+     "ru": "У неё сильная личность.",
+     "en": "She has a strong personality."
+    },
+    {
+     "zh": "今天是我的生日，我要吃蛋糕。",
+     "py": "Jīntiān shì wǒ de shēngrì, wǒ yào chī dàngāo.",
+     "ru": "Сегодня мой день рождения, я буду есть торт.",
+     "en": "Today is my birthday, I'll eat cake."
+    },
+    {
+     "zh": "今天几号？",
+     "py": "Jīntiān jǐ hào?",
+     "ru": "Какое сегодня число?",
+     "en": "What's the date today?"
+    },
+    {
+     "zh": "今天是十月二十二号。",
+     "py": "Jīntiān shì shí yuè èrshí'èr hào.",
+     "ru": "Сегодня 22 октября.",
+     "en": "Today is October 22."
+    },
+    {
+     "zh": "一颗星星",
+     "py": "yì kē xīngxing",
+     "ru": "одна звезда",
+     "en": "a star"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "page": "A-02",
+   "date": null,
+   "words": [
+    {
+     "hz": "图",
+     "py": "tú",
+     "ru": "картина, рисунок",
+     "en": "picture"
+    },
+    {
+     "hz": "图画",
+     "py": "túhuà",
+     "ru": "рисунок",
+     "en": "drawing"
+    },
+    {
+     "hz": "地图",
+     "py": "dìtú",
+     "ru": "карта",
+     "en": "map"
+    },
+    {
+     "hz": "图片",
+     "py": "túpiàn",
+     "ru": "картинка, фото",
+     "en": "picture, image"
+    },
+    {
+     "hz": "图书馆",
+     "py": "túshūguǎn",
+     "ru": "библиотека",
+     "en": "library"
+    },
+    {
+     "hz": "馆",
+     "py": "guǎn",
+     "ru": "здание, зал",
+     "en": "hall, building"
+    },
+    {
+     "hz": "蓝图",
+     "py": "lántú",
+     "ru": "чертёж, план",
+     "en": "blueprint"
+    },
+    {
+     "hz": "题",
+     "py": "tí",
+     "ru": "вопрос, задача",
+     "en": "question, problem"
+    },
+    {
+     "hz": "数学题",
+     "py": "shùxué tí",
+     "ru": "математическая задача",
+     "en": "math problem"
+    },
+    {
+     "hz": "答题",
+     "py": "dá tí",
+     "ru": "отвечать на вопрос",
+     "en": "answer a question"
+    },
+    {
+     "hz": "做题",
+     "py": "zuò tí",
+     "ru": "решать задачи",
+     "en": "do exercises"
+    },
+    {
+     "hz": "出题",
+     "py": "chū tí",
+     "ru": "задавать вопросы (экзамен)",
+     "en": "set questions"
+    },
+    {
+     "hz": "读",
+     "py": "dú",
+     "ru": "читать",
+     "en": "read"
+    },
+    {
+     "hz": "读书",
+     "py": "dúshū",
+     "ru": "учиться; читать",
+     "en": "study; read"
+    },
+    {
+     "hz": "句子",
+     "py": "jùzi",
+     "ru": "предложение",
+     "en": "sentence"
+    },
+    {
+     "hz": "得",
+     "py": "de",
+     "ru": "(связка: как выполняется действие)",
+     "en": "(complement particle)"
+    },
+    {
+     "hz": "跑",
+     "py": "pǎo",
+     "ru": "бегать",
+     "en": "run"
+    },
+    {
+     "hz": "阅读",
+     "py": "yuèdú",
+     "ru": "читать (с пониманием)",
+     "en": "read and understand"
+    },
+    {
+     "hz": "正午",
+     "py": "zhèngwǔ",
+     "ru": "полдень",
+     "en": "noon"
+    },
+    {
+     "hz": "到达",
+     "py": "dàodá",
+     "ru": "прибывать",
+     "en": "arrive"
+    },
+    {
+     "hz": "上午",
+     "py": "shàngwǔ",
+     "ru": "до полудня, утро",
+     "en": "morning (a.m.)"
+    },
+    {
+     "hz": "下午",
+     "py": "xiàwǔ",
+     "ru": "после полудня",
+     "en": "afternoon (p.m.)"
+    },
+    {
+     "hz": "午睡",
+     "py": "wǔshuì",
+     "ru": "дневной сон",
+     "en": "nap"
+    },
+    {
+     "hz": "睡",
+     "py": "shuì",
+     "ru": "спать",
+     "en": "sleep"
+    },
+    {
+     "hz": "今年",
+     "py": "jīnnián",
+     "ru": "этот год",
+     "en": "this year"
+    },
+    {
+     "hz": "年",
+     "py": "nián",
+     "ru": "год",
+     "en": "year"
+    },
+    {
+     "hz": "回头",
+     "py": "huítóu",
+     "ru": "обернуться; позже",
+     "en": "turn around; later"
+    },
+    {
+     "hz": "回头见",
+     "py": "huítóu jiàn",
+     "ru": "увидимся позже",
+     "en": "see you later"
+    },
+    {
+     "hz": "忙",
+     "py": "máng",
+     "ru": "занятой",
+     "en": "busy"
+    },
+    {
+     "hz": "打",
+     "py": "dǎ",
+     "ru": "звонить; бить; играть",
+     "en": "call; hit; play"
+    },
+    {
+     "hz": "打电话",
+     "py": "dǎ diànhuà",
+     "ru": "звонить по телефону",
+     "en": "make a phone call"
+    },
+    {
+     "hz": "围",
+     "py": "wéi",
+     "ru": "окружать",
+     "en": "surround"
+    },
+    {
+     "hz": "围巾",
+     "py": "wéijīn",
+     "ru": "шарф",
+     "en": "scarf"
+    },
+    {
+     "hz": "包围",
+     "py": "bāowéi",
+     "ru": "окружить",
+     "en": "surround, encircle"
+    },
+    {
+     "hz": "纱",
+     "py": "shā",
+     "ru": "марля, вуаль",
+     "en": "gauze; yarn"
+    },
+    {
+     "hz": "布",
+     "py": "bù",
+     "ru": "ткань",
+     "en": "cloth"
+    },
+    {
+     "hz": "纱布",
+     "py": "shābù",
+     "ru": "марля",
+     "en": "gauze"
+    },
+    {
+     "hz": "婚纱",
+     "py": "hūnshā",
+     "ru": "свадебное платье",
+     "en": "wedding dress"
+    },
+    {
+     "hz": "纱窗",
+     "py": "shāchuāng",
+     "ru": "москитная сетка",
+     "en": "window screen"
+    },
+    {
+     "hz": "面纱",
+     "py": "miànshā",
+     "ru": "вуаль",
+     "en": "veil"
+    },
+    {
+     "hz": "喊",
+     "py": "hǎn",
+     "ru": "кричать",
+     "en": "shout"
+    },
+    {
+     "hz": "叫",
+     "py": "jiào",
+     "ru": "звать; кричать",
+     "en": "call; shout"
+    },
+    {
+     "hz": "见",
+     "py": "jiàn",
+     "ru": "видеть",
+     "en": "see"
+    },
+    {
+     "hz": "再见",
+     "py": "zàijiàn",
+     "ru": "до свидания",
+     "en": "goodbye"
+    },
+    {
+     "hz": "见面",
+     "py": "jiànmiàn",
+     "ru": "встретиться лично",
+     "en": "meet face to face"
+    },
+    {
+     "hz": "见识",
+     "py": "jiànshi",
+     "ru": "опыт, кругозор",
+     "en": "experience; knowledge"
+    },
+    {
+     "hz": "见到",
+     "py": "jiàndào",
+     "ru": "увидеть, встретить",
+     "en": "see, meet"
+    },
+    {
+     "hz": "昨天",
+     "py": "zuótiān",
+     "ru": "вчера",
+     "en": "yesterday"
+    },
+    {
+     "hz": "和好",
+     "py": "héhǎo",
+     "ru": "помириться",
+     "en": "reconcile"
+    },
+    {
+     "hz": "和平",
+     "py": "hépíng",
+     "ru": "мир",
+     "en": "peace"
+    },
+    {
+     "hz": "宝贵",
+     "py": "bǎoguì",
+     "ru": "драгоценный",
+     "en": "precious"
+    },
+    {
+     "hz": "爱好",
+     "py": "àihào",
+     "ru": "любить; хобби",
+     "en": "love; hobby"
+    },
+    {
+     "hz": "同学们",
+     "py": "tóngxuémen",
+     "ru": "ученики, одноклассники",
+     "en": "classmates"
+    },
+    {
+     "hz": "儿童",
+     "py": "értóng",
+     "ru": "дети",
+     "en": "children"
+    },
+    {
+     "hz": "童",
+     "py": "tóng",
+     "ru": "ребёнок",
+     "en": "child"
+    },
+    {
+     "hz": "孩童",
+     "py": "háitóng",
+     "ru": "дети (книжн.)",
+     "en": "children (literary)"
+    },
+    {
+     "hz": "给",
+     "py": "gěi",
+     "ru": "давать; для",
+     "en": "give; for"
+    },
+    {
+     "hz": "钱",
+     "py": "qián",
+     "ru": "деньги",
+     "en": "money"
+    },
+    {
+     "hz": "做饭",
+     "py": "zuò fàn",
+     "ru": "готовить еду",
+     "en": "cook"
+    },
+    {
+     "hz": "朋友",
+     "py": "péngyou",
+     "ru": "друг",
+     "en": "friend"
+    },
+    {
+     "hz": "送给",
+     "py": "sònggěi",
+     "ru": "подарить",
+     "en": "give as a gift"
+    },
+    {
+     "hz": "送",
+     "py": "sòng",
+     "ru": "дарить; провожать; доставлять",
+     "en": "give; see off; deliver"
+    },
+    {
+     "hz": "交给",
+     "py": "jiāogěi",
+     "ru": "передать (дело, документ)",
+     "en": "hand over"
+    },
+    {
+     "hz": "请",
+     "py": "qǐng",
+     "ru": "пожалуйста; приглашать",
+     "en": "please; invite"
+    },
+    {
+     "hz": "请坐",
+     "py": "qǐng zuò",
+     "ru": "садитесь, пожалуйста",
+     "en": "please sit"
+    },
+    {
+     "hz": "请客",
+     "py": "qǐngkè",
+     "ru": "угощать",
+     "en": "treat (pay for others)"
+    },
+    {
+     "hz": "客",
+     "py": "kè",
+     "ru": "гость",
+     "en": "guest"
+    },
+    {
+     "hz": "茶",
+     "py": "chá",
+     "ru": "чай",
+     "en": "tea"
+    },
+    {
+     "hz": "茶叶",
+     "py": "cháyè",
+     "ru": "чайные листья",
+     "en": "tea leaves"
+    },
+    {
+     "hz": "有名",
+     "py": "yǒumíng",
+     "ru": "известный",
+     "en": "famous"
+    },
+    {
+     "hz": "名",
+     "py": "míng",
+     "ru": "имя",
+     "en": "name"
+    },
+    {
+     "hz": "您",
+     "py": "nín",
+     "ru": "Вы (вежл.)",
+     "en": "you (polite)"
+    },
+    {
+     "hz": "友好",
+     "py": "yǒuhǎo",
+     "ru": "дружелюбный",
+     "en": "friendly"
+    },
+    {
+     "hz": "美好",
+     "py": "měihǎo",
+     "ru": "прекрасный (жизнь, будущее, мечты)",
+     "en": "wonderful"
+    },
+    {
+     "hz": "腰",
+     "py": "yāo",
+     "ru": "талия, поясница",
+     "en": "waist, lower back"
+    },
+    {
+     "hz": "疼",
+     "py": "téng",
+     "ru": "болеть",
+     "en": "hurt"
+    },
+    {
+     "hz": "山腰",
+     "py": "shānyāo",
+     "ru": "середина склона горы",
+     "en": "mountainside"
+    },
+    {
+     "hz": "铺垫",
+     "py": "pūdiàn",
+     "ru": "подготовка",
+     "en": "groundwork"
+    },
+    {
+     "hz": "铺张",
+     "py": "pūzhāng",
+     "ru": "показуха, расточительство",
+     "en": "extravagance"
+    },
+    {
+     "hz": "饭",
+     "py": "fàn",
+     "ru": "еда, рис",
+     "en": "meal; rice"
+    },
+    {
+     "hz": "饭店",
+     "py": "fàndiàn",
+     "ru": "ресторан, отель",
+     "en": "restaurant; hotel"
+    },
+    {
+     "hz": "条",
+     "py": "tiáo",
+     "ru": "(счётное для длинных предметов)",
+     "en": "(measure word for long things)"
+    },
+    {
+     "hz": "条件",
+     "py": "tiáojiàn",
+     "ru": "условие",
+     "en": "condition"
+    },
+    {
+     "hz": "生活条件",
+     "py": "shēnghuó tiáojiàn",
+     "ru": "условия жизни",
+     "en": "living conditions"
+    },
+    {
+     "hz": "柿子",
+     "py": "shìzi",
+     "ru": "хурма",
+     "en": "persimmon"
+    },
+    {
+     "hz": "冬",
+     "py": "dōng",
+     "ru": "зима",
+     "en": "winter"
+    },
+    {
+     "hz": "冬日",
+     "py": "dōngrì",
+     "ru": "зимний день, зима",
+     "en": "winter day"
+    },
+    {
+     "hz": "冬瓜",
+     "py": "dōngguā",
+     "ru": "восковая тыква",
+     "en": "winter melon"
+    },
+    {
+     "hz": "芽",
+     "py": "yá",
+     "ru": "росток",
+     "en": "sprout"
+    },
+    {
+     "hz": "萌芽",
+     "py": "méngyá",
+     "ru": "первый росток, зародыш",
+     "en": "bud; germinate"
+    },
+    {
+     "hz": "开花",
+     "py": "kāihuā",
+     "ru": "цвести",
+     "en": "bloom"
+    },
+    {
+     "hz": "肉",
+     "py": "ròu",
+     "ru": "мясо",
+     "en": "meat"
+    },
+    {
+     "hz": "肌肉",
+     "py": "jīròu",
+     "ru": "мышца",
+     "en": "muscle"
+    },
+    {
+     "hz": "皮肉",
+     "py": "píròu",
+     "ru": "тело, плоть",
+     "en": "flesh"
+    },
+    {
+     "hz": "皮",
+     "py": "pí",
+     "ru": "кожа",
+     "en": "skin"
+    },
+    {
+     "hz": "汤",
+     "py": "tāng",
+     "ru": "суп",
+     "en": "soup"
+    },
+    {
+     "hz": "鸡",
+     "py": "jī",
+     "ru": "курица",
+     "en": "chicken"
+    },
+    {
+     "hz": "鸡汤",
+     "py": "jītāng",
+     "ru": "куриный суп",
+     "en": "chicken soup"
+    },
+    {
+     "hz": "枪",
+     "py": "qiāng",
+     "ru": "пистолет, ружьё",
+     "en": "gun"
+    },
+    {
+     "hz": "枪支",
+     "py": "qiāngzhī",
+     "ru": "оружие",
+     "en": "firearms"
+    },
+    {
+     "hz": "钓",
+     "py": "diào",
+     "ru": "ловить на удочку",
+     "en": "fish (with a rod)"
+    },
+    {
+     "hz": "钓竿",
+     "py": "diàogān",
+     "ru": "удочка",
+     "en": "fishing rod"
+    },
+    {
+     "hz": "垂钓",
+     "py": "chuídiào",
+     "ru": "рыбачить",
+     "en": "go fishing"
+    },
+    {
+     "hz": "骑",
+     "py": "qí",
+     "ru": "ехать верхом",
+     "en": "ride"
+    },
+    {
+     "hz": "骑马",
+     "py": "qí mǎ",
+     "ru": "ехать на лошади",
+     "en": "ride a horse"
+    },
+    {
+     "hz": "课",
+     "py": "kè",
+     "ru": "урок",
+     "en": "lesson"
+    },
+    {
+     "hz": "上课",
+     "py": "shàngkè",
+     "ru": "быть на уроке",
+     "en": "attend class"
+    },
+    {
+     "hz": "课文",
+     "py": "kèwén",
+     "ru": "текст урока",
+     "en": "lesson text"
+    },
+    {
+     "hz": "圈",
+     "py": "quān",
+     "ru": "круг; сообщество",
+     "en": "circle; community"
+    },
+    {
+     "hz": "线",
+     "py": "xiàn",
+     "ru": "нить, линия",
+     "en": "thread; line"
+    },
+    {
+     "hz": "线圈",
+     "py": "xiànquān",
+     "ru": "катушка",
+     "en": "coil, spool"
+    },
+    {
+     "hz": "电线",
+     "py": "diànxiàn",
+     "ru": "провод, кабель",
+     "en": "electric wire"
+    },
+    {
+     "hz": "地铁线",
+     "py": "dìtiě xiàn",
+     "ru": "линия метро",
+     "en": "metro line"
+    }
+   ],
+   "sentences": [
+    {
+     "zh": "我正在答题。",
+     "py": "Wǒ zhèngzài dá tí.",
+     "ru": "Я сейчас отвечаю на вопрос.",
+     "en": "I'm answering the question."
+    },
+    {
+     "zh": "老师出题，学生答题。",
+     "py": "Lǎoshī chū tí, xuésheng dá tí.",
+     "ru": "Учитель задаёт вопросы, ученики отвечают.",
+     "en": "The teacher sets questions, students answer."
+    },
+    {
+     "zh": "他在北京大学读书。",
+     "py": "Tā zài Běijīng Dàxué dúshū.",
+     "ru": "Он учится в Пекинском университете.",
+     "en": "He studies at Peking University."
+    },
+    {
+     "zh": "请读这个句子。",
+     "py": "Qǐng dú zhège jùzi.",
+     "ru": "Пожалуйста, прочитай это предложение.",
+     "en": "Please read this sentence."
+    },
+    {
+     "zh": "他读得很快。",
+     "py": "Tā dú de hěn kuài.",
+     "ru": "Он читает очень быстро.",
+     "en": "He reads very fast."
+    },
+    {
+     "zh": "你说得对。",
+     "py": "Nǐ shuō de duì.",
+     "ru": "Ты прав.",
+     "en": "You're right."
+    },
+    {
+     "zh": "火车在正午到达北京。",
+     "py": "Huǒchē zài zhèngwǔ dàodá Běijīng.",
+     "ru": "Поезд прибывает в Пекин в полдень.",
+     "en": "The train arrives in Beijing at noon."
+    },
+    {
+     "zh": "我现在忙，回头给你打电话。",
+     "py": "Wǒ xiànzài máng, huítóu gěi nǐ dǎ diànhuà.",
+     "ru": "Я сейчас занят, позже тебе позвоню.",
+     "en": "I'm busy now, I'll call you later."
+    },
+    {
+     "zh": "我昨天见到他了。",
+     "py": "Wǒ zuótiān jiàndào tā le.",
+     "ru": "Я вчера его видел.",
+     "en": "I saw him yesterday."
+    },
+    {
+     "zh": "和平的生活很宝贵。",
+     "py": "Hépíng de shēnghuó hěn bǎoguì.",
+     "ru": "Мирная жизнь драгоценна.",
+     "en": "A peaceful life is precious."
+    },
+    {
+     "zh": "妈妈给我钱。",
+     "py": "Māma gěi wǒ qián.",
+     "ru": "Мама даёт мне деньги.",
+     "en": "Mom gives me money."
+    },
+    {
+     "zh": "她给孩子做饭。",
+     "py": "Tā gěi háizi zuò fàn.",
+     "ru": "Она готовит еду для ребёнка.",
+     "en": "She cooks for the child."
+    },
+    {
+     "zh": "他给朋友打电话。",
+     "py": "Tā gěi péngyou dǎ diànhuà.",
+     "ru": "Он звонит другу.",
+     "en": "He calls a friend."
+    },
+    {
+     "zh": "他去送朋友。",
+     "py": "Tā qù sòng péngyou.",
+     "ru": "Он идёт провожать друга.",
+     "en": "He goes to see his friend off."
+    },
+    {
+     "zh": "我请你吃饭。",
+     "py": "Wǒ qǐng nǐ chī fàn.",
+     "ru": "Я угощаю тебя обедом.",
+     "en": "I'll treat you to a meal."
+    },
+    {
+     "zh": "今天他请客。",
+     "py": "Jīntiān tā qǐngkè.",
+     "ru": "Сегодня он угощает.",
+     "en": "He's paying today."
+    },
+    {
+     "zh": "中国的茶叶很有名。",
+     "py": "Zhōngguó de cháyè hěn yǒumíng.",
+     "ru": "Китайский чай очень известен.",
+     "en": "Chinese tea is very famous."
+    },
+    {
+     "zh": "我的腰很疼。",
+     "py": "Wǒ de yāo hěn téng.",
+     "ru": "У меня сильно болит поясница.",
+     "en": "My lower back hurts a lot."
+    },
+    {
+     "zh": "今天我们学习第十课的课文。",
+     "py": "Jīntiān wǒmen xuéxí dì shí kè de kèwén.",
+     "ru": "Сегодня мы изучаем текст десятого урока.",
+     "en": "Today we study the text of lesson 10."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "page": "A-04",
+   "date": null,
+   "words": [
+    {
+     "hz": "入",
+     "py": "rù",
+     "ru": "входить, проникать",
+     "en": "enter"
+    },
+    {
+     "hz": "水入地",
+     "py": "shuǐ rù dì",
+     "ru": "вода впитывается в землю",
+     "en": "water soaks into the ground"
+    },
+    {
+     "hz": "入冬",
+     "py": "rù dōng",
+     "ru": "наступила зима",
+     "en": "winter sets in"
+    },
+    {
+     "hz": "进",
+     "py": "jìn",
+     "ru": "входить",
+     "en": "enter"
+    },
+    {
+     "hz": "进入",
+     "py": "jìnrù",
+     "ru": "входить (формально)",
+     "en": "enter (formal)"
+    },
+    {
+     "hz": "进入大学",
+     "py": "jìnrù dàxué",
+     "ru": "поступить в университет",
+     "en": "enter university"
+    },
+    {
+     "hz": "加入",
+     "py": "jiārù",
+     "ru": "присоединиться",
+     "en": "join"
+    },
+    {
+     "hz": "公司",
+     "py": "gōngsī",
+     "ru": "компания",
+     "en": "company"
+    },
+    {
+     "hz": "里",
+     "py": "lǐ",
+     "ru": "внутри; ли (≈0,5 км)",
+     "en": "inside; li (unit of distance)"
+    },
+    {
+     "hz": "路",
+     "py": "lù",
+     "ru": "дорога",
+     "en": "road"
+    },
+    {
+     "hz": "心里",
+     "py": "xīnli",
+     "ru": "в сердце",
+     "en": "in one's heart"
+    },
+    {
+     "hz": "包",
+     "py": "bāo",
+     "ru": "сумка",
+     "en": "bag"
+    },
+    {
+     "hz": "里面",
+     "py": "lǐmiàn",
+     "ru": "внутри",
+     "en": "inside"
+    },
+    {
+     "hz": "弯",
+     "py": "wān",
+     "ru": "изгиб, кривой; сгибать",
+     "en": "bend; curved"
+    },
+    {
+     "hz": "弯腰",
+     "py": "wān yāo",
+     "ru": "наклониться",
+     "en": "bend down"
+    },
+    {
+     "hz": "捡",
+     "py": "jiǎn",
+     "ru": "поднимать (с земли)",
+     "en": "pick up"
+    },
+    {
+     "hz": "东西",
+     "py": "dōngxi",
+     "ru": "вещь",
+     "en": "thing"
+    },
+    {
+     "hz": "少",
+     "py": "shǎo",
+     "ru": "мало",
+     "en": "few, little"
+    },
+    {
+     "hz": "多少",
+     "py": "duōshao",
+     "ru": "сколько",
+     "en": "how many/much"
+    },
+    {
+     "hz": "少见",
+     "py": "shǎojiàn",
+     "ru": "редкий",
+     "en": "rare"
+    },
+    {
+     "hz": "直",
+     "py": "zhí",
+     "ru": "прямой; прямолинейный",
+     "en": "straight; frank"
+    },
+    {
+     "hz": "直人",
+     "py": "zhírén",
+     "ru": "прямолинейный человек",
+     "en": "straightforward person"
+    },
+    {
+     "hz": "去",
+     "py": "qù",
+     "ru": "идти, уходить",
+     "en": "go"
+    },
+    {
+     "hz": "进去",
+     "py": "jìnqù",
+     "ru": "войти внутрь",
+     "en": "go in"
+    },
+    {
+     "hz": "车站",
+     "py": "chēzhàn",
+     "ru": "станция",
+     "en": "station"
+    },
+    {
+     "hz": "吐",
+     "py": "tù",
+     "ru": "рвать, тошнить",
+     "en": "vomit"
+    },
+    {
+     "hz": "吐气",
+     "py": "tǔqì",
+     "ru": "выдыхать",
+     "en": "exhale"
+    },
+    {
+     "hz": "谈吐",
+     "py": "tántǔ",
+     "ru": "манера речи",
+     "en": "way of speaking"
+    },
+    {
+     "hz": "光",
+     "py": "guāng",
+     "ru": "свет; полностью; только",
+     "en": "light; used up; only"
+    },
+    {
+     "hz": "月光",
+     "py": "yuèguāng",
+     "ru": "лунный свет",
+     "en": "moonlight"
+    },
+    {
+     "hz": "花光",
+     "py": "huāguāng",
+     "ru": "потратить всё",
+     "en": "spend all"
+    },
+    {
+     "hz": "用光",
+     "py": "yòngguāng",
+     "ru": "израсходовать",
+     "en": "use up"
+    },
+    {
+     "hz": "电视",
+     "py": "diànshì",
+     "ru": "телевизор",
+     "en": "TV"
+    },
+    {
+     "hz": "光明",
+     "py": "guāngmíng",
+     "ru": "светлый; надежда",
+     "en": "bright; hope"
+    },
+    {
+     "hz": "皮肤",
+     "py": "pífū",
+     "ru": "кожа (человека)",
+     "en": "skin"
+    },
+    {
+     "hz": "贵",
+     "py": "guì",
+     "ru": "дорогой",
+     "en": "expensive"
+    },
+    {
+     "hz": "皮包",
+     "py": "píbāo",
+     "ru": "кожаная сумка",
+     "en": "leather bag"
+    },
+    {
+     "hz": "皮带",
+     "py": "pídài",
+     "ru": "ремень",
+     "en": "belt"
+    },
+    {
+     "hz": "红",
+     "py": "hóng",
+     "ru": "красный",
+     "en": "red"
+    },
+    {
+     "hz": "公布",
+     "py": "gōngbù",
+     "ru": "опубликовать, объявить",
+     "en": "announce"
+    },
+    {
+     "hz": "走",
+     "py": "zǒu",
+     "ru": "идти; уходить",
+     "en": "walk; leave"
+    },
+    {
+     "hz": "每天",
+     "py": "měitiān",
+     "ru": "каждый день",
+     "en": "every day"
+    },
+    {
+     "hz": "公里",
+     "py": "gōnglǐ",
+     "ru": "километр",
+     "en": "kilometer"
+    },
+    {
+     "hz": "看见",
+     "py": "kànjiàn",
+     "ru": "увидеть",
+     "en": "see"
+    },
+    {
+     "hz": "井",
+     "py": "jǐng",
+     "ru": "колодец",
+     "en": "well"
+    },
+    {
+     "hz": "衣",
+     "py": "yī",
+     "ru": "одежда",
+     "en": "clothes"
+    }
+   ],
+   "sentences": [
+    {
+     "zh": "天气入冬。",
+     "py": "Tiānqì rù dōng.",
+     "ru": "Наступила зима.",
+     "en": "Winter is setting in."
+    },
+    {
+     "zh": "这条路有十里长。",
+     "py": "Zhè tiáo lù yǒu shí lǐ cháng.",
+     "ru": "Эта дорога длиной десять ли.",
+     "en": "This road is ten li long."
+    },
+    {
+     "zh": "钱在包里面。",
+     "py": "Qián zài bāo lǐmiàn.",
+     "ru": "Деньги в сумке.",
+     "en": "The money is in the bag."
+    },
+    {
+     "zh": "他弯下腰捡东西。",
+     "py": "Tā wānxià yāo jiǎn dōngxi.",
+     "ru": "Он наклонился поднять вещь.",
+     "en": "He bent down to pick something up."
+    },
+    {
+     "zh": "这本书多少钱？",
+     "py": "Zhè běn shū duōshao qián?",
+     "ru": "Сколько стоит эта книга?",
+     "en": "How much is this book?"
+    },
+    {
+     "zh": "我想吐。",
+     "py": "Wǒ xiǎng tù.",
+     "ru": "Меня тошнит.",
+     "en": "I feel sick."
+    },
+    {
+     "zh": "钱花光了。",
+     "py": "Qián huāguāng le.",
+     "ru": "Все деньги потрачены.",
+     "en": "All the money is spent."
+    },
+    {
+     "zh": "他光说不做。",
+     "py": "Tā guāng shuō bú zuò.",
+     "ru": "Он только говорит, но не делает.",
+     "en": "He only talks and doesn't act."
+    },
+    {
+     "zh": "别光看电视，去学习！",
+     "py": "Bié guāng kàn diànshì, qù xuéxí!",
+     "ru": "Не смотри только телевизор, иди учись!",
+     "en": "Don't just watch TV, go study!"
+    },
+    {
+     "zh": "她的皮肤很白。",
+     "py": "Tā de pífū hěn bái.",
+     "ru": "У неё очень белая кожа.",
+     "en": "Her skin is very fair."
+    },
+    {
+     "zh": "他买了一条新的皮带。",
+     "py": "Tā mǎi le yì tiáo xīn de pídài.",
+     "ru": "Он купил новый ремень.",
+     "en": "He bought a new belt."
+    },
+    {
+     "zh": "他每天走十公里。",
+     "py": "Tā měitiān zǒu shí gōnglǐ.",
+     "ru": "Он каждый день проходит 10 км.",
+     "en": "He walks 10 km every day."
+    },
+    {
+     "zh": "小孩看见妈妈就笑了。",
+     "py": "Xiǎohái kànjiàn māma jiù xiào le.",
+     "ru": "Ребёнок увидел маму и сразу улыбнулся.",
+     "en": "The kid smiled as soon as he saw mom."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "page": "A-05",
+   "date": "2025-11-20",
+   "words": [
+    {
+     "hz": "方",
+     "py": "fāng",
+     "ru": "сторона; квадрат; способ",
+     "en": "side; square; method"
+    },
+    {
+     "hz": "东方",
+     "py": "dōngfāng",
+     "ru": "восток",
+     "en": "east"
+    },
+    {
+     "hz": "西方",
+     "py": "xīfāng",
+     "ru": "запад",
+     "en": "west"
+    },
+    {
+     "hz": "地方",
+     "py": "dìfang",
+     "ru": "место",
+     "en": "place"
+    },
+    {
+     "hz": "方法",
+     "py": "fāngfǎ",
+     "ru": "метод",
+     "en": "method"
+    },
+    {
+     "hz": "方形",
+     "py": "fāngxíng",
+     "ru": "квадрат",
+     "en": "square"
+    },
+    {
+     "hz": "形",
+     "py": "xíng",
+     "ru": "форма",
+     "en": "shape"
+    },
+    {
+     "hz": "旅",
+     "py": "lǚ",
+     "ru": "путешествие",
+     "en": "travel"
+    },
+    {
+     "hz": "游",
+     "py": "yóu",
+     "ru": "плавать; гулять",
+     "en": "swim; roam"
+    },
+    {
+     "hz": "旅游",
+     "py": "lǚyóu",
+     "ru": "туризм, путешествие",
+     "en": "tourism, travel"
+    },
+    {
+     "hz": "旅行",
+     "py": "lǚxíng",
+     "ru": "путешествовать",
+     "en": "travel"
+    },
+    {
+     "hz": "运动",
+     "py": "yùndòng",
+     "ru": "движение, спорт",
+     "en": "sport; exercise"
+    },
+    {
+     "hz": "喜欢",
+     "py": "xǐhuan",
+     "ru": "нравиться",
+     "en": "like"
+    },
+    {
+     "hz": "椅子",
+     "py": "yǐzi",
+     "ru": "стул",
+     "en": "chair"
+    },
+    {
+     "hz": "星期",
+     "py": "xīngqī",
+     "ru": "неделя",
+     "en": "week"
+    },
+    {
+     "hz": "期",
+     "py": "qī",
+     "ru": "срок, период",
+     "en": "period"
+    },
+    {
+     "hz": "星期一",
+     "py": "xīngqīyī",
+     "ru": "понедельник",
+     "en": "Monday"
+    },
+    {
+     "hz": "星期四",
+     "py": "xīngqīsì",
+     "ru": "четверг",
+     "en": "Thursday"
+    },
+    {
+     "hz": "星期五",
+     "py": "xīngqīwǔ",
+     "ru": "пятница",
+     "en": "Friday"
+    },
+    {
+     "hz": "星期六",
+     "py": "xīngqīliù",
+     "ru": "суббота",
+     "en": "Saturday"
+    },
+    {
+     "hz": "星期日",
+     "py": "xīngqīrì",
+     "ru": "воскресенье",
+     "en": "Sunday"
+    },
+    {
+     "hz": "周",
+     "py": "zhōu",
+     "ru": "неделя",
+     "en": "week"
+    },
+    {
+     "hz": "每周",
+     "py": "měi zhōu",
+     "ru": "каждую неделю",
+     "en": "every week"
+    },
+    {
+     "hz": "末",
+     "py": "mò",
+     "ru": "конец",
+     "en": "end"
+    },
+    {
+     "hz": "周末",
+     "py": "zhōumò",
+     "ru": "выходные",
+     "en": "weekend"
+    },
+    {
+     "hz": "年末",
+     "py": "niánmò",
+     "ru": "конец года",
+     "en": "end of year"
+    },
+    {
+     "hz": "都",
+     "py": "dōu",
+     "ru": "все",
+     "en": "all"
+    },
+    {
+     "hz": "最",
+     "py": "zuì",
+     "ru": "самый",
+     "en": "the most"
+    },
+    {
+     "hz": "冷",
+     "py": "lěng",
+     "ru": "холодный",
+     "en": "cold"
+    },
+    {
+     "hz": "可爱",
+     "py": "kě'ài",
+     "ru": "милый",
+     "en": "cute"
+    },
+    {
+     "hz": "篮球",
+     "py": "lánqiú",
+     "ru": "баскетбол",
+     "en": "basketball"
+    },
+    {
+     "hz": "喝",
+     "py": "hē",
+     "ru": "пить",
+     "en": "drink"
+    },
+    {
+     "hz": "现在",
+     "py": "xiànzài",
+     "ru": "сейчас",
+     "en": "now"
+    },
+    {
+     "hz": "现代",
+     "py": "xiàndài",
+     "ru": "современный; современность",
+     "en": "modern"
+    },
+    {
+     "hz": "一起",
+     "py": "yìqǐ",
+     "ru": "вместе",
+     "en": "together"
+    },
+    {
+     "hz": "起",
+     "py": "qǐ",
+     "ru": "вставать",
+     "en": "rise"
+    },
+    {
+     "hz": "俩",
+     "py": "liǎ",
+     "ru": "двое, вдвоём",
+     "en": "two (people)"
+    },
+    {
+     "hz": "踢",
+     "py": "tī",
+     "ru": "пинать",
+     "en": "kick"
+    },
+    {
+     "hz": "踢足球",
+     "py": "tī zúqiú",
+     "ru": "играть в футбол",
+     "en": "play football"
+    },
+    {
+     "hz": "拿",
+     "py": "ná",
+     "ru": "брать, держать",
+     "en": "take, hold"
+    },
+    {
+     "hz": "工作",
+     "py": "gōngzuò",
+     "ru": "работать; работа",
+     "en": "work"
+    },
+    {
+     "hz": "漂亮",
+     "py": "piàoliang",
+     "ru": "красивый",
+     "en": "pretty"
+    }
+   ],
+   "sentences": [
+    {
+     "zh": "我喜欢运动。",
+     "py": "Wǒ xǐhuan yùndòng.",
+     "ru": "Я люблю спорт.",
+     "en": "I like sports."
+    },
+    {
+     "zh": "今天最冷。",
+     "py": "Jīntiān zuì lěng.",
+     "ru": "Сегодня холоднее всего.",
+     "en": "Today is the coldest."
+    },
+    {
+     "zh": "我最喜欢的运动是打篮球。",
+     "py": "Wǒ zuì xǐhuan de yùndòng shì dǎ lánqiú.",
+     "ru": "Мой любимый спорт — баскетбол.",
+     "en": "My favorite sport is basketball."
+    },
+    {
+     "zh": "我去拿水。",
+     "py": "Wǒ qù ná shuǐ.",
+     "ru": "Я схожу за водой.",
+     "en": "I'll go get water."
+    },
+    {
+     "zh": "他拿不动。",
+     "py": "Tā ná bu dòng.",
+     "ru": "Ему не под силу поднять.",
+     "en": "He can't lift it."
+    },
+    {
+     "zh": "一月的北京天气最冷。",
+     "py": "Yī yuè de Běijīng tiānqì zuì lěng.",
+     "ru": "В январе в Пекине холоднее всего.",
+     "en": "Beijing is coldest in January."
+    },
+    {
+     "zh": "爸爸现在不能回来，他在工作呢。",
+     "py": "Bàba xiànzài bù néng huílai, tā zài gōngzuò ne.",
+     "ru": "Папа не может сейчас вернуться, он работает.",
+     "en": "Dad can't come back now, he's working."
+    },
+    {
+     "zh": "星期六我们一起去踢足球吧。",
+     "py": "Xīngqīliù wǒmen yìqǐ qù tī zúqiú ba.",
+     "ru": "Давай в субботу вместе поиграем в футбол.",
+     "en": "Let's play football together on Saturday."
+    },
+    {
+     "zh": "你的小猫最漂亮。",
+     "py": "Nǐ de xiǎo māo zuì piàoliang.",
+     "ru": "Твой котёнок самый красивый.",
+     "en": "Your kitten is the prettiest."
+    },
+    {
+     "zh": "我最喜欢旅游。",
+     "py": "Wǒ zuì xǐhuan lǚyóu.",
+     "ru": "Больше всего я люблю путешествовать.",
+     "en": "I love traveling most."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "page": "A-06",
+   "date": "2025-11-25",
+   "words": [
+    {
+     "hz": "广",
+     "py": "guǎng",
+     "ru": "широкий",
+     "en": "wide"
+    },
+    {
+     "hz": "店",
+     "py": "diàn",
+     "ru": "магазин",
+     "en": "shop"
+    },
+    {
+     "hz": "商",
+     "py": "shāng",
+     "ru": "торговля, бизнес",
+     "en": "commerce"
+    },
+    {
+     "hz": "商店",
+     "py": "shāngdiàn",
+     "ru": "магазин",
+     "en": "shop"
+    },
+    {
+     "hz": "商场",
+     "py": "shāngchǎng",
+     "ru": "торговый центр",
+     "en": "mall"
+    },
+    {
+     "hz": "商业",
+     "py": "shāngyè",
+     "ru": "бизнес, торговля",
+     "en": "business"
+    },
+    {
+     "hz": "商人",
+     "py": "shāngrén",
+     "ru": "бизнесмен",
+     "en": "businessman"
+    },
+    {
+     "hz": "商品",
+     "py": "shāngpǐn",
+     "ru": "товар",
+     "en": "goods"
+    },
+    {
+     "hz": "品",
+     "py": "pǐn",
+     "ru": "продукт; качество; дегустировать",
+     "en": "product; quality; taste"
+    },
+    {
+     "hz": "工商",
+     "py": "gōngshāng",
+     "ru": "промышленность и торговля",
+     "en": "industry and commerce"
+    },
+    {
+     "hz": "产品",
+     "py": "chǎnpǐn",
+     "ru": "изделие, продукт",
+     "en": "product"
+    },
+    {
+     "hz": "食品",
+     "py": "shípǐn",
+     "ru": "продукты питания",
+     "en": "food products"
+    },
+    {
+     "hz": "人品",
+     "py": "rénpǐn",
+     "ru": "характер, нравственность",
+     "en": "moral character"
+    },
+    {
+     "hz": "品茶",
+     "py": "pǐn chá",
+     "ru": "дегустировать чай",
+     "en": "taste tea"
+    },
+    {
+     "hz": "物",
+     "py": "wù",
+     "ru": "вещь, предмет",
+     "en": "thing, object"
+    },
+    {
+     "hz": "牛",
+     "py": "niú",
+     "ru": "корова, бык",
+     "en": "cow, ox"
+    },
+    {
+     "hz": "食物",
+     "py": "shíwù",
+     "ru": "пища",
+     "en": "food"
+    },
+    {
+     "hz": "动物园",
+     "py": "dòngwùyuán",
+     "ru": "зоопарк",
+     "en": "zoo"
+    },
+    {
+     "hz": "礼物",
+     "py": "lǐwù",
+     "ru": "подарок",
+     "en": "gift"
+    },
+    {
+     "hz": "动物",
+     "py": "dòngwù",
+     "ru": "животное",
+     "en": "animal"
+    },
+    {
+     "hz": "植物",
+     "py": "zhíwù",
+     "ru": "растение",
+     "en": "plant"
+    },
+    {
+     "hz": "库",
+     "py": "kù",
+     "ru": "склад",
+     "en": "storehouse"
+    },
+    {
+     "hz": "仓库",
+     "py": "cāngkù",
+     "ru": "склад",
+     "en": "warehouse"
+    },
+    {
+     "hz": "车库",
+     "py": "chēkù",
+     "ru": "гараж",
+     "en": "garage"
+    },
+    {
+     "hz": "图库",
+     "py": "túkù",
+     "ru": "фотогалерея",
+     "en": "image library"
+    },
+    {
+     "hz": "哪里",
+     "py": "nǎlǐ",
+     "ru": "где",
+     "en": "where"
+    },
+    {
+     "hz": "庙",
+     "py": "miào",
+     "ru": "храм",
+     "en": "temple"
+    },
+    {
+     "hz": "政",
+     "py": "zhèng",
+     "ru": "управление, политика",
+     "en": "government; politics"
+    },
+    {
+     "hz": "府",
+     "py": "fǔ",
+     "ru": "правительственное здание",
+     "en": "government office"
+    },
+    {
+     "hz": "政府",
+     "py": "zhèngfǔ",
+     "ru": "правительство",
+     "en": "government"
+    },
+    {
+     "hz": "木",
+     "py": "mù",
+     "ru": "дерево, древесина",
+     "en": "wood"
+    },
+    {
+     "hz": "林",
+     "py": "lín",
+     "ru": "роща",
+     "en": "grove"
+    },
+    {
+     "hz": "森林",
+     "py": "sēnlín",
+     "ru": "лес",
+     "en": "forest"
+    },
+    {
+     "hz": "板",
+     "py": "bǎn",
+     "ru": "доска",
+     "en": "board"
+    },
+    {
+     "hz": "黑板",
+     "py": "hēibǎn",
+     "ru": "школьная доска",
+     "en": "blackboard"
+    },
+    {
+     "hz": "地板",
+     "py": "dìbǎn",
+     "ru": "пол",
+     "en": "floor"
+    },
+    {
+     "hz": "干净",
+     "py": "gānjìng",
+     "ru": "чистый",
+     "en": "clean"
+    },
+    {
+     "hz": "树",
+     "py": "shù",
+     "ru": "дерево",
+     "en": "tree"
+    },
+    {
+     "hz": "苹果树",
+     "py": "píngguǒ shù",
+     "ru": "яблоня",
+     "en": "apple tree"
+    },
+    {
+     "hz": "杯子",
+     "py": "bēizi",
+     "ru": "стакан",
+     "en": "cup, glass"
+    },
+    {
+     "hz": "桌子",
+     "py": "zhuōzi",
+     "ru": "стол",
+     "en": "table"
+    },
+    {
+     "hz": "柜子",
+     "py": "guìzi",
+     "ru": "шкаф, комод",
+     "en": "cabinet"
+    },
+    {
+     "hz": "书柜",
+     "py": "shūguì",
+     "ru": "книжный шкаф",
+     "en": "bookcase"
+    },
+    {
+     "hz": "衣柜",
+     "py": "yīguì",
+     "ru": "платяной шкаф",
+     "en": "wardrobe"
+    },
+    {
+     "hz": "竹",
+     "py": "zhú",
+     "ru": "бамбук",
+     "en": "bamboo"
+    },
+    {
+     "hz": "寺",
+     "py": "sì",
+     "ru": "храм",
+     "en": "temple"
+    },
+    {
+     "hz": "等",
+     "py": "děng",
+     "ru": "ждать; и т.д.",
+     "en": "wait; etc."
+    },
+    {
+     "hz": "等一下",
+     "py": "děng yíxià",
+     "ru": "подожди минутку",
+     "en": "wait a moment"
+    },
+    {
+     "hz": "第",
+     "py": "dì",
+     "ru": "(порядковый префикс)",
+     "en": "(ordinal prefix)"
+    },
+    {
+     "hz": "第四",
+     "py": "dì sì",
+     "ru": "четвёртый",
+     "en": "fourth"
+    },
+    {
+     "hz": "弟弟",
+     "py": "dìdi",
+     "ru": "младший брат",
+     "en": "younger brother"
+    },
+    {
+     "hz": "笔",
+     "py": "bǐ",
+     "ru": "ручка, карандаш",
+     "en": "pen, pencil"
+    },
+    {
+     "hz": "毛",
+     "py": "máo",
+     "ru": "перо, шерсть",
+     "en": "feather; fur"
+    },
+    {
+     "hz": "箱子",
+     "py": "xiāngzi",
+     "ru": "коробка, ящик",
+     "en": "box"
+    },
+    {
+     "hz": "行李箱",
+     "py": "xínglixiāng",
+     "ru": "чемодан",
+     "en": "suitcase"
+    },
+    {
+     "hz": "行李",
+     "py": "xíngli",
+     "ru": "багаж",
+     "en": "luggage"
+    },
+    {
+     "hz": "休息",
+     "py": "xiūxi",
+     "ru": "отдыхать",
+     "en": "rest"
+    },
+    {
+     "hz": "伙伴",
+     "py": "huǒbàn",
+     "ru": "товарищ, партнёр",
+     "en": "partner, companion"
+    },
+    {
+     "hz": "陪",
+     "py": "péi",
+     "ru": "сопровождать",
+     "en": "accompany"
+    },
+    {
+     "hz": "陪伴",
+     "py": "péibàn",
+     "ru": "быть рядом, сопровождать",
+     "en": "keep company"
+    },
+    {
+     "hz": "狗",
+     "py": "gǒu",
+     "ru": "собака",
+     "en": "dog"
+    },
+    {
+     "hz": "老人",
+     "py": "lǎorén",
+     "ru": "пожилой человек",
+     "en": "elderly person"
+    },
+    {
+     "hz": "街道",
+     "py": "jiēdào",
+     "ru": "улица",
+     "en": "street"
+    },
+    {
+     "hz": "道",
+     "py": "dào",
+     "ru": "путь, дорога",
+     "en": "way, road"
+    },
+    {
+     "hz": "得",
+     "py": "děi",
+     "ru": "должен",
+     "en": "must"
+    },
+    {
+     "hz": "汉字",
+     "py": "Hànzì",
+     "ru": "китайский иероглиф",
+     "en": "Chinese character"
+    },
+    {
+     "hz": "字",
+     "py": "zì",
+     "ru": "иероглиф, знак",
+     "en": "character"
+    },
+    {
+     "hz": "姐姐",
+     "py": "jiějie",
+     "ru": "старшая сестра",
+     "en": "older sister"
+    },
+    {
+     "hz": "妹妹",
+     "py": "mèimei",
+     "ru": "младшая сестра",
+     "en": "younger sister"
+    },
+    {
+     "hz": "哥哥",
+     "py": "gēge",
+     "ru": "старший брат",
+     "en": "older brother"
+    },
+    {
+     "hz": "婚",
+     "py": "hūn",
+     "ru": "свадьба, брак",
+     "en": "marriage"
+    },
+    {
+     "hz": "婚礼",
+     "py": "hūnlǐ",
+     "ru": "свадебная церемония",
+     "en": "wedding"
+    },
+    {
+     "hz": "昏",
+     "py": "hūn",
+     "ru": "сумерки",
+     "en": "dusk"
+    },
+    {
+     "hz": "贵姓",
+     "py": "guìxìng",
+     "ru": "ваша фамилия (вежл.)",
+     "en": "your surname (polite)"
+    },
+    {
+     "hz": "家",
+     "py": "jiā",
+     "ru": "дом, семья",
+     "en": "home, family"
+    },
+    {
+     "hz": "猪",
+     "py": "zhū",
+     "ru": "свинья",
+     "en": "pig"
+    },
+    {
+     "hz": "猫",
+     "py": "māo",
+     "ru": "кошка",
+     "en": "cat"
+    },
+    {
+     "hz": "安静",
+     "py": "ānjìng",
+     "ru": "тихий",
+     "en": "quiet"
+    },
+    {
+     "hz": "冷静",
+     "py": "lěngjìng",
+     "ru": "хладнокровный, спокойный",
+     "en": "calm"
+    },
+    {
+     "hz": "晚",
+     "py": "wǎn",
+     "ru": "вечер; поздно",
+     "en": "evening; late"
+    },
+    {
+     "hz": "晚安",
+     "py": "wǎn'ān",
+     "ru": "спокойной ночи",
+     "en": "good night"
+    },
+    {
+     "hz": "今晚",
+     "py": "jīnwǎn",
+     "ru": "сегодня вечером",
+     "en": "tonight"
+    },
+    {
+     "hz": "太",
+     "py": "tài",
+     "ru": "слишком",
+     "en": "too"
+    },
+    {
+     "hz": "客厅",
+     "py": "kètīng",
+     "ru": "гостиная",
+     "en": "living room"
+    },
+    {
+     "hz": "客人",
+     "py": "kèrén",
+     "ru": "гость",
+     "en": "guest"
+    },
+    {
+     "hz": "顾",
+     "py": "gù",
+     "ru": "заботиться",
+     "en": "look after"
+    },
+    {
+     "hz": "顾客",
+     "py": "gùkè",
+     "ru": "клиент",
+     "en": "customer"
+    },
+    {
+     "hz": "餐",
+     "py": "cān",
+     "ru": "еда, трапеза",
+     "en": "meal"
+    },
+    {
+     "hz": "餐厅",
+     "py": "cāntīng",
+     "ru": "столовая, ресторан",
+     "en": "canteen, restaurant"
+    },
+    {
+     "hz": "早餐",
+     "py": "zǎocān",
+     "ru": "завтрак",
+     "en": "breakfast"
+    },
+    {
+     "hz": "晚餐",
+     "py": "wǎncān",
+     "ru": "ужин",
+     "en": "dinner"
+    },
+    {
+     "hz": "宿舍",
+     "py": "sùshè",
+     "ru": "общежитие",
+     "en": "dormitory"
+    },
+    {
+     "hz": "花",
+     "py": "huā",
+     "ru": "цветок; тратить",
+     "en": "flower; spend"
+    },
+    {
+     "hz": "花园",
+     "py": "huāyuán",
+     "ru": "сад",
+     "en": "garden"
+    },
+    {
+     "hz": "花生",
+     "py": "huāshēng",
+     "ru": "арахис",
+     "en": "peanut"
+    },
+    {
+     "hz": "药",
+     "py": "yào",
+     "ru": "лекарство",
+     "en": "medicine"
+    },
+    {
+     "hz": "吃药",
+     "py": "chī yào",
+     "ru": "принимать лекарство",
+     "en": "take medicine"
+    },
+    {
+     "hz": "药店",
+     "py": "yàodiàn",
+     "ru": "аптека",
+     "en": "pharmacy"
+    },
+    {
+     "hz": "草",
+     "py": "cǎo",
+     "ru": "трава",
+     "en": "grass"
+    },
+    {
+     "hz": "葡萄",
+     "py": "pútao",
+     "ru": "виноград",
+     "en": "grape"
+    }
+   ],
+   "sentences": [
+    {
+     "zh": "车库在哪里？",
+     "py": "Chēkù zài nǎlǐ?",
+     "ru": "Где гараж?",
+     "en": "Where is the garage?"
+    },
+    {
+     "zh": "地板很干净。",
+     "py": "Dìbǎn hěn gānjìng.",
+     "ru": "Пол очень чистый.",
+     "en": "The floor is very clean."
+    },
+    {
+     "zh": "请给我一杯水。",
+     "py": "Qǐng gěi wǒ yì bēi shuǐ.",
+     "ru": "Дайте мне, пожалуйста, стакан воды.",
+     "en": "Please give me a glass of water."
+    },
+    {
+     "zh": "我想休息一下。",
+     "py": "Wǒ xiǎng xiūxi yíxià.",
+     "ru": "Я хочу немного отдохнуть.",
+     "en": "I want to rest a bit."
+    },
+    {
+     "zh": "狗可以陪伴老人。",
+     "py": "Gǒu kěyǐ péibàn lǎorén.",
+     "ru": "Собака может быть компаньоном для пожилых.",
+     "en": "Dogs can keep the elderly company."
+    },
+    {
+     "zh": "我得走了。",
+     "py": "Wǒ děi zǒu le.",
+     "ru": "Мне пора идти.",
+     "en": "I have to go."
+    },
+    {
+     "zh": "你得学中文。",
+     "py": "Nǐ děi xué Zhōngwén.",
+     "ru": "Тебе надо учить китайский.",
+     "en": "You must learn Chinese."
+    },
+    {
+     "zh": "请问您贵姓？",
+     "py": "Qǐngwèn nín guìxìng?",
+     "ru": "Как ваша фамилия?",
+     "en": "May I ask your surname?"
+    },
+    {
+     "zh": "今晚我不要太晚睡。",
+     "py": "Jīnwǎn wǒ bú yào tài wǎn shuì.",
+     "ru": "Сегодня я не лягу слишком поздно.",
+     "en": "Tonight I won't go to bed too late."
+    },
+    {
+     "zh": "家里来了客人。",
+     "py": "Jiāli lái le kèrén.",
+     "ru": "К нам домой пришли гости.",
+     "en": "Guests came to our home."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "page": "A-08",
+   "date": "2025-11-28",
+   "words": [
+    {
+     "hz": "香",
+     "py": "xiāng",
+     "ru": "ароматный",
+     "en": "fragrant"
+    },
+    {
+     "hz": "香水",
+     "py": "xiāngshuǐ",
+     "ru": "духи",
+     "en": "perfume"
+    },
+    {
+     "hz": "香蕉",
+     "py": "xiāngjiāo",
+     "ru": "банан",
+     "en": "banana"
+    },
+    {
+     "hz": "河",
+     "py": "hé",
+     "ru": "река",
+     "en": "river"
+    },
+    {
+     "hz": "海",
+     "py": "hǎi",
+     "ru": "море",
+     "en": "sea"
+    },
+    {
+     "hz": "海洋",
+     "py": "hǎiyáng",
+     "ru": "океан",
+     "en": "ocean"
+    },
+    {
+     "hz": "活",
+     "py": "huó",
+     "ru": "живой; жить",
+     "en": "alive; live"
+    },
+    {
+     "hz": "鱼",
+     "py": "yú",
+     "ru": "рыба",
+     "en": "fish"
+    },
+    {
+     "hz": "活动",
+     "py": "huódòng",
+     "ru": "мероприятие, активность",
+     "en": "activity, event"
+    },
+    {
+     "hz": "婉",
+     "py": "wǎn",
+     "ru": "мягкий, изящный",
+     "en": "gentle, graceful"
+    },
+    {
+     "hz": "坏",
+     "py": "huài",
+     "ru": "плохой; испортиться",
+     "en": "bad; broken"
+    },
+    {
+     "hz": "菜",
+     "py": "cài",
+     "ru": "блюдо; овощи",
+     "en": "dish; vegetable"
+    },
+    {
+     "hz": "骑自行车",
+     "py": "qí zìxíngchē",
+     "ru": "ехать на велосипеде",
+     "en": "ride a bike"
+    },
+    {
+     "hz": "上班",
+     "py": "shàngbān",
+     "ru": "идти на работу; быть на работе",
+     "en": "go to work"
+    },
+    {
+     "hz": "下班",
+     "py": "xiàbān",
+     "ru": "заканчивать работу",
+     "en": "get off work"
+    },
+    {
+     "hz": "对话",
+     "py": "duìhuà",
+     "ru": "диалог",
+     "en": "dialogue"
+    },
+    {
+     "hz": "下面",
+     "py": "xiàmiàn",
+     "ru": "следующий; внизу",
+     "en": "following; below"
+    },
+    {
+     "hz": "听",
+     "py": "tīng",
+     "ru": "слушать",
+     "en": "listen"
+    },
+    {
+     "hz": "音乐",
+     "py": "yīnyuè",
+     "ru": "музыка",
+     "en": "music"
+    },
+    {
+     "hz": "听懂",
+     "py": "tīngdǒng",
+     "ru": "понять на слух",
+     "en": "understand (by listening)"
+    },
+    {
+     "hz": "二话不说",
+     "py": "èrhuà bù shuō",
+     "ru": "без лишних слов",
+     "en": "without a word"
+    },
+    {
+     "hz": "兔子",
+     "py": "tùzi",
+     "ru": "кролик",
+     "en": "rabbit"
+    },
+    {
+     "hz": "那儿",
+     "py": "nàr",
+     "ru": "там",
+     "en": "there"
+    },
+    {
+     "hz": "哪儿",
+     "py": "nǎr",
+     "ru": "где",
+     "en": "where"
+    },
+    {
+     "hz": "事儿",
+     "py": "shìr",
+     "ru": "дело",
+     "en": "matter"
+    },
+    {
+     "hz": "点儿",
+     "py": "diǎnr",
+     "ru": "немного",
+     "en": "a little"
+    },
+    {
+     "hz": "累",
+     "py": "lèi",
+     "ru": "уставший",
+     "en": "tired"
+    },
+    {
+     "hz": "几点",
+     "py": "jǐ diǎn",
+     "ru": "который час, во сколько",
+     "en": "what time"
+    },
+    {
+     "hz": "起床",
+     "py": "qǐchuáng",
+     "ru": "вставать (с постели)",
+     "en": "get up"
+    },
+    {
+     "hz": "多大",
+     "py": "duō dà",
+     "ru": "сколько лет",
+     "en": "how old"
+    },
+    {
+     "hz": "岁",
+     "py": "suì",
+     "ru": "год (возраста)",
+     "en": "years old"
+    },
+    {
+     "hz": "时候",
+     "py": "shíhou",
+     "ru": "время, когда",
+     "en": "time, when"
+    },
+    {
+     "hz": "什么时候",
+     "py": "shénme shíhou",
+     "ru": "когда?",
+     "en": "when?"
+    },
+    {
+     "hz": "咖啡",
+     "py": "kāfēi",
+     "ru": "кофе",
+     "en": "coffee"
+    },
+    {
+     "hz": "游泳",
+     "py": "yóuyǒng",
+     "ru": "плавать",
+     "en": "swim"
+    },
+    {
+     "hz": "有时候",
+     "py": "yǒu shíhou",
+     "ru": "иногда",
+     "en": "sometimes"
+    },
+    {
+     "hz": "意思",
+     "py": "yìsi",
+     "ru": "смысл",
+     "en": "meaning"
+    },
+    {
+     "hz": "什么样",
+     "py": "shénmeyàng",
+     "ru": "какой, какого типа",
+     "en": "what kind"
+    },
+    {
+     "hz": "男生",
+     "py": "nánshēng",
+     "ru": "парень",
+     "en": "guy, boy"
+    },
+    {
+     "hz": "知道",
+     "py": "zhīdào",
+     "ru": "знать",
+     "en": "know"
+    },
+    {
+     "hz": "怎么样",
+     "py": "zěnmeyàng",
+     "ru": "как? каков?",
+     "en": "how about; how is it"
+    },
+    {
+     "hz": "电影",
+     "py": "diànyǐng",
+     "ru": "фильм",
+     "en": "movie"
+    },
+    {
+     "hz": "九月",
+     "py": "jiǔyuè",
+     "ru": "сентябрь",
+     "en": "September"
+    },
+    {
+     "hz": "几",
+     "py": "jǐ",
+     "ru": "несколько; сколько",
+     "en": "several; how many"
+    },
+    {
+     "hz": "回来",
+     "py": "huílai",
+     "ru": "вернуться",
+     "en": "come back"
+    },
+    {
+     "hz": "左边",
+     "py": "zuǒbian",
+     "ru": "левая сторона, слева",
+     "en": "left side"
+    },
+    {
+     "hz": "学校",
+     "py": "xuéxiào",
+     "ru": "школа",
+     "en": "school"
+    },
+    {
+     "hz": "右边",
+     "py": "yòubian",
+     "ru": "правая сторона",
+     "en": "right side"
+    },
+    {
+     "hz": "手机",
+     "py": "shǒujī",
+     "ru": "мобильный телефон",
+     "en": "mobile phone"
+    },
+    {
+     "hz": "颜色",
+     "py": "yánsè",
+     "ru": "цвет",
+     "en": "color"
+    },
+    {
+     "hz": "冬天",
+     "py": "dōngtiān",
+     "ru": "зима",
+     "en": "winter"
+    },
+    {
+     "hz": "春天",
+     "py": "chūntiān",
+     "ru": "весна",
+     "en": "spring"
+    },
+    {
+     "hz": "夏天",
+     "py": "xiàtiān",
+     "ru": "лето",
+     "en": "summer"
+    },
+    {
+     "hz": "秋天",
+     "py": "qiūtiān",
+     "ru": "осень",
+     "en": "autumn"
+    },
+    {
+     "hz": "季节",
+     "py": "jìjié",
+     "ru": "время года",
+     "en": "season"
+    },
+    {
+     "hz": "季",
+     "py": "jì",
+     "ru": "сезон",
+     "en": "season"
+    },
+    {
+     "hz": "禾",
+     "py": "hé",
+     "ru": "зерно, злаки",
+     "en": "grain"
+    },
+    {
+     "hz": "春季",
+     "py": "chūnjì",
+     "ru": "весенний сезон",
+     "en": "spring season"
+    },
+    {
+     "hz": "夏季",
+     "py": "xiàjì",
+     "ru": "летний сезон",
+     "en": "summer season"
+    },
+    {
+     "hz": "冬季",
+     "py": "dōngjì",
+     "ru": "зимний сезон",
+     "en": "winter season"
+    },
+    {
+     "hz": "四季",
+     "py": "sìjì",
+     "ru": "четыре сезона",
+     "en": "four seasons"
+    },
+    {
+     "hz": "气候",
+     "py": "qìhòu",
+     "ru": "климат",
+     "en": "climate"
+    },
+    {
+     "hz": "春节",
+     "py": "Chūnjié",
+     "ru": "Китайский Новый год",
+     "en": "Spring Festival"
+    },
+    {
+     "hz": "复",
+     "py": "fù",
+     "ru": "повторять",
+     "en": "repeat"
+    },
+    {
+     "hz": "雨伞",
+     "py": "yǔsǎn",
+     "ru": "зонтик",
+     "en": "umbrella"
+    },
+    {
+     "hz": "打伞",
+     "py": "dǎ sǎn",
+     "ru": "раскрыть зонт",
+     "en": "open an umbrella"
+    },
+    {
+     "hz": "雨",
+     "py": "yǔ",
+     "ru": "дождь",
+     "en": "rain"
+    },
+    {
+     "hz": "门",
+     "py": "mén",
+     "ru": "дверь",
+     "en": "door"
+    },
+    {
+     "hz": "门票",
+     "py": "ménpiào",
+     "ru": "входной билет",
+     "en": "admission ticket"
+    },
+    {
+     "hz": "飞",
+     "py": "fēi",
+     "ru": "летать",
+     "en": "fly"
+    },
+    {
+     "hz": "飞行",
+     "py": "fēixíng",
+     "ru": "полёт",
+     "en": "flight"
+    },
+    {
+     "hz": "飞机",
+     "py": "fēijī",
+     "ru": "самолёт",
+     "en": "airplane"
+    },
+    {
+     "hz": "飞行员",
+     "py": "fēixíngyuán",
+     "ru": "пилот",
+     "en": "pilot"
+    },
+    {
+     "hz": "坐",
+     "py": "zuò",
+     "ru": "сидеть",
+     "en": "sit"
+    },
+    {
+     "hz": "立",
+     "py": "lì",
+     "ru": "стоять",
+     "en": "stand"
+    },
+    {
+     "hz": "站立",
+     "py": "zhànlì",
+     "ru": "стоять",
+     "en": "stand"
+    },
+    {
+     "hz": "直立",
+     "py": "zhílì",
+     "ru": "стоять прямо",
+     "en": "stand upright"
+    },
+    {
+     "hz": "许多",
+     "py": "xǔduō",
+     "ru": "очень много",
+     "en": "many"
+    },
+    {
+     "hz": "多久",
+     "py": "duōjiǔ",
+     "ru": "как долго",
+     "en": "how long"
+    },
+    {
+     "hz": "久",
+     "py": "jiǔ",
+     "ru": "долго",
+     "en": "long (time)"
+    },
+    {
+     "hz": "汉语",
+     "py": "Hànyǔ",
+     "ru": "китайский язык",
+     "en": "Chinese language"
+    },
+    {
+     "hz": "语",
+     "py": "yǔ",
+     "ru": "язык, речь",
+     "en": "language"
+    },
+    {
+     "hz": "德国",
+     "py": "Déguó",
+     "ru": "Германия",
+     "en": "Germany"
+    },
+    {
+     "hz": "关门",
+     "py": "guānmén",
+     "ru": "закрыть дверь; закрыться",
+     "en": "close (a door/shop)"
+    },
+    {
+     "hz": "关灯",
+     "py": "guān dēng",
+     "ru": "выключить свет",
+     "en": "turn off the light"
+    },
+    {
+     "hz": "开",
+     "py": "kāi",
+     "ru": "открывать",
+     "en": "open"
+    },
+    {
+     "hz": "开窗",
+     "py": "kāi chuāng",
+     "ru": "открыть окно",
+     "en": "open the window"
+    },
+    {
+     "hz": "开学",
+     "py": "kāixué",
+     "ru": "начало учебного года",
+     "en": "school starts"
+    },
+    {
+     "hz": "外",
+     "py": "wài",
+     "ru": "вне, снаружи",
+     "en": "outside"
+    },
+    {
+     "hz": "国外",
+     "py": "guówài",
+     "ru": "за границей",
+     "en": "abroad"
+    },
+    {
+     "hz": "外语",
+     "py": "wàiyǔ",
+     "ru": "иностранный язык",
+     "en": "foreign language"
+    },
+    {
+     "hz": "外卖",
+     "py": "wàimài",
+     "ru": "доставка еды",
+     "en": "food delivery"
+    },
+    {
+     "hz": "外面",
+     "py": "wàimiàn",
+     "ru": "снаружи",
+     "en": "outside"
+    },
+    {
+     "hz": "下雨",
+     "py": "xià yǔ",
+     "ru": "идёт дождь",
+     "en": "rain"
+    }
+   ],
+   "sentences": [
+    {
+     "zh": "这个人很坏。",
+     "py": "Zhège rén hěn huài.",
+     "ru": "Этот человек очень плохой.",
+     "en": "This person is very bad."
+    },
+    {
+     "zh": "我的车坏了。",
+     "py": "Wǒ de chē huài le.",
+     "ru": "Моя машина сломалась.",
+     "en": "My car broke down."
+    },
+    {
+     "zh": "他六点下班。",
+     "py": "Tā liù diǎn xiàbān.",
+     "ru": "Он заканчивает работу в шесть.",
+     "en": "He gets off work at six."
+    },
+    {
+     "zh": "你听懂了吗？",
+     "py": "Nǐ tīngdǒng le ma?",
+     "ru": "Ты понял?",
+     "en": "Did you understand?"
+    },
+    {
+     "zh": "我有点儿累。",
+     "py": "Wǒ yǒudiǎnr lèi.",
+     "ru": "Я немного устал.",
+     "en": "I'm a bit tired."
+    },
+    {
+     "zh": "我七点多起床。",
+     "py": "Wǒ qī diǎn duō qǐchuáng.",
+     "ru": "Я встаю в начале восьмого.",
+     "en": "I get up a bit after seven."
+    },
+    {
+     "zh": "你几岁了？",
+     "py": "Nǐ jǐ suì le?",
+     "ru": "Сколько тебе лет?",
+     "en": "How old are you?"
+    },
+    {
+     "zh": "我喝咖啡的时候，妈妈进来了。",
+     "py": "Wǒ hē kāfēi de shíhou, māma jìnlai le.",
+     "ru": "Когда я пила кофе, вошла мама.",
+     "en": "When I was drinking coffee, mom came in."
+    },
+    {
+     "zh": "你想吃什么样的蛋糕？",
+     "py": "Nǐ xiǎng chī shénmeyàng de dàngāo?",
+     "ru": "Какой торт ты хочешь?",
+     "en": "What kind of cake do you want?"
+    },
+    {
+     "zh": "你喜欢什么样的男生？",
+     "py": "Nǐ xǐhuan shénmeyàng de nánshēng?",
+     "ru": "Какие парни тебе нравятся?",
+     "en": "What kind of guys do you like?"
+    },
+    {
+     "zh": "这个电影怎么样？",
+     "py": "Zhège diànyǐng zěnmeyàng?",
+     "ru": "Как тебе этот фильм?",
+     "en": "How is this movie?"
+    },
+    {
+     "zh": "我有几个问题。",
+     "py": "Wǒ yǒu jǐ ge wèntí.",
+     "ru": "У меня есть несколько вопросов.",
+     "en": "I have a few questions."
+    },
+    {
+     "zh": "你的学校在我家左边。",
+     "py": "Nǐ de xuéxiào zài wǒ jiā zuǒbian.",
+     "ru": "Твоя школа слева от моего дома.",
+     "en": "Your school is to the left of my home."
+    },
+    {
+     "zh": "你最喜欢哪个季节？",
+     "py": "Nǐ zuì xǐhuan nǎge jìjié?",
+     "ru": "Какое время года тебе нравится больше всего?",
+     "en": "Which season do you like best?"
+    },
+    {
+     "zh": "北京的冬季很冷。",
+     "py": "Běijīng de dōngjì hěn lěng.",
+     "ru": "Зима в Пекине очень холодная.",
+     "en": "Winter in Beijing is very cold."
+    },
+    {
+     "zh": "这里有许多书。",
+     "py": "Zhèlǐ yǒu xǔduō shū.",
+     "ru": "Здесь много книг.",
+     "en": "There are many books here."
+    },
+    {
+     "zh": "你学习汉语多久了？",
+     "py": "Nǐ xuéxí Hànyǔ duōjiǔ le?",
+     "ru": "Как долго ты учишь китайский?",
+     "en": "How long have you studied Chinese?"
+    },
+    {
+     "zh": "商店关门了。",
+     "py": "Shāngdiàn guānmén le.",
+     "ru": "Магазин закрылся.",
+     "en": "The shop is closed."
+    },
+    {
+     "zh": "外面下雨。",
+     "py": "Wàimiàn xià yǔ.",
+     "ru": "На улице идёт дождь.",
+     "en": "It's raining outside."
+    },
+    {
+     "zh": "出去外面走走。",
+     "py": "Chūqu wàimiàn zǒuzou.",
+     "ru": "Выйти прогуляться.",
+     "en": "Go out for a walk."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "page": "A-10",
+   "date": "2025-12-03",
+   "words": [
+    {
+     "hz": "唱",
+     "py": "chàng",
+     "ru": "петь",
+     "en": "sing"
+    },
+    {
+     "hz": "开心",
+     "py": "kāixīn",
+     "ru": "радостный (разг.)",
+     "en": "happy"
+    },
+    {
+     "hz": "以后",
+     "py": "yǐhòu",
+     "ru": "после; в будущем",
+     "en": "after; later"
+    },
+    {
+     "hz": "快乐",
+     "py": "kuàilè",
+     "ru": "счастливый, радость",
+     "en": "happy"
+    },
+    {
+     "hz": "生日快乐",
+     "py": "shēngrì kuàilè",
+     "ru": "с днём рождения",
+     "en": "happy birthday"
+    },
+    {
+     "hz": "祝",
+     "py": "zhù",
+     "ru": "желать",
+     "en": "wish"
+    },
+    {
+     "hz": "长",
+     "py": "zhǎng",
+     "ru": "расти; старший",
+     "en": "grow; elder"
+    },
+    {
+     "hz": "长高",
+     "py": "zhǎng gāo",
+     "ru": "вырасти",
+     "en": "grow taller"
+    },
+    {
+     "hz": "羊",
+     "py": "yáng",
+     "ru": "овца",
+     "en": "sheep"
+    },
+    {
+     "hz": "牛肉",
+     "py": "niúròu",
+     "ru": "говядина",
+     "en": "beef"
+    },
+    {
+     "hz": "头",
+     "py": "tóu",
+     "ru": "голова; (счётное для скота)",
+     "en": "head; (measure word for livestock)"
+    },
+    {
+     "hz": "但是",
+     "py": "dànshì",
+     "ru": "но",
+     "en": "but"
+    },
+    {
+     "hz": "可是",
+     "py": "kěshì",
+     "ru": "но (эмоц.)",
+     "en": "but"
+    },
+    {
+     "hz": "时间",
+     "py": "shíjiān",
+     "ru": "время",
+     "en": "time"
+    },
+    {
+     "hz": "不过",
+     "py": "búguò",
+     "ru": "однако (мягко)",
+     "en": "however"
+    },
+    {
+     "hz": "然而",
+     "py": "rán'ér",
+     "ru": "однако (форм.)",
+     "en": "however (formal)"
+    },
+    {
+     "hz": "然后",
+     "py": "ránhòu",
+     "ru": "потом, затем",
+     "en": "then, afterwards"
+    },
+    {
+     "hz": "学习",
+     "py": "xuéxí",
+     "ru": "учиться",
+     "en": "study"
+    },
+    {
+     "hz": "已经",
+     "py": "yǐjīng",
+     "ru": "уже",
+     "en": "already"
+    },
+    {
+     "hz": "想到",
+     "py": "xiǎngdào",
+     "ru": "додуматься, представить",
+     "en": "think of"
+    },
+    {
+     "hz": "没想到",
+     "py": "méi xiǎngdào",
+     "ru": "неожиданно, не ожидал",
+     "en": "didn't expect"
+    },
+    {
+     "hz": "听到",
+     "py": "tīngdào",
+     "ru": "услышать",
+     "en": "hear"
+    },
+    {
+     "hz": "听完",
+     "py": "tīngwán",
+     "ru": "дослушать",
+     "en": "finish listening"
+    },
+    {
+     "hz": "跳",
+     "py": "tiào",
+     "ru": "прыгать",
+     "en": "jump"
+    },
+    {
+     "hz": "跳舞",
+     "py": "tiàowǔ",
+     "ru": "танцевать",
+     "en": "dance"
+    },
+    {
+     "hz": "不怎么样",
+     "py": "bù zěnmeyàng",
+     "ru": "так себе",
+     "en": "not great"
+    },
+    {
+     "hz": "睡觉",
+     "py": "shuìjiào",
+     "ru": "спать",
+     "en": "sleep"
+    },
+    {
+     "hz": "听说",
+     "py": "tīngshuō",
+     "ru": "говорят, я слышал",
+     "en": "I heard that"
+    },
+    {
+     "hz": "教室",
+     "py": "jiàoshì",
+     "ru": "класс (комната)",
+     "en": "classroom"
+    },
+    {
+     "hz": "教",
+     "py": "jiāo",
+     "ru": "учить, преподавать",
+     "en": "teach"
+    },
+    {
+     "hz": "室",
+     "py": "shì",
+     "ru": "комната",
+     "en": "room"
+    },
+    {
+     "hz": "吧",
+     "py": "ba",
+     "ru": "давай; (частица предложения)",
+     "en": "let's; (suggestion particle)"
+    },
+    {
+     "hz": "买",
+     "py": "mǎi",
+     "ru": "покупать",
+     "en": "buy"
+    },
+    {
+     "hz": "卖",
+     "py": "mài",
+     "ru": "продавать",
+     "en": "sell"
+    },
+    {
+     "hz": "实",
+     "py": "shí",
+     "ru": "настоящий",
+     "en": "real"
+    },
+    {
+     "hz": "事实",
+     "py": "shìshí",
+     "ru": "факт",
+     "en": "fact"
+    },
+    {
+     "hz": "实话",
+     "py": "shíhuà",
+     "ru": "правда",
+     "en": "truth"
+    }
+   ],
+   "sentences": [
+    {
+     "zh": "他唱得很好。",
+     "py": "Tā chàng de hěn hǎo.",
+     "ru": "Он хорошо поёт.",
+     "en": "He sings well."
+    },
+    {
+     "zh": "别笑我。",
+     "py": "Bié xiào wǒ.",
+     "ru": "Не смейся надо мной.",
+     "en": "Don't laugh at me."
+    },
+    {
+     "zh": "听到这个我就开心。",
+     "py": "Tīngdào zhège wǒ jiù kāixīn.",
+     "ru": "Мне радостно это слышать.",
+     "en": "I'm happy to hear this."
+    },
+    {
+     "zh": "他听了以后很高兴。",
+     "py": "Tā tīng le yǐhòu hěn gāoxìng.",
+     "ru": "Услышав это, он очень обрадовался.",
+     "en": "He was happy after hearing it."
+    },
+    {
+     "zh": "祝你每天都很快乐。",
+     "py": "Zhù nǐ měitiān dōu hěn kuàilè.",
+     "ru": "Желаю тебе счастья каждый день.",
+     "en": "Wishing you happiness every day."
+    },
+    {
+     "zh": "我想去，但是太累了。",
+     "py": "Wǒ xiǎng qù, dànshì tài lèi le.",
+     "ru": "Я хочу пойти, но слишком устала.",
+     "en": "I want to go, but I'm too tired."
+    },
+    {
+     "zh": "天气很冷，不过很好。",
+     "py": "Tiānqì hěn lěng, búguò hěn hǎo.",
+     "ru": "Холодно, но хорошо.",
+     "en": "It's cold, but nice."
+    },
+    {
+     "zh": "我吃饭，然后去学习。",
+     "py": "Wǒ chī fàn, ránhòu qù xuéxí.",
+     "ru": "Я поем, а потом пойду учиться.",
+     "en": "I'll eat, then go study."
+    },
+    {
+     "zh": "我以后想去中国。",
+     "py": "Wǒ yǐhòu xiǎng qù Zhōngguó.",
+     "ru": "В будущем я хочу поехать в Китай.",
+     "en": "I want to go to China in the future."
+    },
+    {
+     "zh": "他已经吃了。",
+     "py": "Tā yǐjīng chī le.",
+     "ru": "Он уже поел.",
+     "en": "He has already eaten."
+    },
+    {
+     "zh": "没想到你来了。",
+     "py": "Méi xiǎngdào nǐ lái le.",
+     "ru": "Не ожидал, что ты придёшь.",
+     "en": "I didn't expect you to come."
+    },
+    {
+     "zh": "教室里有很多学生。",
+     "py": "Jiàoshì li yǒu hěn duō xuésheng.",
+     "ru": "В классе много учеников.",
+     "en": "There are many students in the classroom."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "page": "A-11",
+   "date": "2025-12-06",
+   "words": [
+    {
+     "hz": "男",
+     "py": "nán",
+     "ru": "мужчина",
+     "en": "male"
+    },
+    {
+     "hz": "哪",
+     "py": "nǎ",
+     "ru": "какой",
+     "en": "which"
+    },
+    {
+     "hz": "舒服",
+     "py": "shūfu",
+     "ru": "удобный, комфортно",
+     "en": "comfortable"
+    },
+    {
+     "hz": "热",
+     "py": "rè",
+     "ru": "горячий",
+     "en": "hot"
+    },
+    {
+     "hz": "难",
+     "py": "nán",
+     "ru": "трудный",
+     "en": "difficult"
+    },
+    {
+     "hz": "有意思",
+     "py": "yǒu yìsi",
+     "ru": "интересно",
+     "en": "interesting"
+    },
+    {
+     "hz": "没有意思",
+     "py": "méiyǒu yìsi",
+     "ru": "неинтересно",
+     "en": "boring"
+    },
+    {
+     "hz": "公司",
+     "py": "gōngsī",
+     "ru": "компания",
+     "en": "company"
+    },
+    {
+     "hz": "合适",
+     "py": "héshì",
+     "ru": "подходящий, уместный",
+     "en": "suitable"
+    },
+    {
+     "hz": "衣服",
+     "py": "yīfu",
+     "ru": "одежда",
+     "en": "clothes"
+    },
+    {
+     "hz": "会",
+     "py": "huì",
+     "ru": "уметь; будет",
+     "en": "can; will"
+    },
+    {
+     "hz": "服务",
+     "py": "fúwù",
+     "ru": "обслуживать, сервис",
+     "en": "serve; service"
+    },
+    {
+     "hz": "练习",
+     "py": "liànxí",
+     "ru": "практиковать",
+     "en": "practice"
+    },
+    {
+     "hz": "生气",
+     "py": "shēngqì",
+     "ru": "злиться",
+     "en": "get angry"
+    },
+    {
+     "hz": "因为",
+     "py": "yīnwèi",
+     "ru": "потому что",
+     "en": "because"
+    },
+    {
+     "hz": "切",
+     "py": "qiē",
+     "ru": "резать",
+     "en": "cut"
+    },
+    {
+     "hz": "身体",
+     "py": "shēntǐ",
+     "ru": "тело, здоровье",
+     "en": "body; health"
+    },
+    {
+     "hz": "跟",
+     "py": "gēn",
+     "ru": "с",
+     "en": "with"
+    },
+    {
+     "hz": "容易",
+     "py": "róngyì",
+     "ru": "лёгкий",
+     "en": "easy"
+    },
+    {
+     "hz": "看懂",
+     "py": "kàndǒng",
+     "ru": "понять (прочитав)",
+     "en": "understand (by reading)"
+    },
+    {
+     "hz": "换",
+     "py": "huàn",
+     "ru": "менять",
+     "en": "change"
+    },
+    {
+     "hz": "换钱",
+     "py": "huàn qián",
+     "ru": "обменять деньги",
+     "en": "exchange money"
+    },
+    {
+     "hz": "穿",
+     "py": "chuān",
+     "ru": "носить, надевать",
+     "en": "wear"
+    },
+    {
+     "hz": "试",
+     "py": "shì",
+     "ru": "пробовать, примерять",
+     "en": "try"
+    },
+    {
+     "hz": "试穿",
+     "py": "shìchuān",
+     "ru": "примерить",
+     "en": "try on"
+    },
+    {
+     "hz": "考试",
+     "py": "kǎoshì",
+     "ru": "экзамен",
+     "en": "exam"
+    },
+    {
+     "hz": "考大学",
+     "py": "kǎo dàxué",
+     "ru": "поступать в университет",
+     "en": "take the college entrance exam"
+    },
+    {
+     "hz": "生病",
+     "py": "shēngbìng",
+     "ru": "заболеть",
+     "en": "get sick"
+    },
+    {
+     "hz": "病",
+     "py": "bìng",
+     "ru": "болезнь",
+     "en": "illness"
+    },
+    {
+     "hz": "米",
+     "py": "mǐ",
+     "ru": "метр; рис",
+     "en": "meter; rice"
+    },
+    {
+     "hz": "这么",
+     "py": "zhème",
+     "ru": "так, настолько",
+     "en": "so, like this"
+    },
+    {
+     "hz": "那么",
+     "py": "nàme",
+     "ru": "тогда; так",
+     "en": "then; so"
+    },
+    {
+     "hz": "收",
+     "py": "shōu",
+     "ru": "получать, собирать",
+     "en": "receive, collect"
+    }
+   ],
+   "sentences": [
+    {
+     "zh": "喝了热茶以后很舒服。",
+     "py": "Hē le rè chá yǐhòu hěn shūfu.",
+     "ru": "После горячего чая очень хорошо.",
+     "en": "I feel good after drinking hot tea."
+    },
+    {
+     "zh": "这个电影很有意思。",
+     "py": "Zhège diànyǐng hěn yǒu yìsi.",
+     "ru": "Этот фильм очень интересный.",
+     "en": "This movie is very interesting."
+    },
+    {
+     "zh": "太贵了！",
+     "py": "Tài guì le!",
+     "ru": "Слишком дорого!",
+     "en": "Too expensive!"
+    },
+    {
+     "zh": "这件衣服很合适。",
+     "py": "Zhè jiàn yīfu hěn héshì.",
+     "ru": "Эта одежда очень подходит.",
+     "en": "These clothes fit well."
+    },
+    {
+     "zh": "这样说不合适。",
+     "py": "Zhèyàng shuō bù héshì.",
+     "ru": "Так говорить неуместно.",
+     "en": "It's not appropriate to say that."
+    },
+    {
+     "zh": "我每天练习中文。",
+     "py": "Wǒ měitiān liànxí Zhōngwén.",
+     "ru": "Я каждый день практикую китайский.",
+     "en": "I practice Chinese every day."
+    },
+    {
+     "zh": "他很容易生气。",
+     "py": "Tā hěn róngyì shēngqì.",
+     "ru": "Он легко злится.",
+     "en": "He gets angry easily."
+    },
+    {
+     "zh": "可以试穿吗？",
+     "py": "Kěyǐ shìchuān ma?",
+     "ru": "Можно примерить?",
+     "en": "Can I try it on?"
+    },
+    {
+     "zh": "他冬天容易生病。",
+     "py": "Tā dōngtiān róngyì shēngbìng.",
+     "ru": "Зимой он легко заболевает.",
+     "en": "He gets sick easily in winter."
+    },
+    {
+     "zh": "你怎么这么说？",
+     "py": "Nǐ zěnme zhème shuō?",
+     "ru": "Почему ты так говоришь?",
+     "en": "Why do you say that?"
+    },
+    {
+     "zh": "那么我们走吧。",
+     "py": "Nàme wǒmen zǒu ba.",
+     "ru": "Тогда пойдём.",
+     "en": "Then let's go."
+    },
+    {
+     "zh": "你多高？我一米七五。",
+     "py": "Nǐ duō gāo? Wǒ yì mǐ qī wǔ.",
+     "ru": "Какой у тебя рост? 1,75 м.",
+     "en": "How tall are you? 1.75 m."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "page": "A-12",
+   "date": "2026-01-14",
+   "words": [
+    {
+     "hz": "收到",
+     "py": "shōudào",
+     "ru": "получить",
+     "en": "receive"
+    },
+    {
+     "hz": "过",
+     "py": "guò",
+     "ru": "(опыт: V+过); переходить; праздновать",
+     "en": "(experience marker); cross; celebrate"
+    },
+    {
+     "hz": "过马路",
+     "py": "guò mǎlù",
+     "ru": "переходить дорогу",
+     "en": "cross the road"
+    },
+    {
+     "hz": "马路",
+     "py": "mǎlù",
+     "ru": "дорога, улица",
+     "en": "road"
+    },
+    {
+     "hz": "过年",
+     "py": "guònián",
+     "ru": "отмечать Новый год",
+     "en": "celebrate New Year"
+    },
+    {
+     "hz": "朵",
+     "py": "duǒ",
+     "ru": "(счётное для цветов, облаков)",
+     "en": "(measure word for flowers, clouds)"
+    },
+    {
+     "hz": "云",
+     "py": "yún",
+     "ru": "облако",
+     "en": "cloud"
+    },
+    {
+     "hz": "千",
+     "py": "qiān",
+     "ru": "тысяча",
+     "en": "thousand"
+    },
+    {
+     "hz": "接",
+     "py": "jiē",
+     "ru": "принимать; встречать",
+     "en": "receive; pick up"
+    },
+    {
+     "hz": "接电话",
+     "py": "jiē diànhuà",
+     "ru": "ответить на звонок",
+     "en": "answer the phone"
+    },
+    {
+     "hz": "接人",
+     "py": "jiē rén",
+     "ru": "встретить человека",
+     "en": "pick someone up"
+    },
+    {
+     "hz": "接球",
+     "py": "jiē qiú",
+     "ru": "поймать мяч",
+     "en": "catch a ball"
+    },
+    {
+     "hz": "接班",
+     "py": "jiēbān",
+     "ru": "заступать на смену",
+     "en": "take over a shift"
+    },
+    {
+     "hz": "接收",
+     "py": "jiēshōu",
+     "ru": "принимать",
+     "en": "receive, accept"
+    },
+    {
+     "hz": "文件",
+     "py": "wénjiàn",
+     "ru": "документ, файл",
+     "en": "document, file"
+    },
+    {
+     "hz": "校",
+     "py": "xiào",
+     "ru": "школа",
+     "en": "school"
+    },
+    {
+     "hz": "封",
+     "py": "fēng",
+     "ru": "(счётное для писем)",
+     "en": "(measure word for letters)"
+    },
+    {
+     "hz": "信",
+     "py": "xìn",
+     "ru": "письмо",
+     "en": "letter"
+    },
+    {
+     "hz": "消息",
+     "py": "xiāoxi",
+     "ru": "новость, сообщение",
+     "en": "news, message"
+    },
+    {
+     "hz": "开车",
+     "py": "kāichē",
+     "ru": "водить машину",
+     "en": "drive"
+    },
+    {
+     "hz": "凉快",
+     "py": "liángkuai",
+     "ru": "прохладно",
+     "en": "cool"
+    },
+    {
+     "hz": "凉",
+     "py": "liáng",
+     "ru": "прохладный",
+     "en": "cool"
+    },
+    {
+     "hz": "心理学",
+     "py": "xīnlǐxué",
+     "ru": "психология",
+     "en": "psychology"
+    },
+    {
+     "hz": "关于",
+     "py": "guānyú",
+     "ru": "касательно, о",
+     "en": "about"
+    },
+    {
+     "hz": "方面",
+     "py": "fāngmiàn",
+     "ru": "аспект, сторона",
+     "en": "aspect"
+    },
+    {
+     "hz": "经常",
+     "py": "jīngcháng",
+     "ru": "часто",
+     "en": "often"
+    },
+    {
+     "hz": "非常",
+     "py": "fēicháng",
+     "ru": "очень",
+     "en": "very"
+    },
+    {
+     "hz": "语言",
+     "py": "yǔyán",
+     "ru": "язык",
+     "en": "language"
+    },
+    {
+     "hz": "门",
+     "py": "mén",
+     "ru": "(счётное для языков, предметов)",
+     "en": "(measure word for languages, subjects)"
+    },
+    {
+     "hz": "种",
+     "py": "zhǒng",
+     "ru": "вид, тип",
+     "en": "kind, type"
+    },
+    {
+     "hz": "语法",
+     "py": "yǔfǎ",
+     "ru": "грамматика",
+     "en": "grammar"
+    },
+    {
+     "hz": "下星期三",
+     "py": "xià xīngqīsān",
+     "ru": "в следующую среду",
+     "en": "next Wednesday"
+    },
+    {
+     "hz": "体育馆",
+     "py": "tǐyùguǎn",
+     "ru": "спортзал",
+     "en": "gym"
+    },
+    {
+     "hz": "育",
+     "py": "yù",
+     "ru": "воспитывать, развивать",
+     "en": "raise, develop"
+    },
+    {
+     "hz": "教育",
+     "py": "jiàoyù",
+     "ru": "образование",
+     "en": "education"
+    },
+    {
+     "hz": "下课",
+     "py": "xiàkè",
+     "ru": "урок окончен",
+     "en": "class is over"
+    },
+    {
+     "hz": "开始",
+     "py": "kāishǐ",
+     "ru": "начинать",
+     "en": "start"
+    },
+    {
+     "hz": "晚会",
+     "py": "wǎnhuì",
+     "ru": "вечеринка",
+     "en": "evening party"
+    },
+    {
+     "hz": "还",
+     "py": "hái",
+     "ru": "ещё; всё ещё",
+     "en": "still; also"
+    },
+    {
+     "hz": "不错",
+     "py": "búcuò",
+     "ru": "неплохо",
+     "en": "not bad"
+    },
+    {
+     "hz": "经",
+     "py": "jīng",
+     "ru": "через",
+     "en": "via"
+    },
+    {
+     "hz": "上海",
+     "py": "Shànghǎi",
+     "ru": "Шанхай",
+     "en": "Shanghai"
+    },
+    {
+     "hz": "认识",
+     "py": "rènshi",
+     "ru": "знать, быть знакомым",
+     "en": "know, recognize"
+    },
+    {
+     "hz": "作业",
+     "py": "zuòyè",
+     "ru": "домашнее задание",
+     "en": "homework"
+    },
+    {
+     "hz": "头发",
+     "py": "tóufa",
+     "ru": "волосы",
+     "en": "hair"
+    },
+    {
+     "hz": "洗",
+     "py": "xǐ",
+     "ru": "мыть",
+     "en": "wash"
+    },
+    {
+     "hz": "斤",
+     "py": "jīn",
+     "ru": "цзинь (500 г)",
+     "en": "jin (500 g)"
+    },
+    {
+     "hz": "公斤",
+     "py": "gōngjīn",
+     "ru": "килограмм",
+     "en": "kilogram"
+    },
+    {
+     "hz": "长大",
+     "py": "zhǎngdà",
+     "ru": "вырасти",
+     "en": "grow up"
+    },
+    {
+     "hz": "多长时间",
+     "py": "duō cháng shíjiān",
+     "ru": "как долго",
+     "en": "how long"
+    },
+    {
+     "hz": "支",
+     "py": "zhī",
+     "ru": "(счётное для ручек)",
+     "en": "(measure word for pens)"
+    },
+    {
+     "hz": "瓶",
+     "py": "píng",
+     "ru": "бутылка",
+     "en": "bottle"
+    },
+    {
+     "hz": "可乐",
+     "py": "kělè",
+     "ru": "кола",
+     "en": "cola"
+    },
+    {
+     "hz": "鞋",
+     "py": "xié",
+     "ru": "обувь",
+     "en": "shoes"
+    },
+    {
+     "hz": "好看",
+     "py": "hǎokàn",
+     "ru": "красивый",
+     "en": "good-looking"
+    },
+    {
+     "hz": "运动鞋",
+     "py": "yùndòngxié",
+     "ru": "кроссовки",
+     "en": "sneakers"
+    },
+    {
+     "hz": "皮鞋",
+     "py": "píxié",
+     "ru": "кожаная обувь",
+     "en": "leather shoes"
+    },
+    {
+     "hz": "换鞋",
+     "py": "huàn xié",
+     "ru": "переобуться",
+     "en": "change shoes"
+    },
+    {
+     "hz": "区别",
+     "py": "qūbié",
+     "ru": "разница",
+     "en": "difference"
+    },
+    {
+     "hz": "帮",
+     "py": "bāng",
+     "ru": "помогать",
+     "en": "help"
+    },
+    {
+     "hz": "助",
+     "py": "zhù",
+     "ru": "помогать (книжн.)",
+     "en": "assist"
+    },
+    {
+     "hz": "找",
+     "py": "zhǎo",
+     "ru": "искать",
+     "en": "look for"
+    },
+    {
+     "hz": "介绍",
+     "py": "jièshào",
+     "ru": "представить",
+     "en": "introduce"
+    },
+    {
+     "hz": "自己",
+     "py": "zìjǐ",
+     "ru": "сам, себя",
+     "en": "oneself"
+    },
+    {
+     "hz": "简单",
+     "py": "jiǎndān",
+     "ru": "простой",
+     "en": "simple"
+    },
+    {
+     "hz": "让",
+     "py": "ràng",
+     "ru": "позволять; заставлять",
+     "en": "let; make"
+    },
+    {
+     "hz": "同事",
+     "py": "tóngshì",
+     "ru": "коллега",
+     "en": "colleague"
+    },
+    {
+     "hz": "城市",
+     "py": "chéngshì",
+     "ru": "город",
+     "en": "city"
+    },
+    {
+     "hz": "外国人",
+     "py": "wàiguórén",
+     "ru": "иностранец",
+     "en": "foreigner"
+    },
+    {
+     "hz": "市",
+     "py": "shì",
+     "ru": "город; рынок",
+     "en": "city; market"
+    },
+    {
+     "hz": "题目",
+     "py": "tímù",
+     "ru": "задание, тема",
+     "en": "topic; question"
+    },
+    {
+     "hz": "新鲜",
+     "py": "xīnxiān",
+     "ru": "свежий",
+     "en": "fresh"
+    },
+    {
+     "hz": "玩",
+     "py": "wán",
+     "ru": "играть, веселиться",
+     "en": "play, have fun"
+    },
+    {
+     "hz": "王",
+     "py": "wáng",
+     "ru": "король",
+     "en": "king"
+    },
+    {
+     "hz": "元",
+     "py": "yuán",
+     "ru": "юань",
+     "en": "yuan"
+    }
+   ],
+   "sentences": [
+    {
+     "zh": "秋天收苹果。",
+     "py": "Qiūtiān shōu píngguǒ.",
+     "ru": "Осенью собирают яблоки.",
+     "en": "Apples are harvested in autumn."
+    },
+    {
+     "zh": "我没吃过这个。",
+     "py": "Wǒ méi chī guo zhège.",
+     "ru": "Я никогда это не ела.",
+     "en": "I've never eaten this."
+    },
+    {
+     "zh": "一朵花，一朵云",
+     "py": "yì duǒ huā, yì duǒ yún",
+     "ru": "один цветок, одно облако",
+     "en": "a flower, a cloud"
+    },
+    {
+     "zh": "我收到你的消息了。",
+     "py": "Wǒ shōudào nǐ de xiāoxi le.",
+     "ru": "Я получила твоё сообщение.",
+     "en": "I got your message."
+    },
+    {
+     "zh": "他会三门外语。",
+     "py": "Tā huì sān mén wàiyǔ.",
+     "ru": "Он знает три иностранных языка.",
+     "en": "He speaks three foreign languages."
+    },
+    {
+     "zh": "你会几种语言？",
+     "py": "Nǐ huì jǐ zhǒng yǔyán?",
+     "ru": "Сколько языков ты знаешь?",
+     "en": "How many languages do you speak?"
+    },
+    {
+     "zh": "我开始学习中文。",
+     "py": "Wǒ kāishǐ xuéxí Zhōngwén.",
+     "ru": "Я начала учить китайский.",
+     "en": "I've started learning Chinese."
+    },
+    {
+     "zh": "天还很热。",
+     "py": "Tiān hái hěn rè.",
+     "ru": "Всё ещё жарко.",
+     "en": "It's still hot."
+    },
+    {
+     "zh": "我还要一杯水。",
+     "py": "Wǒ hái yào yì bēi shuǐ.",
+     "ru": "Мне ещё стакан воды.",
+     "en": "I'd like another glass of water."
+    },
+    {
+     "zh": "这个电影还不错。",
+     "py": "Zhège diànyǐng hái búcuò.",
+     "ru": "Этот фильм довольно неплохой.",
+     "en": "This movie is pretty good."
+    },
+    {
+     "zh": "经北京去上海。",
+     "py": "Jīng Běijīng qù Shànghǎi.",
+     "ru": "Ехать в Шанхай через Пекин.",
+     "en": "Go to Shanghai via Beijing."
+    },
+    {
+     "zh": "我不认识这个字。",
+     "py": "Wǒ bú rènshi zhège zì.",
+     "ru": "Я не знаю этот иероглиф.",
+     "en": "I don't know this character."
+    },
+    {
+     "zh": "你作业做完了吗？",
+     "py": "Nǐ zuòyè zuòwán le ma?",
+     "ru": "Ты сделал домашку?",
+     "en": "Have you finished your homework?"
+    },
+    {
+     "zh": "多穿点儿。",
+     "py": "Duō chuān diǎnr.",
+     "ru": "Оденься потеплее.",
+     "en": "Wear more clothes."
+    },
+    {
+     "zh": "我洗完头发了。",
+     "py": "Wǒ xǐwán tóufa le.",
+     "ru": "Я помыла голову.",
+     "en": "I've finished washing my hair."
+    },
+    {
+     "zh": "好久没见，你长大了！",
+     "py": "Hǎojiǔ méi jiàn, nǐ zhǎngdà le!",
+     "ru": "Давно не виделись, ты вырос!",
+     "en": "Long time no see, you've grown!"
+    },
+    {
+     "zh": "几瓶可乐？",
+     "py": "Jǐ píng kělè?",
+     "ru": "Сколько бутылок колы?",
+     "en": "How many bottles of cola?"
+    },
+    {
+     "zh": "这双鞋很好看。",
+     "py": "Zhè shuāng xié hěn hǎokàn.",
+     "ru": "Эта пара обуви очень красивая.",
+     "en": "These shoes look great."
+    },
+    {
+     "zh": "有什么区别？",
+     "py": "Yǒu shénme qūbié?",
+     "ru": "Какая разница?",
+     "en": "What's the difference?"
+    },
+    {
+     "zh": "你能帮我找东西吗？",
+     "py": "Nǐ néng bāng wǒ zhǎo dōngxi ma?",
+     "ru": "Можешь помочь мне найти вещь?",
+     "en": "Can you help me find something?"
+    },
+    {
+     "zh": "孩子自己穿衣服。",
+     "py": "Háizi zìjǐ chuān yīfu.",
+     "ru": "Ребёнок одевается сам.",
+     "en": "The child dresses himself."
+    },
+    {
+     "zh": "这件事让我很生气。",
+     "py": "Zhè jiàn shì ràng wǒ hěn shēngqì.",
+     "ru": "Это меня очень разозлило.",
+     "en": "This made me very angry."
+    },
+    {
+     "zh": "妈妈让我出去。",
+     "py": "Māma ràng wǒ chūqu.",
+     "ru": "Мама разрешила мне выйти.",
+     "en": "Mom let me go out."
+    },
+    {
+     "zh": "这个城市对外国人很友好。",
+     "py": "Zhège chéngshì duì wàiguórén hěn yǒuhǎo.",
+     "ru": "Этот город дружелюбен к иностранцам.",
+     "en": "This city is friendly to foreigners."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "page": "A-14",
+   "date": "2026-02-04",
+   "words": [
+    {
+     "hz": "套",
+     "py": "tào",
+     "ru": "комплект; чехол",
+     "en": "set; cover"
+    },
+    {
+     "hz": "房子",
+     "py": "fángzi",
+     "ru": "дом, квартира",
+     "en": "house, apartment"
+    },
+    {
+     "hz": "手机套",
+     "py": "shǒujītào",
+     "ru": "чехол для телефона",
+     "en": "phone case"
+    },
+    {
+     "hz": "散步",
+     "py": "sànbù",
+     "ru": "гулять",
+     "en": "take a walk"
+    },
+    {
+     "hz": "晚上",
+     "py": "wǎnshang",
+     "ru": "вечер",
+     "en": "evening"
+    },
+    {
+     "hz": "走路",
+     "py": "zǒulù",
+     "ru": "идти пешком",
+     "en": "walk"
+    },
+    {
+     "hz": "早点",
+     "py": "zǎodiǎn",
+     "ru": "завтрак; пораньше",
+     "en": "breakfast; earlier"
+    },
+    {
+     "hz": "准备",
+     "py": "zhǔnbèi",
+     "ru": "готовиться",
+     "en": "prepare"
+    },
+    {
+     "hz": "护照",
+     "py": "hùzhào",
+     "ru": "паспорт",
+     "en": "passport"
+    },
+    {
+     "hz": "护照号",
+     "py": "hùzhào hào",
+     "ru": "номер паспорта",
+     "en": "passport number"
+    },
+    {
+     "hz": "照片",
+     "py": "zhàopiàn",
+     "ru": "фотография",
+     "en": "photo"
+    },
+    {
+     "hz": "前面",
+     "py": "qiánmiàn",
+     "ru": "впереди",
+     "en": "in front"
+    },
+    {
+     "hz": "以前",
+     "py": "yǐqián",
+     "ru": "раньше",
+     "en": "before"
+    },
+    {
+     "hz": "出发",
+     "py": "chūfā",
+     "ru": "отправляться",
+     "en": "set off"
+    },
+    {
+     "hz": "明天",
+     "py": "míngtiān",
+     "ru": "завтра",
+     "en": "tomorrow"
+    },
+    {
+     "hz": "早上",
+     "py": "zǎoshang",
+     "ru": "утро",
+     "en": "morning"
+    },
+    {
+     "hz": "适合",
+     "py": "shìhé",
+     "ru": "подходить для",
+     "en": "be suitable for"
+    },
+    {
+     "hz": "如果",
+     "py": "rúguǒ",
+     "ru": "если",
+     "en": "if"
+    },
+    {
+     "hz": "烤",
+     "py": "kǎo",
+     "ru": "жарить, запекать",
+     "en": "roast, grill"
+    },
+    {
+     "hz": "烤鱼",
+     "py": "kǎoyú",
+     "ru": "жареная рыба",
+     "en": "grilled fish"
+    },
+    {
+     "hz": "拷",
+     "py": "kǎo",
+     "ru": "копировать",
+     "en": "copy"
+    },
+    {
+     "hz": "游来游去",
+     "py": "yóu lái yóu qù",
+     "ru": "плавать туда-сюда",
+     "en": "swim around"
+    },
+    {
+     "hz": "遇",
+     "py": "yù",
+     "ru": "встречать, сталкиваться",
+     "en": "encounter"
+    },
+    {
+     "hz": "遇到",
+     "py": "yùdào",
+     "ru": "столкнуться с",
+     "en": "run into"
+    },
+    {
+     "hz": "困难",
+     "py": "kùnnan",
+     "ru": "трудность",
+     "en": "difficulty"
+    },
+    {
+     "hz": "好久不见",
+     "py": "hǎojiǔ bú jiàn",
+     "ru": "давно не виделись",
+     "en": "long time no see"
+    }
+   ],
+   "sentences": [
+    {
+     "zh": "我喜欢晚上散步。",
+     "py": "Wǒ xǐhuan wǎnshang sànbù.",
+     "ru": "Я люблю гулять вечером.",
+     "en": "I like walking in the evening."
+    },
+    {
+     "zh": "饭后散步对身体好。",
+     "py": "Fàn hòu sànbù duì shēntǐ hǎo.",
+     "ru": "Гулять после еды полезно.",
+     "en": "A walk after meals is good for you."
+    },
+    {
+     "zh": "我在外面等你。",
+     "py": "Wǒ zài wàimiàn děng nǐ.",
+     "ru": "Я жду тебя снаружи.",
+     "en": "I'll wait for you outside."
+    },
+    {
+     "zh": "你早点睡。",
+     "py": "Nǐ zǎo diǎn shuì.",
+     "ru": "Ложись пораньше.",
+     "en": "Go to bed earlier."
+    },
+    {
+     "zh": "我还没吃早点。",
+     "py": "Wǒ hái méi chī zǎodiǎn.",
+     "ru": "Я ещё не завтракала.",
+     "en": "I haven't had breakfast yet."
+    },
+    {
+     "zh": "明天早上出发。",
+     "py": "Míngtiān zǎoshang chūfā.",
+     "ru": "Отправляемся завтра утром.",
+     "en": "We set off tomorrow morning."
+    },
+    {
+     "zh": "飞机已经出发了。",
+     "py": "Fēijī yǐjīng chūfā le.",
+     "ru": "Самолёт уже вылетел.",
+     "en": "The plane has already left."
+    },
+    {
+     "zh": "这个时间不合适。",
+     "py": "Zhège shíjiān bù héshì.",
+     "ru": "Это время не подходит.",
+     "en": "This time doesn't work."
+    },
+    {
+     "zh": "这双鞋适合走路。",
+     "py": "Zhè shuāng xié shìhé zǒulù.",
+     "ru": "Эта обувь подходит для ходьбы.",
+     "en": "These shoes are good for walking."
+    },
+    {
+     "zh": "如果你有时间，我们去散步。",
+     "py": "Rúguǒ nǐ yǒu shíjiān, wǒmen qù sànbù.",
+     "ru": "Если у тебя есть время, пойдём гулять.",
+     "en": "If you have time, let's go for a walk."
+    },
+    {
+     "zh": "如果不合适，就换一个。",
+     "py": "Rúguǒ bù héshì, jiù huàn yí ge.",
+     "ru": "Если не подходит, поменяй.",
+     "en": "If it doesn't fit, change it."
+    },
+    {
+     "zh": "一家公司，一家餐厅",
+     "py": "yì jiā gōngsī, yì jiā cāntīng",
+     "ru": "одна компания, один ресторан",
+     "en": "a company, a restaurant"
+    },
+    {
+     "zh": "遇到困难。",
+     "py": "Yùdào kùnnan.",
+     "ru": "Столкнуться с трудностями.",
+     "en": "Run into difficulties."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "page": "A-15",
+   "date": "2026-02-15",
+   "words": [
+    {
+     "hz": "恋爱",
+     "py": "liàn'ài",
+     "ru": "любовь; встречаться",
+     "en": "romance; be in love"
+    },
+    {
+     "hz": "谈",
+     "py": "tán",
+     "ru": "обсуждать, говорить",
+     "en": "talk"
+    },
+    {
+     "hz": "谈恋爱",
+     "py": "tán liàn'ài",
+     "ru": "встречаться (романтически)",
+     "en": "date"
+    },
+    {
+     "hz": "错",
+     "py": "cuò",
+     "ru": "ошибка; неправильный",
+     "en": "mistake; wrong"
+    },
+    {
+     "hz": "部",
+     "py": "bù",
+     "ru": "(счётное для фильмов, телефонов)",
+     "en": "(measure word for films, phones)"
+    },
+    {
+     "hz": "总是",
+     "py": "zǒngshì",
+     "ru": "всегда",
+     "en": "always"
+    },
+    {
+     "hz": "别",
+     "py": "bié",
+     "ru": "другой; не надо",
+     "en": "other; don't"
+    },
+    {
+     "hz": "这次",
+     "py": "zhè cì",
+     "ru": "в этот раз",
+     "en": "this time"
+    },
+    {
+     "hz": "上次",
+     "py": "shàng cì",
+     "ru": "в прошлый раз",
+     "en": "last time"
+    },
+    {
+     "hz": "这样",
+     "py": "zhèyàng",
+     "ru": "так, такой",
+     "en": "like this"
+    },
+    {
+     "hz": "复习",
+     "py": "fùxí",
+     "ru": "повторять (пройденное)",
+     "en": "review"
+    },
+    {
+     "hz": "明白",
+     "py": "míngbai",
+     "ru": "понимать; ясный",
+     "en": "understand; clear"
+    },
+    {
+     "hz": "应该",
+     "py": "yīnggāi",
+     "ru": "следует; наверное",
+     "en": "should"
+    },
+    {
+     "hz": "退休",
+     "py": "tuìxiū",
+     "ru": "выйти на пенсию",
+     "en": "retire"
+    },
+    {
+     "hz": "熊猫",
+     "py": "xióngmāo",
+     "ru": "панда",
+     "en": "panda"
+    },
+    {
+     "hz": "鸭",
+     "py": "yā",
+     "ru": "утка",
+     "en": "duck"
+    },
+    {
+     "hz": "烤鸭",
+     "py": "kǎoyā",
+     "ru": "утка по-пекински",
+     "en": "roast duck"
+    },
+    {
+     "hz": "司机",
+     "py": "sījī",
+     "ru": "водитель",
+     "en": "driver"
+    },
+    {
+     "hz": "出租车司机",
+     "py": "chūzūchē sījī",
+     "ru": "таксист",
+     "en": "taxi driver"
+    },
+    {
+     "hz": "空姐",
+     "py": "kōngjiě",
+     "ru": "стюардесса",
+     "en": "flight attendant (female)"
+    },
+    {
+     "hz": "空少",
+     "py": "kōngshào",
+     "ru": "стюард",
+     "en": "flight attendant (male)"
+    },
+    {
+     "hz": "住",
+     "py": "zhù",
+     "ru": "жить",
+     "en": "live"
+    },
+    {
+     "hz": "时尚",
+     "py": "shíshàng",
+     "ru": "мода, модный",
+     "en": "fashion"
+    },
+    {
+     "hz": "带",
+     "py": "dài",
+     "ru": "брать с собой; сопровождать",
+     "en": "bring; take along"
+    },
+    {
+     "hz": "拍照",
+     "py": "pāizhào",
+     "ru": "фотографировать",
+     "en": "take a photo"
+    },
+    {
+     "hz": "辣",
+     "py": "là",
+     "ru": "острый",
+     "en": "spicy"
+    },
+    {
+     "hz": "川剧",
+     "py": "chuānjù",
+     "ru": "сычуаньская опера",
+     "en": "Sichuan opera"
+    }
+   ],
+   "sentences": [
+    {
+     "zh": "他们在恋爱。",
+     "py": "Tāmen zài liàn'ài.",
+     "ru": "Они встречаются.",
+     "en": "They are in love."
+    },
+    {
+     "zh": "今天的天气不错。",
+     "py": "Jīntiān de tiānqì búcuò.",
+     "ru": "Сегодня неплохая погода.",
+     "en": "The weather is nice today."
+    },
+    {
+     "zh": "两部手机，一部电影",
+     "py": "liǎng bù shǒujī, yí bù diànyǐng",
+     "ru": "два телефона, один фильм",
+     "en": "two phones, one movie"
+    },
+    {
+     "zh": "你总是这样。",
+     "py": "Nǐ zǒngshì zhèyàng.",
+     "ru": "Ты всегда такой.",
+     "en": "You're always like this."
+    },
+    {
+     "zh": "这次考试很难。",
+     "py": "Zhè cì kǎoshì hěn nán.",
+     "ru": "Этот экзамен очень сложный.",
+     "en": "This exam is hard."
+    },
+    {
+     "zh": "上次不合适，这次可以。",
+     "py": "Shàng cì bù héshì, zhè cì kěyǐ.",
+     "ru": "В прошлый раз не подошло, в этот раз можно.",
+     "en": "Last time didn't work, this time it's fine."
+    },
+    {
+     "zh": "明天考试，我得复习。",
+     "py": "Míngtiān kǎoshì, wǒ děi fùxí.",
+     "ru": "Завтра экзамен, мне надо повторить.",
+     "en": "Exam tomorrow, I have to review."
+    },
+    {
+     "zh": "他说得很明白。",
+     "py": "Tā shuō de hěn míngbai.",
+     "ru": "Он объяснил очень ясно.",
+     "en": "He explained it clearly."
+    },
+    {
+     "zh": "你应该早点睡。",
+     "py": "Nǐ yīnggāi zǎo diǎn shuì.",
+     "ru": "Тебе надо ложиться пораньше.",
+     "en": "You should sleep earlier."
+    },
+    {
+     "zh": "退休以后，他每天散步。",
+     "py": "Tuìxiū yǐhòu, tā měitiān sànbù.",
+     "ru": "Выйдя на пенсию, он гуляет каждый день.",
+     "en": "After retiring, he walks every day."
+    },
+    {
+     "zh": "你住在哪个地方？",
+     "py": "Nǐ zhù zài nǎge dìfang?",
+     "ru": "Где ты живёшь?",
+     "en": "Where do you live?"
+    },
+    {
+     "zh": "我给你带咖啡。",
+     "py": "Wǒ gěi nǐ dài kāfēi.",
+     "ru": "Я принесу тебе кофе.",
+     "en": "I'll bring you coffee."
+    },
+    {
+     "zh": "我带你去。",
+     "py": "Wǒ dài nǐ qù.",
+     "ru": "Я отведу тебя.",
+     "en": "I'll take you there."
+    },
+    {
+     "zh": "可以拍照吗？",
+     "py": "Kěyǐ pāizhào ma?",
+     "ru": "Можно фотографировать?",
+     "en": "Can I take photos?"
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "page": "A-16",
+   "date": "2026-03-07",
+   "words": [
+    {
+     "hz": "春晚",
+     "py": "Chūnwǎn",
+     "ru": "новогодний гала-концерт",
+     "en": "Spring Festival Gala"
+    },
+    {
+     "hz": "舞蹈",
+     "py": "wǔdǎo",
+     "ru": "танец",
+     "en": "dance"
+    },
+    {
+     "hz": "清真",
+     "py": "qīngzhēn",
+     "ru": "халяль",
+     "en": "halal"
+    },
+    {
+     "hz": "清真餐厅",
+     "py": "qīngzhēn cāntīng",
+     "ru": "халяль-ресторан",
+     "en": "halal restaurant"
+    },
+    {
+     "hz": "清真寺",
+     "py": "qīngzhēnsì",
+     "ru": "мечеть",
+     "en": "mosque"
+    },
+    {
+     "hz": "穆斯林",
+     "py": "mùsīlín",
+     "ru": "мусульманин",
+     "en": "Muslim"
+    },
+    {
+     "hz": "水果",
+     "py": "shuǐguǒ",
+     "ru": "фрукты",
+     "en": "fruit"
+    },
+    {
+     "hz": "销售",
+     "py": "xiāoshòu",
+     "ru": "продажи; продавец",
+     "en": "sales"
+    },
+    {
+     "hz": "独生子女",
+     "py": "dúshēng zǐnǚ",
+     "ru": "единственный ребёнок",
+     "en": "only child"
+    },
+    {
+     "hz": "排球",
+     "py": "páiqiú",
+     "ru": "волейбол",
+     "en": "volleyball"
+    },
+    {
+     "hz": "反义词",
+     "py": "fǎnyìcí",
+     "ru": "антоним",
+     "en": "antonym"
+    },
+    {
+     "hz": "同义词",
+     "py": "tóngyìcí",
+     "ru": "синоним",
+     "en": "synonym"
+    },
+    {
+     "hz": "从…到…",
+     "py": "cóng…dào…",
+     "ru": "от… до…",
+     "en": "from… to…"
+    },
+    {
+     "hz": "日记",
+     "py": "rìjì",
+     "ru": "дневник",
+     "en": "diary"
+    },
+    {
+     "hz": "写",
+     "py": "xiě",
+     "ru": "писать",
+     "en": "write"
+    },
+    {
+     "hz": "记得",
+     "py": "jìde",
+     "ru": "помнить",
+     "en": "remember"
+    },
+    {
+     "hz": "故事",
+     "py": "gùshi",
+     "ru": "история, рассказ",
+     "en": "story"
+    },
+    {
+     "hz": "爱情",
+     "py": "àiqíng",
+     "ru": "любовь",
+     "en": "love"
+    },
+    {
+     "hz": "照相机",
+     "py": "zhàoxiàngjī",
+     "ru": "фотоаппарат",
+     "en": "camera"
+    },
+    {
+     "hz": "台",
+     "py": "tái",
+     "ru": "(счётное для техники)",
+     "en": "(measure word for machines)"
+    },
+    {
+     "hz": "变",
+     "py": "biàn",
+     "ru": "меняться",
+     "en": "change"
+    },
+    {
+     "hz": "变红",
+     "py": "biàn hóng",
+     "ru": "покраснеть",
+     "en": "turn red"
+    },
+    {
+     "hz": "脸",
+     "py": "liǎn",
+     "ru": "лицо",
+     "en": "face"
+    },
+    {
+     "hz": "成",
+     "py": "chéng",
+     "ru": "стать, превратиться",
+     "en": "become"
+    },
+    {
+     "hz": "冰",
+     "py": "bīng",
+     "ru": "лёд",
+     "en": "ice"
+    },
+    {
+     "hz": "快要",
+     "py": "kuàiyào",
+     "ru": "скоро, вот-вот",
+     "en": "about to"
+    },
+    {
+     "hz": "就要",
+     "py": "jiùyào",
+     "ru": "вот-вот (очень скоро)",
+     "en": "just about to"
+    },
+    {
+     "hz": "毕业",
+     "py": "bìyè",
+     "ru": "окончить учёбу",
+     "en": "graduate"
+    },
+    {
+     "hz": "比赛",
+     "py": "bǐsài",
+     "ru": "соревнование",
+     "en": "competition, match"
+    },
+    {
+     "hz": "胖",
+     "py": "pàng",
+     "ru": "толстый",
+     "en": "fat"
+    },
+    {
+     "hz": "瘦",
+     "py": "shòu",
+     "ru": "худой",
+     "en": "thin"
+    }
+   ],
+   "sentences": [
+    {
+     "zh": "我们一起看春晚。",
+     "py": "Wǒmen yìqǐ kàn Chūnwǎn.",
+     "ru": "Мы вместе смотрим новогодний концерт.",
+     "en": "We watch the Spring Festival Gala together."
+    },
+    {
+     "zh": "很多穆斯林吃清真食品。",
+     "py": "Hěn duō mùsīlín chī qīngzhēn shípǐn.",
+     "ru": "Многие мусульмане едят халяльную еду.",
+     "en": "Many Muslims eat halal food."
+    },
+    {
+     "zh": "我做销售。",
+     "py": "Wǒ zuò xiāoshòu.",
+     "ru": "Я работаю в продажах.",
+     "en": "I work in sales."
+    },
+    {
+     "zh": "他是独生子女。",
+     "py": "Tā shì dúshēng zǐnǚ.",
+     "ru": "Он единственный ребёнок.",
+     "en": "He's an only child."
+    },
+    {
+     "zh": "我喜欢打排球。",
+     "py": "Wǒ xǐhuan dǎ páiqiú.",
+     "ru": "Я люблю играть в волейбол.",
+     "en": "I like playing volleyball."
+    },
+    {
+     "zh": "从九点到晚上都很忙。",
+     "py": "Cóng jiǔ diǎn dào wǎnshang dōu hěn máng.",
+     "ru": "С девяти до вечера всё время занята.",
+     "en": "Busy from nine until evening."
+    },
+    {
+     "zh": "我每天写日记。",
+     "py": "Wǒ měitiān xiě rìjì.",
+     "ru": "Я каждый день пишу дневник.",
+     "en": "I write a diary every day."
+    },
+    {
+     "zh": "我的爱好是听音乐。",
+     "py": "Wǒ de àihào shì tīng yīnyuè.",
+     "ru": "Моё хобби — слушать музыку.",
+     "en": "My hobby is listening to music."
+    },
+    {
+     "zh": "这台照相机很好。",
+     "py": "Zhè tái zhàoxiàngjī hěn hǎo.",
+     "ru": "Этот фотоаппарат очень хороший.",
+     "en": "This camera is very good."
+    },
+    {
+     "zh": "脸变红了。",
+     "py": "Liǎn biàn hóng le.",
+     "ru": "Лицо покраснело.",
+     "en": "His face turned red."
+    },
+    {
+     "zh": "水成了冰。",
+     "py": "Shuǐ chéng le bīng.",
+     "ru": "Вода превратилась в лёд.",
+     "en": "The water turned into ice."
+    },
+    {
+     "zh": "快要下雨了。",
+     "py": "Kuàiyào xià yǔ le.",
+     "ru": "Скоро пойдёт дождь.",
+     "en": "It's about to rain."
+    },
+    {
+     "zh": "火车就要开了。",
+     "py": "Huǒchē jiùyào kāi le.",
+     "ru": "Поезд вот-вот отправится.",
+     "en": "The train is about to leave."
+    },
+    {
+     "zh": "我快要毕业了。",
+     "py": "Wǒ kuàiyào bìyè le.",
+     "ru": "Я скоро окончу учёбу.",
+     "en": "I'm graduating soon."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "page": "A-17",
+   "date": "2026-03-28",
+   "words": [
+    {
+     "hz": "胃",
+     "py": "wèi",
+     "ru": "желудок",
+     "en": "stomach"
+    },
+    {
+     "hz": "细菌",
+     "py": "xìjūn",
+     "ru": "бактерия",
+     "en": "bacteria"
+    },
+    {
+     "hz": "细",
+     "py": "xì",
+     "ru": "тонкий",
+     "en": "thin, fine"
+    },
+    {
+     "hz": "菌",
+     "py": "jūn",
+     "ru": "микроб, грибок",
+     "en": "germ; fungus"
+    },
+    {
+     "hz": "呕吐",
+     "py": "ǒutù",
+     "ru": "рвота",
+     "en": "vomit"
+    },
+    {
+     "hz": "难吃",
+     "py": "nánchī",
+     "ru": "невкусный",
+     "en": "tastes bad"
+    },
+    {
+     "hz": "一般",
+     "py": "yìbān",
+     "ru": "обычно; так себе",
+     "en": "usually; ordinary"
+    },
+    {
+     "hz": "小时",
+     "py": "xiǎoshí",
+     "ru": "час",
+     "en": "hour"
+    },
+    {
+     "hz": "危险",
+     "py": "wēixiǎn",
+     "ru": "опасный",
+     "en": "dangerous"
+    },
+    {
+     "hz": "安全",
+     "py": "ānquán",
+     "ru": "безопасный",
+     "en": "safe"
+    },
+    {
+     "hz": "最后",
+     "py": "zuìhòu",
+     "ru": "последний; наконец",
+     "en": "last; finally"
+    },
+    {
+     "hz": "照顾",
+     "py": "zhàogù",
+     "ru": "заботиться",
+     "en": "take care of"
+    },
+    {
+     "hz": "迟到",
+     "py": "chídào",
+     "ru": "опаздывать",
+     "en": "be late"
+    },
+    {
+     "hz": "准时",
+     "py": "zhǔnshí",
+     "ru": "вовремя",
+     "en": "on time"
+    },
+    {
+     "hz": "裙子",
+     "py": "qúnzi",
+     "ru": "юбка",
+     "en": "skirt"
+    },
+    {
+     "hz": "检查",
+     "py": "jiǎnchá",
+     "ru": "проверять, обследовать",
+     "en": "check, examine"
+    },
+    {
+     "hz": "一般来说",
+     "py": "yìbān lái shuō",
+     "ru": "в общем говоря",
+     "en": "generally speaking"
+    },
+    {
+     "hz": "啤酒",
+     "py": "píjiǔ",
+     "ru": "пиво",
+     "en": "beer"
+    },
+    {
+     "hz": "差不多",
+     "py": "chàbuduō",
+     "ru": "почти; примерно",
+     "en": "almost; about the same"
+    },
+    {
+     "hz": "差",
+     "py": "chà",
+     "ru": "плохой; не хватать",
+     "en": "poor; lack"
+    },
+    {
+     "hz": "对我来说",
+     "py": "duì wǒ lái shuō",
+     "ru": "для меня",
+     "en": "for me"
+    },
+    {
+     "hz": "一…就…",
+     "py": "yī… jiù…",
+     "ru": "как только… сразу…",
+     "en": "as soon as…"
+    },
+    {
+     "hz": "气温",
+     "py": "qìwēn",
+     "ru": "температура воздуха",
+     "en": "air temperature"
+    },
+    {
+     "hz": "温",
+     "py": "wēn",
+     "ru": "тёплый",
+     "en": "warm"
+    },
+    {
+     "hz": "低",
+     "py": "dī",
+     "ru": "низкий",
+     "en": "low"
+    },
+    {
+     "hz": "温度",
+     "py": "wēndù",
+     "ru": "температура",
+     "en": "temperature"
+    },
+    {
+     "hz": "再",
+     "py": "zài",
+     "ru": "снова; потом",
+     "en": "again; then"
+    },
+    {
+     "hz": "当然",
+     "py": "dāngrán",
+     "ru": "конечно",
+     "en": "of course"
+    },
+    {
+     "hz": "以后再说",
+     "py": "yǐhòu zài shuō",
+     "ru": "потом поговорим",
+     "en": "let's talk later"
+    },
+    {
+     "hz": "又",
+     "py": "yòu",
+     "ru": "снова (в прошлом)",
+     "en": "again (past)"
+    },
+    {
+     "hz": "风",
+     "py": "fēng",
+     "ru": "ветер",
+     "en": "wind"
+    },
+    {
+     "hz": "风力",
+     "py": "fēnglì",
+     "ru": "сила ветра",
+     "en": "wind force"
+    },
+    {
+     "hz": "台风",
+     "py": "táifēng",
+     "ru": "тайфун",
+     "en": "typhoon"
+    },
+    {
+     "hz": "戴",
+     "py": "dài",
+     "ru": "носить (аксессуары)",
+     "en": "wear (accessories)"
+    },
+    {
+     "hz": "眼镜",
+     "py": "yǎnjìng",
+     "ru": "очки",
+     "en": "glasses"
+    },
+    {
+     "hz": "手表",
+     "py": "shǒubiǎo",
+     "ru": "наручные часы",
+     "en": "watch"
+    }
+   ],
+   "sentences": [
+    {
+     "zh": "我等了一个小时。",
+     "py": "Wǒ děng le yí ge xiǎoshí.",
+     "ru": "Я ждала час.",
+     "en": "I waited an hour."
+    },
+    {
+     "zh": "最后我回家了。",
+     "py": "Zuìhòu wǒ huí jiā le.",
+     "ru": "В конце концов я пошла домой.",
+     "en": "In the end I went home."
+    },
+    {
+     "zh": "好好照顾自己。",
+     "py": "Hǎohǎo zhàogù zìjǐ.",
+     "ru": "Береги себя.",
+     "en": "Take good care of yourself."
+    },
+    {
+     "zh": "上班迟到。",
+     "py": "Shàngbān chídào.",
+     "ru": "Опоздать на работу.",
+     "en": "Be late for work."
+    },
+    {
+     "zh": "一般我六点起床。",
+     "py": "Yìbān wǒ liù diǎn qǐchuáng.",
+     "ru": "Обычно я встаю в шесть.",
+     "en": "I usually get up at six."
+    },
+    {
+     "zh": "这个地方很一般。",
+     "py": "Zhège dìfang hěn yìbān.",
+     "ru": "Это место ничем не особенное.",
+     "en": "This place is pretty ordinary."
+    },
+    {
+     "zh": "我要一瓶啤酒。",
+     "py": "Wǒ yào yì píng píjiǔ.",
+     "ru": "Мне бутылку пива.",
+     "en": "I'd like a bottle of beer."
+    },
+    {
+     "zh": "我再看一下。",
+     "py": "Wǒ zài kàn yíxià.",
+     "ru": "Я посмотрю ещё раз.",
+     "en": "Let me look again."
+    },
+    {
+     "zh": "我们明天再去。",
+     "py": "Wǒmen míngtiān zài qù.",
+     "ru": "Сходим завтра снова.",
+     "en": "We'll go again tomorrow."
+    },
+    {
+     "zh": "他又迟到了。",
+     "py": "Tā yòu chídào le.",
+     "ru": "Он снова опоздал.",
+     "en": "He's late again."
+    },
+    {
+     "zh": "风很大。",
+     "py": "Fēng hěn dà.",
+     "ru": "Сильный ветер.",
+     "en": "It's very windy."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "page": "A-18",
+   "date": "2026-04-25",
+   "words": [
+    {
+     "hz": "帽子",
+     "py": "màozi",
+     "ru": "шапка",
+     "en": "hat"
+    },
+    {
+     "hz": "手套",
+     "py": "shǒutào",
+     "ru": "перчатки",
+     "en": "gloves"
+    },
+    {
+     "hz": "一样",
+     "py": "yíyàng",
+     "ru": "одинаковый",
+     "en": "the same"
+    },
+    {
+     "hz": "暖和",
+     "py": "nuǎnhuo",
+     "ru": "тёплый",
+     "en": "warm"
+    },
+    {
+     "hz": "太阳",
+     "py": "tàiyáng",
+     "ru": "солнце",
+     "en": "sun"
+    },
+    {
+     "hz": "月亮",
+     "py": "yuèliang",
+     "ru": "луна",
+     "en": "moon"
+    },
+    {
+     "hz": "短裤",
+     "py": "duǎnkù",
+     "ru": "шорты",
+     "en": "shorts"
+    },
+    {
+     "hz": "裤",
+     "py": "kù",
+     "ru": "штаны",
+     "en": "trousers"
+    },
+    {
+     "hz": "虽然…但是…",
+     "py": "suīrán… dànshì…",
+     "ru": "хотя…, но…",
+     "en": "although…, but…"
+    },
+    {
+     "hz": "还是",
+     "py": "háishi",
+     "ru": "всё равно; или",
+     "en": "still; or"
+    },
+    {
+     "hz": "要是",
+     "py": "yàoshi",
+     "ru": "если (разг.)",
+     "en": "if (colloquial)"
+    },
+    {
+     "hz": "出门",
+     "py": "chūmén",
+     "ru": "выходить из дома",
+     "en": "go out"
+    },
+    {
+     "hz": "墨镜",
+     "py": "mòjìng",
+     "ru": "солнцезащитные очки",
+     "en": "sunglasses"
+    },
+    {
+     "hz": "冻死了",
+     "py": "dòng sǐ le",
+     "ru": "замёрз до смерти",
+     "en": "freezing"
+    },
+    {
+     "hz": "真",
+     "py": "zhēn",
+     "ru": "действительно",
+     "en": "really"
+    },
+    {
+     "hz": "忘",
+     "py": "wàng",
+     "ru": "забывать",
+     "en": "forget"
+    },
+    {
+     "hz": "伞",
+     "py": "sǎn",
+     "ru": "зонт",
+     "en": "umbrella"
+    },
+    {
+     "hz": "什么鬼天气",
+     "py": "shénme guǐ tiānqì",
+     "ru": "что за мерзкая погода",
+     "en": "what nasty weather"
+    },
+    {
+     "hz": "船",
+     "py": "chuán",
+     "ru": "лодка, корабль",
+     "en": "boat, ship"
+    },
+    {
+     "hz": "景点",
+     "py": "jǐngdiǎn",
+     "ru": "достопримечательность",
+     "en": "tourist attraction"
+    },
+    {
+     "hz": "预报",
+     "py": "yùbào",
+     "ru": "прогноз",
+     "en": "forecast"
+    },
+    {
+     "hz": "天气预报",
+     "py": "tiānqì yùbào",
+     "ru": "прогноз погоды",
+     "en": "weather forecast"
+    },
+    {
+     "hz": "起",
+     "py": "qǐ",
+     "ru": "начиная с",
+     "en": "starting from"
+    },
+    {
+     "hz": "影响",
+     "py": "yǐngxiǎng",
+     "ru": "влияние; мешать",
+     "en": "influence; disturb"
+    },
+    {
+     "hz": "别人",
+     "py": "biérén",
+     "ru": "другие люди",
+     "en": "other people"
+    },
+    {
+     "hz": "部分",
+     "py": "bùfen",
+     "ru": "часть",
+     "en": "part"
+    },
+    {
+     "hz": "大部分",
+     "py": "dà bùfen",
+     "ru": "большая часть",
+     "en": "most"
+    },
+    {
+     "hz": "区",
+     "py": "qū",
+     "ru": "район, зона",
+     "en": "district"
+    },
+    {
+     "hz": "地区",
+     "py": "dìqū",
+     "ru": "регион",
+     "en": "region"
+    },
+    {
+     "hz": "小区",
+     "py": "xiǎoqū",
+     "ru": "жилой квартал, двор",
+     "en": "residential compound"
+    },
+    {
+     "hz": "市区",
+     "py": "shìqū",
+     "ru": "центр города",
+     "en": "city center"
+    },
+    {
+     "hz": "不同",
+     "py": "bùtóng",
+     "ru": "разный",
+     "en": "different"
+    },
+    {
+     "hz": "文化",
+     "py": "wénhuà",
+     "ru": "культура",
+     "en": "culture"
+    }
+   ],
+   "sentences": [
+    {
+     "zh": "冬天要戴手套。",
+     "py": "Dōngtiān yào dài shǒutào.",
+     "ru": "Зимой надо носить перчатки.",
+     "en": "You need to wear gloves in winter."
+    },
+    {
+     "zh": "他跟我一样高。",
+     "py": "Tā gēn wǒ yíyàng gāo.",
+     "ru": "Он такого же роста, как я.",
+     "en": "He's as tall as me."
+    },
+    {
+     "zh": "今天很暖和。",
+     "py": "Jīntiān hěn nuǎnhuo.",
+     "ru": "Сегодня тепло.",
+     "en": "It's warm today."
+    },
+    {
+     "zh": "太阳出来了。",
+     "py": "Tàiyáng chūlai le.",
+     "ru": "Вышло солнце.",
+     "en": "The sun came out."
+    },
+    {
+     "zh": "虽然很累，我还是工作。",
+     "py": "Suīrán hěn lèi, wǒ háishi gōngzuò.",
+     "ru": "Хотя я устала, я всё равно работаю.",
+     "en": "Although tired, I still work."
+    },
+    {
+     "zh": "如果下雨，我就不出门。",
+     "py": "Rúguǒ xià yǔ, wǒ jiù bù chūmén.",
+     "ru": "Если пойдёт дождь, я не выйду.",
+     "en": "If it rains, I won't go out."
+    },
+    {
+     "zh": "要是你来，我很开心。",
+     "py": "Yàoshi nǐ lái, wǒ hěn kāixīn.",
+     "ru": "Если ты придёшь, я буду рада.",
+     "en": "If you come, I'll be happy."
+    },
+    {
+     "zh": "雨真大！",
+     "py": "Yǔ zhēn dà!",
+     "ru": "Какой сильный дождь!",
+     "en": "What heavy rain!"
+    },
+    {
+     "zh": "别忘了带伞！",
+     "py": "Bié wàng le dài sǎn!",
+     "ru": "Не забудь зонт!",
+     "en": "Don't forget your umbrella!"
+    },
+    {
+     "zh": "我坐船去。",
+     "py": "Wǒ zuò chuán qù.",
+     "ru": "Я поплыву на корабле.",
+     "en": "I'll go by boat."
+    },
+    {
+     "zh": "北京有很多景点。",
+     "py": "Běijīng yǒu hěn duō jǐngdiǎn.",
+     "ru": "В Пекине много достопримечательностей.",
+     "en": "Beijing has many sights."
+    },
+    {
+     "zh": "明天起我不迟到。",
+     "py": "Míngtiān qǐ wǒ bù chídào.",
+     "ru": "С завтрашнего дня я не опаздываю.",
+     "en": "Starting tomorrow I won't be late."
+    },
+    {
+     "zh": "不要影响别人。",
+     "py": "Bú yào yǐngxiǎng biérén.",
+     "ru": "Не мешай другим.",
+     "en": "Don't disturb others."
+    },
+    {
+     "zh": "不同地区有不同文化。",
+     "py": "Bùtóng dìqū yǒu bùtóng wénhuà.",
+     "ru": "В разных регионах разная культура.",
+     "en": "Different regions have different cultures."
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "page": "A-19",
+   "date": "2026-05-02",
+   "words": [
+    {
+     "hz": "受",
+     "py": "shòu",
+     "ru": "получать; подвергаться",
+     "en": "receive; suffer"
+    },
+    {
+     "hz": "受到",
+     "py": "shòudào",
+     "ru": "подвергнуться, получить",
+     "en": "receive; be affected by"
+    },
+    {
+     "hz": "下降",
+     "py": "xiàjiàng",
+     "ru": "снижаться",
+     "en": "decrease"
+    },
+    {
+     "hz": "降",
+     "py": "jiàng",
+     "ru": "понижаться",
+     "en": "fall, drop"
+    },
+    {
+     "hz": "白天",
+     "py": "báitiān",
+     "ru": "днём",
+     "en": "daytime"
+    },
+    {
+     "hz": "夜间",
+     "py": "yèjiān",
+     "ru": "ночью (офиц.)",
+     "en": "at night"
+    },
+    {
+     "hz": "达到",
+     "py": "dádào",
+     "ru": "достигать",
+     "en": "reach"
+    },
+    {
+     "hz": "水位",
+     "py": "shuǐwèi",
+     "ru": "уровень воды",
+     "en": "water level"
+    },
+    {
+     "hz": "以上",
+     "py": "yǐshàng",
+     "ru": "более, свыше",
+     "en": "above, over"
+    },
+    {
+     "hz": "转",
+     "py": "zhuǎn",
+     "ru": "поворачивать; менять",
+     "en": "turn; transfer"
+    },
+    {
+     "hz": "左转",
+     "py": "zuǒ zhuǎn",
+     "ru": "повернуть налево",
+     "en": "turn left"
+    },
+    {
+     "hz": "转车",
+     "py": "zhuǎn chē",
+     "ru": "пересаживаться",
+     "en": "change trains/buses"
+    },
+    {
+     "hz": "忘",
+     "py": "wàng",
+     "ru": "забывать",
+     "en": "forget"
+    },
+    {
+     "hz": "鬼",
+     "py": "guǐ",
+     "ru": "призрак; хитрый",
+     "en": "ghost; sly"
+    },
+    {
+     "hz": "怕",
+     "py": "pà",
+     "ru": "бояться",
+     "en": "fear"
+    },
+    {
+     "hz": "计划",
+     "py": "jìhuà",
+     "ru": "план; планировать",
+     "en": "plan"
+    },
+    {
+     "hz": "打算",
+     "py": "dǎsuan",
+     "ru": "собираться, намереваться",
+     "en": "intend"
+    },
+    {
+     "hz": "打扫",
+     "py": "dǎsǎo",
+     "ru": "убирать",
+     "en": "clean"
+    },
+    {
+     "hz": "阴",
+     "py": "yīn",
+     "ru": "пасмурный; тень",
+     "en": "overcast; shade"
+    },
+    {
+     "hz": "阴天",
+     "py": "yīntiān",
+     "ru": "пасмурный день",
+     "en": "cloudy day"
+    },
+    {
+     "hz": "终于",
+     "py": "zhōngyú",
+     "ru": "наконец-то",
+     "en": "finally"
+    },
+    {
+     "hz": "古",
+     "py": "gǔ",
+     "ru": "древний",
+     "en": "ancient"
+    },
+    {
+     "hz": "古代",
+     "py": "gǔdài",
+     "ru": "древность",
+     "en": "ancient times"
+    },
+    {
+     "hz": "古城",
+     "py": "gǔchéng",
+     "ru": "древний город",
+     "en": "ancient city"
+    },
+    {
+     "hz": "宾馆",
+     "py": "bīnguǎn",
+     "ru": "гостиница",
+     "en": "hotel"
+    },
+    {
+     "hz": "宾",
+     "py": "bīn",
+     "ru": "гость",
+     "en": "guest"
+    }
+   ],
+   "sentences": [
+    {
+     "zh": "公司受到影响。",
+     "py": "Gōngsī shòudào yǐngxiǎng.",
+     "ru": "Компания пострадала.",
+     "en": "The company was affected."
+    },
+    {
+     "zh": "气温下降了。",
+     "py": "Qìwēn xiàjiàng le.",
+     "ru": "Температура упала.",
+     "en": "The temperature dropped."
+    },
+    {
+     "zh": "夜间不要出门。",
+     "py": "Yèjiān bú yào chūmén.",
+     "ru": "Не выходи ночью.",
+     "en": "Don't go out at night."
+    },
+    {
+     "zh": "水位达到最高。",
+     "py": "Shuǐwèi dádào zuì gāo.",
+     "ru": "Уровень воды достиг максимума.",
+     "en": "The water level reached its peak."
+    },
+    {
+     "zh": "十八岁以上",
+     "py": "shíbā suì yǐshàng",
+     "ru": "старше 18 лет",
+     "en": "over 18 years old"
+    },
+    {
+     "zh": "请左转。",
+     "py": "Qǐng zuǒ zhuǎn.",
+     "ru": "Поверните налево.",
+     "en": "Please turn left."
+    },
+    {
+     "zh": "别忘了带护照。",
+     "py": "Bié wàng le dài hùzhào.",
+     "ru": "Не забудь паспорт.",
+     "en": "Don't forget your passport."
+    },
+    {
+     "zh": "我怕鬼。",
+     "py": "Wǒ pà guǐ.",
+     "ru": "Я боюсь привидений.",
+     "en": "I'm afraid of ghosts."
+    },
+    {
+     "zh": "我计划明天去。",
+     "py": "Wǒ jìhuà míngtiān qù.",
+     "ru": "Я планирую пойти завтра.",
+     "en": "I plan to go tomorrow."
+    },
+    {
+     "zh": "如果天气很暖和，我打算穿短裤。",
+     "py": "Rúguǒ tiānqì hěn nuǎnhuo, wǒ dǎsuan chuān duǎnkù.",
+     "ru": "Если будет тепло, я надену шорты.",
+     "en": "If it's warm, I'll wear shorts."
+    },
+    {
+     "zh": "我计划打扫房间。",
+     "py": "Wǒ jìhuà dǎsǎo fángjiān.",
+     "ru": "Я планирую убрать комнату.",
+     "en": "I plan to clean the room."
+    },
+    {
+     "zh": "我终于不迟到了。",
+     "py": "Wǒ zhōngyú bù chídào le.",
+     "ru": "Я наконец-то не опоздала.",
+     "en": "I finally wasn't late."
+    },
+    {
+     "zh": "这个地区有很多古代故事。",
+     "py": "Zhège dìqū yǒu hěn duō gǔdài gùshi.",
+     "ru": "В этом регионе много древних историй.",
+     "en": "This region has many ancient stories."
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "page": "A-20",
+   "date": "2026-06-20",
+   "words": [
+    {
+     "hz": "订",
+     "py": "dìng",
+     "ru": "бронировать",
+     "en": "book, reserve"
+    },
+    {
+     "hz": "咱们",
+     "py": "zánmen",
+     "ru": "мы (включая собеседника)",
+     "en": "we (inclusive)"
+    },
+    {
+     "hz": "拐",
+     "py": "guǎi",
+     "ru": "поворачивать",
+     "en": "turn"
+    },
+    {
+     "hz": "右拐",
+     "py": "yòu guǎi",
+     "ru": "повернуть направо",
+     "en": "turn right"
+    },
+    {
+     "hz": "墙",
+     "py": "qiáng",
+     "ru": "стена",
+     "en": "wall"
+    },
+    {
+     "hz": "张",
+     "py": "zhāng",
+     "ru": "(счётное для плоских предметов)",
+     "en": "(measure word for flat things)"
+    },
+    {
+     "hz": "像",
+     "py": "xiàng",
+     "ru": "быть похожим",
+     "en": "resemble"
+    },
+    {
+     "hz": "开玩笑",
+     "py": "kāi wánxiào",
+     "ru": "шутить",
+     "en": "joke"
+    },
+    {
+     "hz": "玩笑",
+     "py": "wánxiào",
+     "ru": "шутка",
+     "en": "joke"
+    },
+    {
+     "hz": "找到",
+     "py": "zhǎodào",
+     "ru": "найти",
+     "en": "find"
+    },
+    {
+     "hz": "清楚",
+     "py": "qīngchu",
+     "ru": "ясный, чётко",
+     "en": "clear"
+    },
+    {
+     "hz": "听清楚",
+     "py": "tīng qīngchu",
+     "ru": "расслышать",
+     "en": "hear clearly"
+    },
+    {
+     "hz": "遍",
+     "py": "biàn",
+     "ru": "раз (от начала до конца)",
+     "en": "time (complete)"
+    },
+    {
+     "hz": "原料",
+     "py": "yuánliào",
+     "ru": "ингредиенты, сырьё",
+     "en": "ingredients"
+    },
+    {
+     "hz": "克",
+     "py": "kè",
+     "ru": "грамм",
+     "en": "gram"
+    },
+    {
+     "hz": "茄子",
+     "py": "qiézi",
+     "ru": "баклажан",
+     "en": "eggplant"
+    },
+    {
+     "hz": "牛肉末",
+     "py": "niúròu mò",
+     "ru": "говяжий фарш",
+     "en": "ground beef"
+    },
+    {
+     "hz": "末",
+     "py": "mò",
+     "ru": "порошок, крошка",
+     "en": "powder; mince"
+    },
+    {
+     "hz": "鸡肉",
+     "py": "jīròu",
+     "ru": "курятина",
+     "en": "chicken meat"
+    },
+    {
+     "hz": "油",
+     "py": "yóu",
+     "ru": "масло",
+     "en": "oil"
+    },
+    {
+     "hz": "放",
+     "py": "fàng",
+     "ru": "класть, добавлять",
+     "en": "put, add"
+    },
+    {
+     "hz": "花椰菜",
+     "py": "huāyēcài",
+     "ru": "цветная капуста",
+     "en": "cauliflower"
+    },
+    {
+     "hz": "用",
+     "py": "yòng",
+     "ru": "использовать",
+     "en": "use"
+    },
+    {
+     "hz": "炒",
+     "py": "chǎo",
+     "ru": "жарить (помешивая)",
+     "en": "stir-fry"
+    },
+    {
+     "hz": "少量",
+     "py": "shǎoliàng",
+     "ru": "небольшое количество",
+     "en": "small amount"
+    },
+    {
+     "hz": "量",
+     "py": "liàng",
+     "ru": "количество",
+     "en": "amount"
+    },
+    {
+     "hz": "加",
+     "py": "jiā",
+     "ru": "добавлять",
+     "en": "add"
+    },
+    {
+     "hz": "盐",
+     "py": "yán",
+     "ru": "соль",
+     "en": "salt"
+    },
+    {
+     "hz": "豆瓣酱",
+     "py": "dòubànjiàng",
+     "ru": "острая бобовая паста",
+     "en": "spicy bean paste"
+    },
+    {
+     "hz": "酱",
+     "py": "jiàng",
+     "ru": "соус, паста",
+     "en": "sauce, paste"
+    },
+    {
+     "hz": "番茄酱",
+     "py": "fānqiéjiàng",
+     "ru": "кетчуп",
+     "en": "ketchup"
+    },
+    {
+     "hz": "花椒粉",
+     "py": "huājiāofěn",
+     "ru": "молотый сычуаньский перец",
+     "en": "Sichuan pepper powder"
+    },
+    {
+     "hz": "椒",
+     "py": "jiāo",
+     "ru": "перец",
+     "en": "pepper"
+    },
+    {
+     "hz": "粉",
+     "py": "fěn",
+     "ru": "порошок",
+     "en": "powder"
+    },
+    {
+     "hz": "葱",
+     "py": "cōng",
+     "ru": "зелёный лук",
+     "en": "scallion"
+    },
+    {
+     "hz": "洋葱",
+     "py": "yángcōng",
+     "ru": "репчатый лук",
+     "en": "onion"
+    },
+    {
+     "hz": "姜",
+     "py": "jiāng",
+     "ru": "имбирь",
+     "en": "ginger"
+    }
+   ],
+   "sentences": [
+    {
+     "zh": "我打算订一个宾馆。",
+     "py": "Wǒ dǎsuan dìng yí ge bīnguǎn.",
+     "ru": "Я собираюсь забронировать отель.",
+     "en": "I plan to book a hotel."
+    },
+    {
+     "zh": "咱们一起去看景点吧。",
+     "py": "Zánmen yìqǐ qù kàn jǐngdiǎn ba.",
+     "ru": "Давай вместе посмотрим достопримечательности.",
+     "en": "Let's go sightseeing together."
+    },
+    {
+     "zh": "从宾馆出来以后右拐。",
+     "py": "Cóng bīnguǎn chūlai yǐhòu yòu guǎi.",
+     "ru": "Выйдя из отеля, поверните направо.",
+     "en": "Turn right after leaving the hotel."
+    },
+    {
+     "zh": "墙上有一张照片。",
+     "py": "Qiáng shang yǒu yì zhāng zhàopiàn.",
+     "ru": "На стене фотография.",
+     "en": "There's a photo on the wall."
+    },
+    {
+     "zh": "我没听清楚。",
+     "py": "Wǒ méi tīng qīngchu.",
+     "ru": "Я не расслышала.",
+     "en": "I didn't hear clearly."
+    },
+    {
+     "zh": "请再说一遍。",
+     "py": "Qǐng zài shuō yí biàn.",
+     "ru": "Пожалуйста, повторите.",
+     "en": "Please say it again."
+    },
+    {
+     "zh": "这个菜的原料很新鲜。",
+     "py": "Zhège cài de yuánliào hěn xīnxiān.",
+     "ru": "Ингредиенты этого блюда очень свежие.",
+     "en": "The ingredients of this dish are fresh."
+    },
+    {
+     "zh": "放一点油。",
+     "py": "Fàng yìdiǎn yóu.",
+     "ru": "Добавь немного масла.",
+     "en": "Add a little oil."
+    },
+    {
+     "zh": "加少量盐。",
+     "py": "Jiā shǎoliàng yán.",
+     "ru": "Добавь немного соли.",
+     "en": "Add a little salt."
+    },
+    {
+     "zh": "如果豆瓣酱太多，这个菜会很辣。",
+     "py": "Rúguǒ dòubànjiàng tài duō, zhège cài huì hěn là.",
+     "ru": "Если пасты слишком много, блюдо будет острым.",
+     "en": "Too much bean paste makes this dish spicy."
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "page": "A-21",
+   "date": "2026-06-30",
+   "words": [
+    {
+     "hz": "蒜",
+     "py": "suàn",
+     "ru": "чеснок",
+     "en": "garlic"
+    },
+    {
+     "hz": "做法",
+     "py": "zuòfǎ",
+     "ru": "способ приготовления",
+     "en": "recipe, method"
+    },
+    {
+     "hz": "把",
+     "py": "bǎ",
+     "ru": "(предлог: объект перед глаголом)",
+     "en": "(object-fronting particle)"
+    },
+    {
+     "hz": "成",
+     "py": "chéng",
+     "ru": "в, на (результат: разрезать на…)",
+     "en": "into (result)"
+    },
+    {
+     "hz": "块",
+     "py": "kuài",
+     "ru": "кусок",
+     "en": "piece"
+    },
+    {
+     "hz": "先",
+     "py": "xiān",
+     "ru": "сначала",
+     "en": "first"
+    },
+    {
+     "hz": "再",
+     "py": "zài",
+     "ru": "потом",
+     "en": "then"
+    },
+    {
+     "hz": "锅",
+     "py": "guō",
+     "ru": "сковорода, кастрюля",
+     "en": "pan, pot"
+    },
+    {
+     "hz": "放进",
+     "py": "fàngjìn",
+     "ru": "положить внутрь",
+     "en": "put into"
+    },
+    {
+     "hz": "加热",
+     "py": "jiārè",
+     "ru": "нагреть",
+     "en": "heat up"
+    },
+    {
+     "hz": "熟",
+     "py": "shú",
+     "ru": "готовый, спелый",
+     "en": "cooked; ripe"
+    },
+    {
+     "hz": "煮",
+     "py": "zhǔ",
+     "ru": "варить",
+     "en": "boil"
+    },
+    {
+     "hz": "煮鸡蛋",
+     "py": "zhǔ jīdàn",
+     "ru": "варёное яйцо",
+     "en": "boiled egg"
+    },
+    {
+     "hz": "暖",
+     "py": "nuǎn",
+     "ru": "тёплый",
+     "en": "warm"
+    },
+    {
+     "hz": "吃醋",
+     "py": "chīcù",
+     "ru": "ревновать",
+     "en": "be jealous"
+    },
+    {
+     "hz": "醋",
+     "py": "cù",
+     "ru": "уксус",
+     "en": "vinegar"
+    },
+    {
+     "hz": "只是",
+     "py": "zhǐshì",
+     "ru": "просто, только",
+     "en": "just, only"
+    },
+    {
+     "hz": "聊天",
+     "py": "liáotiān",
+     "ru": "болтать",
+     "en": "chat"
+    },
+    {
+     "hz": "高尔夫球",
+     "py": "gāo'ěrfūqiú",
+     "ru": "гольф",
+     "en": "golf"
+    },
+    {
+     "hz": "洞",
+     "py": "dòng",
+     "ru": "дыра, лунка",
+     "en": "hole"
+    },
+    {
+     "hz": "离",
+     "py": "lí",
+     "ru": "от (расстояние)",
+     "en": "away from"
+    },
+    {
+     "hz": "近",
+     "py": "jìn",
+     "ru": "близко",
+     "en": "near"
+    },
+    {
+     "hz": "内脏",
+     "py": "nèizàng",
+     "ru": "внутренности",
+     "en": "internal organs"
+    },
+    {
+     "hz": "脏",
+     "py": "zāng",
+     "ru": "грязный",
+     "en": "dirty"
+    },
+    {
+     "hz": "美味",
+     "py": "měiwèi",
+     "ru": "деликатес, вкусный",
+     "en": "delicious"
+    },
+    {
+     "hz": "血",
+     "py": "xuè",
+     "ru": "кровь",
+     "en": "blood"
+    },
+    {
+     "hz": "出血",
+     "py": "chūxuè",
+     "ru": "кровотечение",
+     "en": "bleed"
+    }
+   ],
+   "sentences": [
+    {
+     "zh": "我想学这个菜的做法。",
+     "py": "Wǒ xiǎng xué zhège cài de zuòfǎ.",
+     "ru": "Я хочу научиться готовить это блюдо.",
+     "en": "I want to learn how to make this dish."
+    },
+    {
+     "zh": "请把葱切一下。",
+     "py": "Qǐng bǎ cōng qiē yíxià.",
+     "ru": "Нарежь, пожалуйста, лук.",
+     "en": "Please chop the scallion."
+    },
+    {
+     "zh": "把茄子切成小块。",
+     "py": "Bǎ qiézi qiē chéng xiǎo kuài.",
+     "ru": "Нарежь баклажан маленькими кусочками.",
+     "en": "Cut the eggplant into small pieces."
+    },
+    {
+     "zh": "先洗花椰菜，再切。",
+     "py": "Xiān xǐ huāyēcài, zài qiē.",
+     "ru": "Сначала помой капусту, потом режь.",
+     "en": "Wash the cauliflower first, then cut it."
+    },
+    {
+     "zh": "把油放进锅里。",
+     "py": "Bǎ yóu fàngjìn guō li.",
+     "ru": "Налей масло в сковороду.",
+     "en": "Put the oil in the pan."
+    },
+    {
+     "zh": "牛肉熟了以后，放豆瓣酱。",
+     "py": "Niúròu shú le yǐhòu, fàng dòubànjiàng.",
+     "ru": "Когда говядина готова, добавь бобовую пасту.",
+     "en": "When the beef is cooked, add the bean paste."
+    },
+    {
+     "zh": "这个季节很暖和。",
+     "py": "Zhège jìjié hěn nuǎnhuo.",
+     "ru": "В это время года тепло.",
+     "en": "This season is warm."
+    },
+    {
+     "zh": "他很容易吃醋。",
+     "py": "Tā hěn róngyì chīcù.",
+     "ru": "Он легко ревнует.",
+     "en": "He gets jealous easily."
+    },
+    {
+     "zh": "虽然我只是跟朋友聊天，但是她吃醋了。",
+     "py": "Suīrán wǒ zhǐshì gēn péngyou liáotiān, dànshì tā chīcù le.",
+     "ru": "Хотя я просто болтал с другом, она приревновала.",
+     "en": "Though I was just chatting with a friend, she got jealous."
+    },
+    {
+     "zh": "你会打高尔夫球吗？",
+     "py": "Nǐ huì dǎ gāo'ěrfūqiú ma?",
+     "ru": "Ты умеешь играть в гольф?",
+     "en": "Can you play golf?"
+    },
+    {
+     "zh": "这个球离洞很近。",
+     "py": "Zhège qiú lí dòng hěn jìn.",
+     "ru": "Мяч близко к лунке.",
+     "en": "The ball is close to the hole."
+    },
+    {
+     "zh": "原料很简单，但是美味。",
+     "py": "Yuánliào hěn jiǎndān, dànshì měiwèi.",
+     "ru": "Ингредиенты простые, но вкусно.",
+     "en": "Simple ingredients, but delicious."
+    },
+    {
+     "zh": "血是身体的一部分。",
+     "py": "Xuè shì shēntǐ de yí bùfen.",
+     "ru": "Кровь — часть тела.",
+     "en": "Blood is part of the body."
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "page": "A-22",
+   "date": "2026-08-29",
+   "words": [
+    {
+     "hz": "臭",
+     "py": "chòu",
+     "ru": "вонючий",
+     "en": "stinky"
+    },
+    {
+     "hz": "真空包装",
+     "py": "zhēnkōng bāozhuāng",
+     "ru": "вакуумная упаковка",
+     "en": "vacuum packing"
+    },
+    {
+     "hz": "装",
+     "py": "zhuāng",
+     "ru": "упаковывать; грузить",
+     "en": "pack; load"
+    },
+    {
+     "hz": "移民局",
+     "py": "yímínjú",
+     "ru": "миграционная служба",
+     "en": "immigration office"
+    },
+    {
+     "hz": "移",
+     "py": "yí",
+     "ru": "перемещать",
+     "en": "move"
+    },
+    {
+     "hz": "移动",
+     "py": "yídòng",
+     "ru": "перемещаться",
+     "en": "move; mobile"
+    },
+    {
+     "hz": "民",
+     "py": "mín",
+     "ru": "народ",
+     "en": "people"
+    },
+    {
+     "hz": "人民",
+     "py": "rénmín",
+     "ru": "народ",
+     "en": "the people"
+    },
+    {
+     "hz": "局",
+     "py": "jú",
+     "ru": "бюро, служба",
+     "en": "bureau"
+    },
+    {
+     "hz": "公安局",
+     "py": "gōng'ānjú",
+     "ru": "полиция (бюро общественной безопасности)",
+     "en": "police bureau"
+    },
+    {
+     "hz": "网络",
+     "py": "wǎngluò",
+     "ru": "интернет, сеть",
+     "en": "internet, network"
+    },
+    {
+     "hz": "必须",
+     "py": "bìxū",
+     "ru": "обязательно, должен",
+     "en": "must"
+    },
+    {
+     "hz": "告诉",
+     "py": "gàosu",
+     "ru": "сказать, сообщить",
+     "en": "tell"
+    },
+    {
+     "hz": "扫",
+     "py": "sǎo",
+     "ru": "сканировать; подметать",
+     "en": "scan; sweep"
+    },
+    {
+     "hz": "二维码",
+     "py": "èrwéimǎ",
+     "ru": "QR-код",
+     "en": "QR code"
+    },
+    {
+     "hz": "维",
+     "py": "wéi",
+     "ru": "измерение",
+     "en": "dimension"
+    },
+    {
+     "hz": "码",
+     "py": "mǎ",
+     "ru": "код",
+     "en": "code"
+    },
+    {
+     "hz": "讲",
+     "py": "jiǎng",
+     "ru": "рассказывать, объяснять",
+     "en": "tell, explain"
+    },
+    {
+     "hz": "对…说",
+     "py": "duì… shuō",
+     "ru": "сказать кому-то",
+     "en": "say to"
+    },
+    {
+     "hz": "鸡爪",
+     "py": "jīzhuǎ",
+     "ru": "куриные лапки",
+     "en": "chicken feet"
+    },
+    {
+     "hz": "词典",
+     "py": "cídiǎn",
+     "ru": "словарь",
+     "en": "dictionary"
+    },
+    {
+     "hz": "词",
+     "py": "cí",
+     "ru": "слово",
+     "en": "word"
+    },
+    {
+     "hz": "典",
+     "py": "diǎn",
+     "ru": "справочник",
+     "en": "reference work"
+    },
+    {
+     "hz": "查",
+     "py": "chá",
+     "ru": "искать, проверять",
+     "en": "look up"
+    },
+    {
+     "hz": "电视剧",
+     "py": "diànshìjù",
+     "ru": "сериал",
+     "en": "TV series"
+    },
+    {
+     "hz": "剧",
+     "py": "jù",
+     "ru": "пьеса",
+     "en": "drama"
+    },
+    {
+     "hz": "歌剧",
+     "py": "gējù",
+     "ru": "опера",
+     "en": "opera"
+    },
+    {
+     "hz": "字幕",
+     "py": "zìmù",
+     "ru": "субтитры",
+     "en": "subtitles"
+    },
+    {
+     "hz": "打开",
+     "py": "dǎkāi",
+     "ru": "открыть, включить",
+     "en": "open, turn on"
+    },
+    {
+     "hz": "风扇",
+     "py": "fēngshàn",
+     "ru": "вентилятор",
+     "en": "fan"
+    },
+    {
+     "hz": "扇",
+     "py": "shàn",
+     "ru": "веер",
+     "en": "fan"
+    },
+    {
+     "hz": "关上",
+     "py": "guānshang",
+     "ru": "выключить, закрыть",
+     "en": "turn off, close"
+    },
+    {
+     "hz": "晒黑",
+     "py": "shàihēi",
+     "ru": "загореть",
+     "en": "get tanned"
+    },
+    {
+     "hz": "晒",
+     "py": "shài",
+     "ru": "греться на солнце",
+     "en": "bask in the sun"
+    },
+    {
+     "hz": "湖",
+     "py": "hú",
+     "ru": "озеро",
+     "en": "lake"
+    },
+    {
+     "hz": "湖边",
+     "py": "húbiān",
+     "ru": "у озера",
+     "en": "lakeside"
+    }
+   ],
+   "sentences": [
+    {
+     "zh": "你的鞋很臭。",
+     "py": "Nǐ de xié hěn chòu.",
+     "ru": "Твоя обувь воняет.",
+     "en": "Your shoes stink."
+    },
+    {
+     "zh": "虽然有网络，但是我没听清楚。",
+     "py": "Suīrán yǒu wǎngluò, dànshì wǒ méi tīng qīngchu.",
+     "ru": "Хотя интернет есть, я не расслышала.",
+     "en": "Though there's internet, I didn't hear clearly."
+    },
+    {
+     "zh": "必须戴手套。",
+     "py": "Bìxū dài shǒutào.",
+     "ru": "Обязательно надо надеть перчатки.",
+     "en": "You must wear gloves."
+    },
+    {
+     "zh": "如果你知道，请告诉我。",
+     "py": "Rúguǒ nǐ zhīdào, qǐng gàosu wǒ.",
+     "ru": "Если знаешь, скажи мне.",
+     "en": "If you know, please tell me."
+    },
+    {
+     "zh": "扫二维码。",
+     "py": "Sǎo èrwéimǎ.",
+     "ru": "Отсканируй QR-код.",
+     "en": "Scan the QR code."
+    },
+    {
+     "zh": "我有话对你说。",
+     "py": "Wǒ yǒu huà duì nǐ shuō.",
+     "ru": "Мне нужно тебе кое-что сказать.",
+     "en": "I have something to tell you."
+    },
+    {
+     "zh": "这个词是什么意思？我查一下词典。",
+     "py": "Zhège cí shì shénme yìsi? Wǒ chá yíxià cídiǎn.",
+     "ru": "Что значит это слово? Посмотрю в словаре.",
+     "en": "What does this word mean? I'll check the dictionary."
+    },
+    {
+     "zh": "这部电视剧很好看。",
+     "py": "Zhè bù diànshìjù hěn hǎokàn.",
+     "ru": "Этот сериал очень хороший.",
+     "en": "This series is great."
+    },
+    {
+     "zh": "打开字幕。",
+     "py": "Dǎkāi zìmù.",
+     "ru": "Включи субтитры.",
+     "en": "Turn on subtitles."
+    },
+    {
+     "zh": "关上风扇。",
+     "py": "Guānshang fēngshàn.",
+     "ru": "Выключи вентилятор.",
+     "en": "Turn off the fan."
+    },
+    {
+     "zh": "夏天我喜欢在湖边晒太阳。",
+     "py": "Xiàtiān wǒ xǐhuan zài húbiān shài tàiyáng.",
+     "ru": "Летом я люблю загорать у озера.",
+     "en": "In summer I like sunbathing by the lake."
+    }
+   ]
+  },
+  {
+   "n": 20,
+   "page": "A-23",
+   "date": "2026-09-09",
+   "words": [
+    {
+     "hz": "欢迎",
+     "py": "huānyíng",
+     "ru": "приветствовать",
+     "en": "welcome"
+    },
+    {
+     "hz": "欢迎光临",
+     "py": "huānyíng guānglín",
+     "ru": "добро пожаловать",
+     "en": "welcome (to a shop)"
+    },
+    {
+     "hz": "光临",
+     "py": "guānglín",
+     "ru": "посещение (вежл.)",
+     "en": "presence (polite)"
+    },
+    {
+     "hz": "办理",
+     "py": "bànlǐ",
+     "ru": "оформлять",
+     "en": "handle, process"
+    },
+    {
+     "hz": "银行卡",
+     "py": "yínhángkǎ",
+     "ru": "банковская карта",
+     "en": "bank card"
+    },
+    {
+     "hz": "预订",
+     "py": "yùdìng",
+     "ru": "бронировать заранее",
+     "en": "reserve"
+    },
+    {
+     "hz": "预",
+     "py": "yù",
+     "ru": "заранее",
+     "en": "in advance"
+    },
+    {
+     "hz": "毕业式",
+     "py": "bìyèshì",
+     "ru": "выпускная церемония",
+     "en": "graduation ceremony"
+    },
+    {
+     "hz": "式",
+     "py": "shì",
+     "ru": "церемония; стиль",
+     "en": "ceremony; style"
+    },
+    {
+     "hz": "毕业证书",
+     "py": "bìyè zhèngshū",
+     "ru": "диплом",
+     "en": "diploma"
+    },
+    {
+     "hz": "证书",
+     "py": "zhèngshū",
+     "ru": "свидетельство",
+     "en": "certificate"
+    },
+    {
+     "hz": "论文",
+     "py": "lùnwén",
+     "ru": "диссертация",
+     "en": "thesis"
+    },
+    {
+     "hz": "答辩",
+     "py": "dábiàn",
+     "ru": "защита (диссертации)",
+     "en": "defense (of a thesis)"
+    },
+    {
+     "hz": "硕士",
+     "py": "shuòshì",
+     "ru": "магистр",
+     "en": "master's degree"
+    },
+    {
+     "hz": "学位",
+     "py": "xuéwèi",
+     "ru": "учёная степень",
+     "en": "academic degree"
+    },
+    {
+     "hz": "位",
+     "py": "wèi",
+     "ru": "место",
+     "en": "place, position"
+    },
+    {
+     "hz": "邮局",
+     "py": "yóujú",
+     "ru": "почта",
+     "en": "post office"
+    },
+    {
+     "hz": "最近",
+     "py": "zuìjìn",
+     "ru": "ближайший; недавно",
+     "en": "nearest; recently"
+    },
+    {
+     "hz": "邮寄",
+     "py": "yóujì",
+     "ru": "отправить почтой",
+     "en": "send by mail"
+    },
+    {
+     "hz": "寄",
+     "py": "jì",
+     "ru": "отправлять",
+     "en": "send"
+    },
+    {
+     "hz": "父母",
+     "py": "fùmǔ",
+     "ru": "родители",
+     "en": "parents"
+    },
+    {
+     "hz": "母语",
+     "py": "mǔyǔ",
+     "ru": "родной язык",
+     "en": "mother tongue"
+    },
+    {
+     "hz": "咬伤",
+     "py": "yǎoshāng",
+     "ru": "укус (рана)",
+     "en": "bite wound"
+    },
+    {
+     "hz": "咬",
+     "py": "yǎo",
+     "ru": "кусать",
+     "en": "bite"
+    },
+    {
+     "hz": "伤",
+     "py": "shāng",
+     "ru": "рана, травма",
+     "en": "injury"
+    },
+    {
+     "hz": "处",
+     "py": "chù",
+     "ru": "место",
+     "en": "place"
+    },
+    {
+     "hz": "伤口",
+     "py": "shāngkǒu",
+     "ru": "рана",
+     "en": "wound"
+    },
+    {
+     "hz": "住处",
+     "py": "zhùchù",
+     "ru": "место жительства",
+     "en": "residence"
+    },
+    {
+     "hz": "处理",
+     "py": "chǔlǐ",
+     "ru": "обрабатывать, заниматься",
+     "en": "handle, deal with"
+    },
+    {
+     "hz": "花粉",
+     "py": "huāfěn",
+     "ru": "пыльца",
+     "en": "pollen"
+    },
+    {
+     "hz": "过敏",
+     "py": "guòmǐn",
+     "ru": "аллергия",
+     "en": "allergy"
+    },
+    {
+     "hz": "膀胱",
+     "py": "pángguāng",
+     "ru": "мочевой пузырь",
+     "en": "bladder"
+    },
+    {
+     "hz": "输",
+     "py": "shū",
+     "ru": "проигрывать; вливать",
+     "en": "lose; transfuse"
+    }
+   ],
+   "sentences": [
+    {
+     "zh": "欢迎光临！",
+     "py": "Huānyíng guānglín!",
+     "ru": "Добро пожаловать!",
+     "en": "Welcome!"
+    },
+    {
+     "zh": "欢迎你来！",
+     "py": "Huānyíng nǐ lái!",
+     "ru": "Рада, что ты пришёл!",
+     "en": "Glad you came!"
+    },
+    {
+     "zh": "办理银行卡。",
+     "py": "Bànlǐ yínhángkǎ.",
+     "ru": "Оформить банковскую карту.",
+     "en": "Get a bank card."
+    },
+    {
+     "zh": "答辩论文。",
+     "py": "Dábiàn lùnwén.",
+     "ru": "Защищать диссертацию.",
+     "en": "Defend a thesis."
+    },
+    {
+     "zh": "最近的邮局在哪里？",
+     "py": "Zuìjìn de yóujú zài nǎlǐ?",
+     "ru": "Где ближайшая почта?",
+     "en": "Where's the nearest post office?"
+    },
+    {
+     "zh": "可以邮寄到德国吗？",
+     "py": "Kěyǐ yóujì dào Déguó ma?",
+     "ru": "Можно отправить в Германию?",
+     "en": "Can it be mailed to Germany?"
+    },
+    {
+     "zh": "我把毕业证书邮寄给了我的父母。",
+     "py": "Wǒ bǎ bìyè zhèngshū yóujì gěi le wǒ de fùmǔ.",
+     "ru": "Я отправила диплом родителям.",
+     "en": "I mailed my diploma to my parents."
+    },
+    {
+     "zh": "处理伤口。",
+     "py": "Chǔlǐ shāngkǒu.",
+     "ru": "Обработать рану.",
+     "en": "Treat a wound."
+    },
+    {
+     "zh": "处理问题。",
+     "py": "Chǔlǐ wèntí.",
+     "ru": "Решать проблему.",
+     "en": "Deal with a problem."
+    },
+    {
+     "zh": "对花粉过敏。",
+     "py": "Duì huāfěn guòmǐn.",
+     "ru": "Аллергия на пыльцу.",
+     "en": "Allergic to pollen."
+    }
+   ]
+  },
+  {
+   "n": 21,
+   "page": "A-24",
+   "date": "2026-09-23",
+   "words": [
+    {
+     "hz": "输血",
+     "py": "shūxuè",
+     "ru": "переливание крови",
+     "en": "blood transfusion"
+    },
+    {
+     "hz": "抗生素",
+     "py": "kàngshēngsù",
+     "ru": "антибиотики",
+     "en": "antibiotics"
+    },
+    {
+     "hz": "抗",
+     "py": "kàng",
+     "ru": "против",
+     "en": "against"
+    },
+    {
+     "hz": "素",
+     "py": "sù",
+     "ru": "элемент, вещество",
+     "en": "element"
+    },
+    {
+     "hz": "酒吧",
+     "py": "jiǔbā",
+     "ru": "бар",
+     "en": "bar"
+    },
+    {
+     "hz": "酒",
+     "py": "jiǔ",
+     "ru": "алкоголь",
+     "en": "alcohol"
+    },
+    {
+     "hz": "赛",
+     "py": "sài",
+     "ru": "соревнование",
+     "en": "race, match"
+    },
+    {
+     "hz": "参加",
+     "py": "cānjiā",
+     "ru": "участвовать",
+     "en": "participate"
+    },
+    {
+     "hz": "象棋",
+     "py": "xiàngqí",
+     "ru": "китайские шахматы",
+     "en": "Chinese chess"
+    },
+    {
+     "hz": "下象棋",
+     "py": "xià xiàngqí",
+     "ru": "играть в шахматы",
+     "en": "play chess"
+    },
+    {
+     "hz": "环",
+     "py": "huán",
+     "ru": "кольцо, звено",
+     "en": "ring, link"
+    },
+    {
+     "hz": "环路",
+     "py": "huánlù",
+     "ru": "кольцевая дорога",
+     "en": "ring road"
+    },
+    {
+     "hz": "钟楼",
+     "py": "zhōnglóu",
+     "ru": "колокольня",
+     "en": "bell tower"
+    },
+    {
+     "hz": "座",
+     "py": "zuò",
+     "ru": "(счётное для зданий, гор)",
+     "en": "(measure word for buildings, mountains)"
+    },
+    {
+     "hz": "古老",
+     "py": "gǔlǎo",
+     "ru": "старинный",
+     "en": "ancient"
+    },
+    {
+     "hz": "以为",
+     "py": "yǐwéi",
+     "ru": "ошибочно полагать",
+     "en": "mistakenly think"
+    },
+    {
+     "hz": "认为",
+     "py": "rènwéi",
+     "ru": "полагать, считать",
+     "en": "believe"
+    },
+    {
+     "hz": "觉得",
+     "py": "juéde",
+     "ru": "думать, чувствовать",
+     "en": "feel, think"
+    },
+    {
+     "hz": "维生素",
+     "py": "wéishēngsù",
+     "ru": "витамин",
+     "en": "vitamin"
+    },
+    {
+     "hz": "重要",
+     "py": "zhòngyào",
+     "ru": "важный",
+     "en": "important"
+    },
+    {
+     "hz": "晒太阳",
+     "py": "shài tàiyáng",
+     "ru": "загорать на солнце",
+     "en": "sunbathe"
+    },
+    {
+     "hz": "窗",
+     "py": "chuāng",
+     "ru": "окно",
+     "en": "window"
+    },
+    {
+     "hz": "山",
+     "py": "shān",
+     "ru": "гора",
+     "en": "mountain"
+    },
+    {
+     "hz": "独立",
+     "py": "dúlì",
+     "ru": "независимый",
+     "en": "independent"
+    },
+    {
+     "hz": "过",
+     "py": "guò",
+     "ru": "проживать (жизнь)",
+     "en": "live (a life)"
+    },
+    {
+     "hz": "很少",
+     "py": "hěn shǎo",
+     "ru": "редко",
+     "en": "rarely"
+    },
+    {
+     "hz": "花钱",
+     "py": "huā qián",
+     "ru": "тратить деньги",
+     "en": "spend money"
+    },
+    {
+     "hz": "贝",
+     "py": "bèi",
+     "ru": "ракушка",
+     "en": "shell"
+    },
+    {
+     "hz": "放假",
+     "py": "fàngjià",
+     "ru": "уходить на каникулы",
+     "en": "have a holiday"
+    },
+    {
+     "hz": "假",
+     "py": "jià",
+     "ru": "каникулы, отпуск",
+     "en": "vacation"
+    }
+   ],
+   "sentences": [
+    {
+     "zh": "他输给了我。",
+     "py": "Tā shū gěi le wǒ.",
+     "ru": "Он мне проиграл.",
+     "en": "He lost to me."
+    },
+    {
+     "zh": "参加足球比赛。",
+     "py": "Cānjiā zúqiú bǐsài.",
+     "ru": "Участвовать в футбольном матче.",
+     "en": "Take part in a football match."
+    },
+    {
+     "zh": "这个地区有一座古老的钟楼。",
+     "py": "Zhège dìqū yǒu yí zuò gǔlǎo de zhōnglóu.",
+     "ru": "В этом районе есть старинная колокольня.",
+     "en": "There's an old bell tower in this area."
+    },
+    {
+     "zh": "我以为今天下雨。",
+     "py": "Wǒ yǐwéi jīntiān xià yǔ.",
+     "ru": "Я думала, сегодня будет дождь.",
+     "en": "I thought it would rain today."
+    },
+    {
+     "zh": "我认为这个方法很好。",
+     "py": "Wǒ rènwéi zhège fāngfǎ hěn hǎo.",
+     "ru": "Я считаю, что это хороший метод.",
+     "en": "I think this method is good."
+    },
+    {
+     "zh": "维生素对身体很重要。",
+     "py": "Wéishēngsù duì shēntǐ hěn zhòngyào.",
+     "ru": "Витамины очень важны для здоровья.",
+     "en": "Vitamins are important for health."
+    },
+    {
+     "zh": "冬天的时候，我喜欢坐在窗边晒太阳。",
+     "py": "Dōngtiān de shíhou, wǒ xǐhuan zuò zài chuāngbiān shài tàiyáng.",
+     "ru": "Зимой я люблю сидеть у окна на солнце.",
+     "en": "In winter I like sitting by the window in the sun."
+    },
+    {
+     "zh": "这座山很高。",
+     "py": "Zhè zuò shān hěn gāo.",
+     "ru": "Эта гора очень высокая.",
+     "en": "This mountain is very high."
+    },
+    {
+     "zh": "她想过独立的生活。",
+     "py": "Tā xiǎng guò dúlì de shēnghuó.",
+     "ru": "Она хочет жить независимо.",
+     "en": "She wants to live independently."
+    },
+    {
+     "zh": "我很少吃茄子。",
+     "py": "Wǒ hěn shǎo chī qiézi.",
+     "ru": "Я редко ем баклажаны.",
+     "en": "I rarely eat eggplant."
+    },
+    {
+     "zh": "她很少花钱买衣服。",
+     "py": "Tā hěn shǎo huā qián mǎi yīfu.",
+     "ru": "Она редко тратит деньги на одежду.",
+     "en": "She rarely spends money on clothes."
+    },
+    {
+     "zh": "这家宾馆太贵了。",
+     "py": "Zhè jiā bīnguǎn tài guì le.",
+     "ru": "Этот отель слишком дорогой.",
+     "en": "This hotel is too expensive."
+    },
+    {
+     "zh": "我放假了。",
+     "py": "Wǒ fàngjià le.",
+     "ru": "У меня начались каникулы.",
+     "en": "I'm on holiday."
+    }
+   ]
+  },
+  {
+   "n": 22,
+   "page": "B-01",
+   "date": "2026-10-03",
+   "words": [
+    {
+     "hz": "爬山",
+     "py": "páshān",
+     "ru": "ходить в горы",
+     "en": "hike, climb mountains"
+    },
+    {
+     "hz": "请假",
+     "py": "qǐngjià",
+     "ru": "отпроситься",
+     "en": "ask for leave"
+    },
+    {
+     "hz": "领养",
+     "py": "lǐngyǎng",
+     "ru": "усыновить, взять (питомца)",
+     "en": "adopt"
+    },
+    {
+     "hz": "领",
+     "py": "lǐng",
+     "ru": "вести; получать",
+     "en": "lead; receive"
+    },
+    {
+     "hz": "养",
+     "py": "yǎng",
+     "ru": "растить, держать (животных)",
+     "en": "raise, keep (pets)"
+    },
+    {
+     "hz": "只",
+     "py": "zhī",
+     "ru": "(счётное для животных)",
+     "en": "(measure word for animals)"
+    },
+    {
+     "hz": "内向",
+     "py": "nèixiàng",
+     "ru": "интроверт",
+     "en": "introverted"
+    },
+    {
+     "hz": "外向",
+     "py": "wàixiàng",
+     "ru": "экстраверт",
+     "en": "extroverted"
+    },
+    {
+     "hz": "原因",
+     "py": "yuányīn",
+     "ru": "причина",
+     "en": "reason"
+    },
+    {
+     "hz": "从来没",
+     "py": "cónglái méi",
+     "ru": "никогда не",
+     "en": "never (have)"
+    },
+    {
+     "hz": "肯",
+     "py": "kěn",
+     "ru": "быть готовым, соглашаться",
+     "en": "be willing"
+    },
+    {
+     "hz": "帮忙",
+     "py": "bāngmáng",
+     "ru": "помогать",
+     "en": "help"
+    },
+    {
+     "hz": "值得",
+     "py": "zhídé",
+     "ru": "стоить (того)",
+     "en": "be worth"
+    },
+    {
+     "hz": "酒店",
+     "py": "jiǔdiàn",
+     "ru": "отель",
+     "en": "hotel"
+    },
+    {
+     "hz": "接口",
+     "py": "jiēkǒu",
+     "ru": "разъём; контакт",
+     "en": "interface; contact"
+    },
+    {
+     "hz": "接口人",
+     "py": "jiēkǒurén",
+     "ru": "контактное лицо",
+     "en": "point of contact"
+    },
+    {
+     "hz": "主任",
+     "py": "zhǔrèn",
+     "ru": "начальник, руководитель",
+     "en": "director, head"
+    },
+    {
+     "hz": "部门",
+     "py": "bùmén",
+     "ru": "отдел",
+     "en": "department"
+    },
+    {
+     "hz": "老板",
+     "py": "lǎobǎn",
+     "ru": "босс",
+     "en": "boss"
+    },
+    {
+     "hz": "本科",
+     "py": "běnkē",
+     "ru": "бакалавриат",
+     "en": "bachelor's degree"
+    },
+    {
+     "hz": "硕士学位",
+     "py": "shuòshì xuéwèi",
+     "ru": "степень магистра",
+     "en": "master's degree"
+    },
+    {
+     "hz": "紧张",
+     "py": "jǐnzhāng",
+     "ru": "нервничать",
+     "en": "nervous"
+    },
+    {
+     "hz": "取决于",
+     "py": "qǔjuéyú",
+     "ru": "зависеть от",
+     "en": "depend on"
+    }
+   ],
+   "sentences": [
+    {
+     "zh": "我今天请假。",
+     "py": "Wǒ jīntiān qǐngjià.",
+     "ru": "Я сегодня отпросилась.",
+     "en": "I'm taking the day off today."
+    },
+    {
+     "zh": "我想领养一只小猫。",
+     "py": "Wǒ xiǎng lǐngyǎng yì zhī xiǎo māo.",
+     "ru": "Я хочу взять котёнка.",
+     "en": "I want to adopt a kitten."
+    },
+    {
+     "zh": "这是我很少花钱的原因。",
+     "py": "Zhè shì wǒ hěn shǎo huā qián de yuányīn.",
+     "ru": "Вот почему я мало трачу.",
+     "en": "This is why I rarely spend money."
+    },
+    {
+     "zh": "我从来没养过猫。",
+     "py": "Wǒ cónglái méi yǎng guo māo.",
+     "ru": "У меня никогда не было кошки.",
+     "en": "I've never had a cat."
+    },
+    {
+     "zh": "他肯学中文。",
+     "py": "Tā kěn xué Zhōngwén.",
+     "ru": "Он готов учить китайский.",
+     "en": "He's willing to learn Chinese."
+    },
+    {
+     "zh": "这部电视剧值得看。",
+     "py": "Zhè bù diànshìjù zhídé kàn.",
+     "ru": "Этот сериал стоит посмотреть.",
+     "en": "This series is worth watching."
+    },
+    {
+     "zh": "这件事不值得花这么多时间。",
+     "py": "Zhè jiàn shì bù zhídé huā zhème duō shíjiān.",
+     "ru": "Это не стоит столько времени.",
+     "en": "This isn't worth so much time."
+    },
+    {
+     "zh": "我预订了一个酒店。",
+     "py": "Wǒ yùdìng le yí ge jiǔdiàn.",
+     "ru": "Я забронировала отель.",
+     "en": "I booked a hotel."
+    },
+    {
+     "zh": "他是我们公司的接口人。",
+     "py": "Tā shì wǒmen gōngsī de jiēkǒurén.",
+     "ru": "Он контактное лицо нашей компании.",
+     "en": "He's our company's point of contact."
+    },
+    {
+     "zh": "她是我们部门的主任。",
+     "py": "Tā shì wǒmen bùmén de zhǔrèn.",
+     "ru": "Она руководитель нашего отдела.",
+     "en": "She's the head of our department."
+    },
+    {
+     "zh": "本科毕业以后，我开始工作。",
+     "py": "Běnkē bìyè yǐhòu, wǒ kāishǐ gōngzuò.",
+     "ru": "После бакалавриата я начала работать.",
+     "en": "After my bachelor's I started working."
+    },
+    {
+     "zh": "答辩的时候，我很紧张。",
+     "py": "Dábiàn de shíhou, wǒ hěn jǐnzhāng.",
+     "ru": "На защите я очень нервничала.",
+     "en": "I was nervous during the defense."
+    },
+    {
+     "zh": "别紧张！",
+     "py": "Bié jǐnzhāng!",
+     "ru": "Не нервничай!",
+     "en": "Don't be nervous!"
+    }
+   ]
+  },
+  {
+   "n": 23,
+   "page": "B-02",
+   "date": "2026-10-11",
+   "words": [
+    {
+     "hz": "价格",
+     "py": "jiàgé",
+     "ru": "цена",
+     "en": "price"
+    },
+    {
+     "hz": "万",
+     "py": "wàn",
+     "ru": "десять тысяч",
+     "en": "ten thousand"
+    },
+    {
+     "hz": "块",
+     "py": "kuài",
+     "ru": "юань (разг.)",
+     "en": "yuan (colloquial)"
+    },
+    {
+     "hz": "游览",
+     "py": "yóulǎn",
+     "ru": "осматривать (достопримечательности)",
+     "en": "tour, sightsee"
+    },
+    {
+     "hz": "挂",
+     "py": "guà",
+     "ru": "висеть, вешать",
+     "en": "hang"
+    },
+    {
+     "hz": "着",
+     "py": "zhe",
+     "ru": "(длительное состояние)",
+     "en": "(continuous aspect particle)"
+    },
+    {
+     "hz": "画",
+     "py": "huà",
+     "ru": "картина",
+     "en": "painting"
+    },
+    {
+     "hz": "放着",
+     "py": "fàngzhe",
+     "ru": "лежит",
+     "en": "is placed"
+    },
+    {
+     "hz": "对面",
+     "py": "duìmiàn",
+     "ru": "напротив",
+     "en": "opposite"
+    },
+    {
+     "hz": "楼",
+     "py": "lóu",
+     "ru": "этаж; здание",
+     "en": "floor; building"
+    },
+    {
+     "hz": "无",
+     "py": "wú",
+     "ru": "нет, без",
+     "en": "without"
+    },
+    {
+     "hz": "无话可说",
+     "py": "wú huà kě shuō",
+     "ru": "нечего сказать",
+     "en": "nothing to say"
+    },
+    {
+     "hz": "无话不谈",
+     "py": "wú huà bù tán",
+     "ru": "говорить обо всём",
+     "en": "talk about everything"
+    },
+    {
+     "hz": "位",
+     "py": "wèi",
+     "ru": "(вежл. счётное для людей)",
+     "en": "(polite measure word for people)"
+    },
+    {
+     "hz": "服务员",
+     "py": "fúwùyuán",
+     "ru": "официант",
+     "en": "waiter"
+    },
+    {
+     "hz": "员",
+     "py": "yuán",
+     "ru": "сотрудник",
+     "en": "staff member"
+    },
+    {
+     "hz": "包",
+     "py": "bāo",
+     "ru": "включать",
+     "en": "include"
+    },
+    {
+     "hz": "退房",
+     "py": "tuìfáng",
+     "ru": "выезд из отеля",
+     "en": "check out"
+    },
+    {
+     "hz": "退",
+     "py": "tuì",
+     "ru": "возвращать, отступать",
+     "en": "return; retreat"
+    },
+    {
+     "hz": "刷卡",
+     "py": "shuākǎ",
+     "ru": "платить картой",
+     "en": "pay by card"
+    },
+    {
+     "hz": "刷",
+     "py": "shuā",
+     "ru": "проводить (картой); чистить",
+     "en": "swipe; brush"
+    },
+    {
+     "hz": "确认",
+     "py": "quèrèn",
+     "ru": "подтвердить, уточнить",
+     "en": "confirm"
+    }
+   ],
+   "sentences": [
+    {
+     "zh": "价格取决于酒店。",
+     "py": "Jiàgé qǔjuéyú jiǔdiàn.",
+     "ru": "Цена зависит от отеля.",
+     "en": "The price depends on the hotel."
+    },
+    {
+     "zh": "要不要爬山，取决于天气。",
+     "py": "Yào bu yào páshān, qǔjuéyú tiānqì.",
+     "ru": "Пойдём ли в горы — зависит от погоды.",
+     "en": "Whether we hike depends on the weather."
+    },
+    {
+     "zh": "这个酒店一天一万块钱，太贵了！",
+     "py": "Zhège jiǔdiàn yì tiān yí wàn kuài qián, tài guì le!",
+     "ru": "Этот отель стоит 10 000 юаней в день — слишком дорого!",
+     "en": "This hotel is 10,000 yuan a day, too expensive!"
+    },
+    {
+     "zh": "我们花了一天游览北京。",
+     "py": "Wǒmen huā le yì tiān yóulǎn Běijīng.",
+     "ru": "Мы потратили день на осмотр Пекина.",
+     "en": "We spent a day touring Beijing."
+    },
+    {
+     "zh": "把画挂在墙上。",
+     "py": "Bǎ huà guà zài qiáng shang.",
+     "ru": "Повесь картину на стену.",
+     "en": "Hang the painting on the wall."
+    },
+    {
+     "zh": "桌子上放着一本书。",
+     "py": "Zhuōzi shang fàngzhe yì běn shū.",
+     "ru": "На столе лежит книга.",
+     "en": "There's a book on the table."
+    },
+    {
+     "zh": "银行就在邮局对面。",
+     "py": "Yínháng jiù zài yóujú duìmiàn.",
+     "ru": "Банк прямо напротив почты.",
+     "en": "The bank is right across from the post office."
+    },
+    {
+     "zh": "我想跟你谈一谈。",
+     "py": "Wǒ xiǎng gēn nǐ tán yi tán.",
+     "ru": "Я хочу с тобой поговорить.",
+     "en": "I want to talk with you."
+    },
+    {
+     "zh": "我住在三楼。",
+     "py": "Wǒ zhù zài sān lóu.",
+     "ru": "Я живу на третьем этаже.",
+     "en": "I live on the third floor."
+    },
+    {
+     "zh": "你的房间在几楼？",
+     "py": "Nǐ de fángjiān zài jǐ lóu?",
+     "ru": "На каком этаже твоя комната?",
+     "en": "Which floor is your room on?"
+    },
+    {
+     "zh": "我无话可说。",
+     "py": "Wǒ wú huà kě shuō.",
+     "ru": "Мне нечего сказать.",
+     "en": "I have nothing to say."
+    },
+    {
+     "zh": "我们无话不谈。",
+     "py": "Wǒmen wú huà bù tán.",
+     "ru": "Мы говорим обо всём.",
+     "en": "We talk about everything."
+    },
+    {
+     "zh": "请问，两位有预订吗？",
+     "py": "Qǐngwèn, liǎng wèi yǒu yùdìng ma?",
+     "ru": "Скажите, у вас двоих есть бронь?",
+     "en": "Excuse me, do you two have a reservation?"
+    },
+    {
+     "zh": "这个酒店包早餐吗？",
+     "py": "Zhège jiǔdiàn bāo zǎocān ma?",
+     "ru": "Завтрак включён?",
+     "en": "Does this hotel include breakfast?"
+    },
+    {
+     "zh": "请问，几点退房？",
+     "py": "Qǐngwèn, jǐ diǎn tuìfáng?",
+     "ru": "Скажите, во сколько выезд?",
+     "en": "What time is check-out?"
+    },
+    {
+     "zh": "我想确认一下，明天几点退房？",
+     "py": "Wǒ xiǎng quèrèn yíxià, míngtiān jǐ diǎn tuìfáng?",
+     "ru": "Хочу уточнить, во сколько завтра выезд?",
+     "en": "I'd like to confirm what time check-out is tomorrow."
+    }
+   ]
+  }
+ ]
+}
