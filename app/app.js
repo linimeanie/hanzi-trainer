@@ -258,6 +258,33 @@ async function ensureChars(hz) {
   }
   return added;
 }
+const shortG = g => (g || '').split(/[;,]/)[0].replace(/\s*\((ключ|сверху|снизу)\)/, '').trim();
+function partsPanel(c) {
+  const r = DEC.chars[c], inf = x => DEC.info[x] || {};
+  if (!r || !r.p.length) return `<div class="pp-note">${r && r.t === 'pg' ? 'рисунок предмета — не делится на части' : 'не делится на части'}</div>`;
+  return `<div class="pp-title"><span class="hz">${esc(c)}</span> =</div>` + r.p.map(x =>
+    `<button class="pp ${x === r.s ? 's' : x === r.m ? 'm' : ''}" data-part="${esc(x)}" data-of="${esc(c)}"><span class="hz">${esc(x)}</span><small>${esc(shortG(inf(x).g))}</small></button>`).join('');
+}
+function partInfo(x, c) {
+  const r = DEC.chars[c] || {}, inf = DEC.info[x] || {}, ci = DEC.info[c] || {};
+  const role = x === r.s ? `<b class="t-s">звук</b>: ${esc(c)} <span class="py">${pyHtml(ci.py)}</span> читается похоже на ${esc(x)} <span class="py">${pyHtml(inf.py)}</span>`
+    : x === r.m ? `<b class="t-m">смысл</b>: подсказывает значение иероглифа ${esc(c)}`
+    : r.t === 'id' ? 'значения частей вместе дают смысл' : '';
+  return `<div class="pi"><span class="hz">${esc(x)}</span><div><span class="py">${pyHtml(inf.py)}</span> ${esc(inf.g || '')}
+    ${role ? `<div class="pi-role">${role}</div>` : ''}</div><button class="ib" data-open="${esc(x)}">Открыть ›</button></div>`;
+}
+function hero(w, id, max) {
+  const han = [...w.hz].filter(isHan), panelW = 96;
+  const avail = Math.min(innerWidth, 640) - 40 - panelW - 12 - (han.length - 1) * 8;
+  const sz = Math.floor(Math.min(max, avail / Math.max(1, han.length)));
+  return `<div class="hero"><div class="tzgrow" id="${id}" style="--s:${sz}px">${[...w.hz].map((c, i) => isHan(c)
+      ? `<div class="tzg ${c === han[0] && han.length > 1 ? 'on' : ''}" data-c="${esc(c)}" data-pick="${esc(c)}">${GRID}<span class="ch">${esc(c)}</span></div>`
+      : `<span class="nonhan">${esc(c)}</span>`).join('')}</div>
+    <div class="pp-col" id="${id}-pp">${han.length ? partsPanel(han[0]) : ''}</div></div>
+    <div class="pi-wrap" id="${id}-pi"></div>`;
+}
+// compact horizontal strip of look-alikes
+function lookStrip(hz) { const h = lookHtml(hz); return h ? `<div class="box"><h3>Не перепутай</h3><div class="la-strip">${h}</div></div>` : ''; }
 function lookHtml(hz) {
   const cs = [...new Set([...hz].filter(isHan))].filter(c => (DEC.look || {})[c]);
   return cs.map(c => `<div class="la-row">${[...hz].length > 1 ? `<div class="la-for"><span class="hz">${esc(c)}</span> похож на:</div>` : ''}
@@ -328,15 +355,14 @@ function renderCard() {
 }
 // full explanation after a mistake: stroke order plays by itself
 function sheet(w, ok) {
-  const bd = breakdown(w.hz), ex = exampleHtml(w);
+  const ex = exampleHtml(w, 3);
   screen(`<div class="status ${ok ? 'ok' : 'bad'}">${ok ? 'ВЕРНО' : 'ЗАПОМНИ'}</div>
-    <div data-say="${esc(w.hz)}">${charRow(w.hz, Math.min(260, innerHeight * .3), 'sr')}</div>
-    <div class="icons">${spkBtn(w.hz)}${slowBtn(w.hz)}${strokeBtn('sr')}</div>
+    ${hero(w, 'sr', Math.min(230, innerHeight * .28))}
     <div class="big-py" data-say="${esc(w.hz)}">${pyHtml(w.py)}</div><div class="info-ru">${esc(w.ru)}</div>${enLine(w)}
+    <div class="icons">${spkBtn(w.hz)}${slowBtn(w.hz)}${strokeBtn('sr')}</div>
     ${partsRow(w)}
-    ${ex ? `<div class="box"><h3>Пример</h3>${ex}</div>` : ''}
-    ${bd ? `<div class="box"><h3>Из чего состоит</h3>${bd}</div>` : ''}
-    ${lookHtml(w.hz) ? `<div class="box"><h3>Не перепутай — похожие</h3>${lookHtml(w.hz)}</div>` : ''}`,
+    ${ex ? `<div class="box"><h3>Примеры</h3>${ex}</div>` : ''}
+    ${lookStrip(w.hz)}`,
     `<button class="btn primary" data-a="next">Дальше</button>`, 'top-al');
   SES.view = () => sheet(w, ok);
   paintGlyphs();
@@ -565,7 +591,7 @@ function wordsTab() {
 let CUR = null;
 function wordPage(hz, quiet) {
   const w = WORDS.get(hz) || { hz, py: (DEC.info[hz] || {}).py || '', ru: (DEC.info[hz] || {}).g || '', en: '', lesson: null, part: true };
-  const s = ws(hz), lv = Math.min(s.b, MASTERED), bd = breakdown(hz), ex = exampleHtml(w, 4), la = lookHtml(hz);
+  const s = ws(hz), lv = Math.min(s.b, MASTERED), ex = exampleHtml(w, 5);
   const inWords = [...hz].length === 1 ? LIST.filter(x => x.hz !== hz && x.hz.includes(hz)).slice(0, 12) : [];
   const xt = !WORDS.get(hz) && (DEC.extra || {})[hz];
   const xtHtml = xt ? `<div class="box"><h3>Частое слово</h3>
@@ -577,17 +603,16 @@ function wordPage(hz, quiet) {
   const prevTab = TAB;
   page(`${back}
     <div style="display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center">
-      <div data-say="${esc(hz)}">${charRow(hz, Math.min(260, innerHeight * .32), 'wr')}</div>
-      <div class="icons">${spkBtn(hz)}${slowBtn(hz)}${strokeBtn('wr')}</div>
+      ${hero(w, 'wr', Math.min(240, innerHeight * .3))}
       <div class="big-py" data-say="${esc(hz)}">${pyHtml(w.py)}</div><div class="info-ru">${esc(w.ru)}</div>${w.en ? `<div class="big-en">${esc(w.en)}</div>` : ''}
+      <div class="icons">${spkBtn(hz)}${slowBtn(hz)}${strokeBtn('wr')}</div>
       ${partsRow(w)}
       <div class="tag">${w.lesson ? `<span class="dot c-${tierOf(w.lesson)}"></span>${w.custom ? 'мои слова' : 'урок ' + w.lesson} · ${s.t ? `уровень ${'●'.repeat(lv)}${'○'.repeat(MASTERED - lv)}` : 'ещё не тренировалось'}` : 'отдельный иероглиф'}</div>
     </div>
     ${xtHtml}
     ${ex ? `<div class="box"><h3>Примеры</h3>${ex}</div>` : ''}
     ${inWords.length ? `<div class="box"><h3>Встречается в словах</h3>${wordList(inWords)}</div>` : ''}
-    ${bd ? `<div class="box"><h3>Из чего состоит</h3>${bd}</div>` : ''}
-    ${la ? `<div class="box"><h3>Не перепутай — похожие</h3>${la}</div>` : ''}
+    ${lookStrip(hz)}
     ${w.custom ? `<div class="box"><button class="btn ghost" data-a="del" style="color:var(--bad)">Удалить слово</button></div>` : ''}`);
   CUR = () => wordPage(hz);
   $('[data-a=back]').onclick = () => PREV.length ? PREV.pop()() : go(prevTab);
@@ -754,6 +779,21 @@ document.addEventListener('click', e => {
   const say = !slow && !(t.closest('[data-open]') && (!SES || SES.view)) && t.closest('[data-say]'); if (say) speak(say.dataset.say);
   const st = t.closest('[data-stroke]'); if (st) strokeOrder(document.getElementById(st.dataset.stroke));
   const tab = t.closest('[data-tab]'); if (tab) return go(tab.dataset.tab);
+  const pick = t.closest('[data-pick]');
+  if (pick) {
+    const row = pick.closest('.tzgrow'), c = pick.dataset.pick;
+    $$('.tzg', row).forEach(b => b.classList.toggle('on', b === pick && $$('.tzg', row).length > 1));
+    const pp = document.getElementById(row.id + '-pp'); if (pp) pp.innerHTML = partsPanel(c);
+    const pi = document.getElementById(row.id + '-pi'); if (pi) pi.innerHTML = '';
+    speak(c); return;
+  }
+  const part = t.closest('[data-part]');
+  if (part) {
+    const col = part.closest('.pp-col'), pi = document.getElementById(col.id.replace(/-pp$/, '-pi'));
+    $$('.pp', col).forEach(b => b.classList.toggle('sel', b === part));
+    if (pi) pi.innerHTML = partInfo(part.dataset.part, part.dataset.of);
+    speak(part.dataset.part); return;
+  }
   const wd = t.closest('[data-word]');
   const op = t.closest('[data-open]');
   if (wd || (op && (!SES || SES.view))) {

@@ -215,3 +215,30 @@ nav.tabs button.on { color: var(--red); }
 .la-g svg { width: 52px; height: 52px; }
 .la .py { font-size: 13px; }
 .la small { font-size: 11.5px; line-height: 1.2; text-align: center; }
+
+/* hero: big character + its parts on the right */
+.hero { display: flex; gap: 12px; align-items: stretch; justify-content: center; width: 100%; }
+.hero .tzg { cursor: pointer; }
+.hero .tzgrow .tzg.on > svg.grid rect { stroke: var(--red); stroke-width: 3; }
+.pp-col { width: 96px; flex: none; display: flex; flex-direction: column; gap: 6px; justify-content: center; }
+.pp-title { font-size: 12px; color: var(--mut); text-align: left; } .pp-title .hz { font-size: 16px; color: var(--ink); }
+.pp { display: flex; flex-direction: column; align-items: center; padding: 6px 4px; border: 1.5px solid var(--line);
+  border-radius: 12px; background: var(--card); position: relative; }
+.pp .hz { font-size: 30px; line-height: 1.1; }
+.pp small { font-size: 11px; line-height: 1.15; color: var(--mut); text-align: center; }
+.pp.m { border-color: color-mix(in srgb, var(--jade) 55%, var(--line)); }
+.pp.s { border-color: color-mix(in srgb, var(--red) 55%, var(--line)); }
+.pp.m::after, .pp.s::after { position: absolute; top: 3px; right: 6px; font-size: 9px; font-weight: 700; letter-spacing: .04em; }
+.pp.m::after { content: 'СМЫСЛ'; color: var(--jade); } .pp.s::after { content: 'ЗВУК'; color: var(--red); }
+.pp.sel { background: var(--red-soft); }
+.pp-note { font-size: 12px; color: var(--mut); text-align: center; }
+.pi-wrap:empty { display: none; }
+.pi { display: flex; align-items: center; gap: 12px; width: 100%; text-align: left; background: var(--card);
+  border: 1.5px solid var(--line); border-radius: 14px; padding: 10px 12px; font-size: 14px; }
+.pi > .hz { font-size: 36px; }
+.pi > div { flex: 1; }
+.pi-role { color: var(--mut); font-size: 13px; margin-top: 2px; }
+.t-m { color: var(--jade); } .t-s { color: var(--red); }
+.la-strip .la-list { display: flex; overflow-x: auto; gap: 8px; padding-bottom: 4px; scroll-snap-type: x mandatory; }
+.la-strip .la { flex: none; width: 88px; scroll-snap-align: start; }
+.la-strip .la-row { margin-bottom: 8px; }
