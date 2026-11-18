@@ -240,6 +240,23 @@ function partsRow(w) {
       <span class="py">${pyHtml(aligned ? sy[i] : inf.py)}</span><small>${esc(inf.g || '')}</small></button>`; }).join('')}</div>`;
 }
 // up to 5 characters that look almost the same; the differing part is drawn in red
+// characters the notebook data doesn't cover (e.g. words added in the app) load from chars/<block>.json
+const shardCache = new Map();
+const missingChars = hz => [...hz].filter(c => isHan(c) && !DEC.chars[c]);
+const shardKey = c => (c.codePointAt(0) >> 7).toString(16);
+async function ensureChars(hz) {
+  const need = missingChars(hz); if (!need.length) return false;
+  for (const k of new Set(need.map(shardKey)))
+    if (!shardCache.has(k)) shardCache.set(k, fetch(`chars/${k}.json`).then(r => r.ok ? r.json() : {}).catch(() => { shardCache.delete(k); return {}; }));
+  let added = false;
+  for (const c of need) {
+    const r = (await shardCache.get(shardKey(c)) || {})[c]; if (!r) continue;
+    DEC.chars[c] = r.d; if (r.l && r.l.length) (DEC.look ||= {})[c] = r.l;
+    for (const [x, i] of Object.entries(r.i)) if (!DEC.info[x]) DEC.info[x] = i;
+    added = true;
+  }
+  return added;
+}
 function lookHtml(hz) {
   const cs = [...new Set([...hz].filter(isHan))].filter(c => (DEC.look || {})[c]);
   return cs.map(c => `<div class="la-row">${[...hz].length > 1 ? `<div class="la-for"><span class="hz">${esc(c)}</span> похож на:</div>` : ''}
@@ -545,7 +562,7 @@ function wordsTab() {
   $('[data-a=add]').onclick = addWord;
 }
 let CUR = null;
-function wordPage(hz) {
+function wordPage(hz, quiet) {
   const w = WORDS.get(hz) || { hz, py: (DEC.info[hz] || {}).py || '', ru: (DEC.info[hz] || {}).g || '', en: '', lesson: null, part: true };
   const s = ws(hz), lv = Math.min(s.b, MASTERED), bd = breakdown(hz), ex = exampleHtml(w, 4), la = lookHtml(hz);
   const inWords = [...hz].length === 1 ? LIST.filter(x => x.hz !== hz && x.hz.includes(hz)).slice(0, 12) : [];
@@ -572,8 +589,9 @@ function wordPage(hz) {
     save(); rebuild(); computeTiers(); go('words');
   });
   paintGlyphs();
-  speak(hz);
+  if (!quiet) speak(hz);
   setTimeout(() => strokeOrder($('#wr')), 400);
+  if (missingChars(hz).length) { const me = CUR; ensureChars(hz).then(a => { if (a && CUR === me) { wordPage(hz, true); CUR = me; } }); }
 }
 const PREV = [];
 async function addWord() {
@@ -594,7 +612,13 @@ async function addWord() {
     if (!pyTouched && window.ZH_PINYIN) $('#f-py').value = [...hz].map(c => ZH_PINYIN[c] || '').join('');
     const ex = WORDS.get(hz);
     $('#f-pyh').textContent = ex ? `Уже есть: ${ex.py} — ${ex.ru}` : 'заполнится сам — проверь тоны';
-    $('#f-prev').innerHTML = hz && [...hz].some(isHan) ? `<div class="box">${breakdown(hz)}</div>` : '';
+    const show = () => {
+      if ($('#f-hz').value.trim() !== hz) return;
+      const bd = breakdown(hz), la = lookHtml(hz);
+      $('#f-prev').innerHTML = hz && [...hz].some(isHan) ? `<div class="box">${partsRow({ hz, py: $('#f-py').value })}${bd}${la ? `<h3 style="margin-top:12px">Похожие</h3>${la}` : ''}</div>` : '';
+      paintGlyphs($('#f-prev'));
+    };
+    show(); ensureChars(hz).then(a => a && show());
   };
   $('[data-a=save]').onclick = () => {
     const hz = $('#f-hz').value.trim(), py = $('#f-py').value.trim(), ru = $('#f-ru').value.trim(), en = $('#f-en').value.trim();
@@ -745,3 +769,4 @@ document.addEventListener('keydown', e => {
 if ('serviceWorker' in navigator && location.protocol.startsWith('http')) navigator.serviceWorker.register('sw.js').catch(() => {});
 go('learn');
 initSync();
+for (const c of S.custom) if (!c.del) ensureChars(c.hz);

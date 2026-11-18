@@ -1,4 +1,4 @@
-"""Find up to 5 look-alike characters for every character in the word list.
+"""Find up to 5 look-alike characters for every character in the dictionary (the word list first in ranking).
 
 Two characters look alike when they have the same layout (left-right, top-bottom…) and share one of
 their two parts, the other part being different — e.g. 请/清/情/晴. Sharing the non-radical part
@@ -48,8 +48,9 @@ for c in dic:
         for pos, part in ((1, s_[1]), (2, s_[2])):
             by_part.setdefault(part, {}).setdefault((s_[0], pos, part), []).append(c)
             if strokes(s_[3 - pos]) <= 5: contains.setdefault(part, []).append(c)
+targets = mine + [c for c in dic if '\u4e00' <= c <= '\u9fff' and c not in mine_set]
 out = {}
-for c in mine:
+for c in targets:
     s = split(c)
     def diff_idx(x):
         xs = split(x)
@@ -92,6 +93,6 @@ for c in mine:
     if best: out[c] = best
 (root / 'data/lookalikes.json').write_text(json.dumps(out, ensure_ascii=False), encoding='utf-8')
 allc = {x for v in out.values() for x, _ in v}
-print(len(out), 'chars have look-alikes;', len(allc), 'distinct look-alike chars;', len(allc - mine_set), 'outside the word list')
+print(len(out), 'chars have look-alikes;', sum(c in out for c in mine), 'of', len(mine), 'from the word list')
 for c in '请末己睛休找晚退房饭':
     print(c, out.get(c))

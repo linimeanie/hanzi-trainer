@@ -102,6 +102,47 @@ nogloss = [c for c in sorted(need) if not gloss.get(c)]
 (root / 'app/decomp.js').write_text('window.ZH_DECOMP = ' + json.dumps({'chars': out, 'info': info, 'look': look}, ensure_ascii=False) + ';\n', encoding='utf-8')
 pinyin = {c: d['pinyin'][0] for c, d in dic.items() if d.get('pinyin') and is_han(c)}
 (root / 'app/pinyin.js').write_text('window.ZH_PINYIN = ' + json.dumps(pinyin, ensure_ascii=False, separators=(',', ':')) + ';\n', encoding='utf-8')
+
+# ---- every dictionary character, in small files the app fetches on demand (app/chars/<block>.json) ----
+# so words added in the app get a breakdown and look-alikes right away. Characters without a Russian
+# gloss carry the English definition, marked e=1.
+def rec_of(c):
+    d = dic[c]
+    parts = [x for x in d.get('decomposition', '') if x not in IDS and x != c and x.strip()]
+    e = d.get('etymology') or {}
+    r = {'p': parts}
+    if e.get('type') in TYPES: r['t'] = TYPES[e['type']]
+    if (e.get('semantic') or '').strip(): r['m'] = e['semantic'].strip()
+    if (e.get('phonetic') or '').strip(): r['s'] = e['phonetic'].strip()
+    if e.get('hint'): r['h'] = e['hint']
+    if d.get('radical') and d['radical'] != c: r['r'] = d['radical']
+    return r
+def info_of(c):
+    d = dic.get(c) or {}
+    py = d.get('pinyin') or []
+    i = {'g': gloss.get(c, ''), 'py': py[0] if py else ''}
+    if not i['g'] and d.get('definition'):
+        i['g'] = d['definition'].split(';')[0][:40]; i['e'] = 1
+    m = d.get('matches')
+    if m: i['m'] = ''.join(str(x[0]) if x else '-' for x in m)
+    return i
+la_all = json.loads(la_path.read_text(encoding='utf-8')) if la_path.exists() else {}
+shards = {}
+for c in dic:
+    if not is_han(c):
+        continue
+    r = rec_of(c)
+    lst = la_all.get(c, [])
+    related = {c, *r['p'], *(r.get(k) for k in 'msr' if r.get(k)), *(x for x, _ in lst)}
+    shards.setdefault(format(ord(c) >> 7, 'x'), {})[c] = {'d': r, 'l': lst, 'i': {x: info_of(x) for x in related if x}}
+chars_dir = root / 'app/chars'
+chars_dir.mkdir(exist_ok=True)
+for old in chars_dir.glob('*.json'):
+    if old.stem not in shards:
+        old.unlink()
+for k, v in shards.items():
+    (chars_dir / f'{k}.json').write_text(json.dumps(v, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+print(f"{sum(len(v) for v in shards.values())} characters published in {len(shards)} files under app/chars/")
 print(f"{len(lessons)} lessons, {sum(len(l['words']) for l in lessons)} words, {sum(len(l['sentences']) for l in lessons)} sentences, "
       f"({ai} written by Claude), {len(out)} characters with breakdown, {len(look)} with look-alikes")
 if missing: print('not in dictionary:', ''.join(missing))
