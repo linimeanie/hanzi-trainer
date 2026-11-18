@@ -69,30 +69,18 @@ for c in targets:
                 sharing_nonradical = keep != rad
                 diffpart_c = a if pos == 2 else b
                 diffpart_x = xs[1] if pos == 2 else xs[2]
-                if not sharing_nonradical or abs(strokes(diffpart_c) - strokes(diffpart_x)) > 2: continue
+                if not sharing_nonradical or abs(strokes(diffpart_c) - strokes(diffpart_x)) > 1: continue
+                if strokes(keep) < 3 or strokes(keep) < strokes(diffpart_c): continue   # the shared part must be the main, bigger one
                 rank = 1
                 cands.append((rank, x, other_idx))
-        # same main (non-radical) part in a different layout, e.g. 房 / 防 / 访 — only to fill up the list
-        main = b if a == rad else a if b == rad else None
-        if main:
-            for (op2, pos2, keep2), xs_list in ((k, v) for k, v in by_part.get(main, {}).items()):
-                for x in xs_list:
-                    if x == c or op2 == op: continue
-                    xs = split(x)
-                    other = xs[1] if pos2 == 2 else xs[2]
-                    if strokes(other) > 5: continue   # only small radicals differ, the main part stays
-                    cands.append((2, x, 0 if pos2 == 2 else 1))
-        # characters built on this one (退 → 腿) and the one it is built on
-        for x in contains.get(c, []):
-            xs = split(x); cands.append((3, x, 0 if xs[2] == c else 1))
     seen, best = set(), []
     for rank, x, idx in sorted(cands, key=lambda t: (t[0], t[1] not in mine_set, abs(strokes(t[1]) - strokes(c)))):
         if x in seen or x == c or x not in dic: continue
         seen.add(x); best.append([x, idx])
-        if len(best) == 5: break
+        if len(best) == 4: break
     if best: out[c] = best
 (root / 'data/lookalikes.json').write_text(json.dumps(out, ensure_ascii=False), encoding='utf-8')
 allc = {x for v in out.values() for x, _ in v}
 print(len(out), 'chars have look-alikes;', sum(c in out for c in mine), 'of', len(mine), 'from the word list')
-for c in '请末己睛休找晚退房饭':
+for c in '请末己睛休找晚饭城口日':
     print(c, out.get(c))

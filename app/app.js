@@ -61,13 +61,11 @@ rebuild();
 // green = newest notebook class + words added in the app since then; orange = the 3 lessons before; red = older
 let TIERS = {};
 function computeTiers() {
-  const base = LESSONS.filter(l => !l.custom), latest = base[base.length - 1];
-  const sorted = [...LESSONS].sort((x, y) => (y.date || '').localeCompare(x.date || '') || y.n - x.n);
-  TIERS = {}; let orange = 0;
-  for (const l of sorted) {
-    const green = l === latest || (l.custom && (l.date || '') >= (latest.date || ''));
-    TIERS[l.n] = green ? 'green' : orange++ < 3 ? 'orange' : 'red';
-  }
+  // notebook lessons go by their number (some have no date); words added in the app go by date
+  const base = LESSONS.filter(l => !l.custom).sort((x, y) => y.n - x.n), latest = base[0];
+  TIERS = {};
+  base.forEach((l, i) => TIERS[l.n] = i === 0 ? 'green' : i <= 3 ? 'orange' : 'red');
+  for (const l of LESSONS.filter(l => l.custom)) TIERS[l.n] = (l.date || '') >= (latest.date || '') ? 'green' : 'orange';
 }
 computeTiers();
 const tierOf = n => TIERS[n] || 'red';
@@ -283,6 +281,46 @@ function hero(w, id, max) {
     <div class="pp-col" id="${id}-pp">${han.length ? partsPanel(han[0]) : ''}</div></div>
     <div class="pi-wrap" id="${id}-pi"></div>`;
 }
+function wordView(w, id, maxPx) {
+  const chars = [...w.hz], han = chars.filter(isHan), sy = sylls(w.py), aligned = sy.length === han.length;
+  const avail = Math.min(innerWidth, 640) - 40 - (han.length - 1) * 10;
+  const sz = Math.floor(Math.min(maxPx, avail / Math.max(1, han.length)));
+  let k = 0;
+  const cells = chars.map(c => {
+    if (!isHan(c)) return `<span class="nonhan">${esc(c)}</span>`;
+    const i = k++, inf = DEC.info[c] || {};
+    const g = han.length === 1 ? '' : shortG(inf.g);
+    return `<div class="wc" data-wc="${esc(c)}" data-row="${id}">
+      <span class="wc-py">${pyHtml(aligned ? sy[i] : inf.py)}</span>
+      <div class="tzg" data-c="${esc(c)}">${GRID}<span class="ch">${esc(c)}</span></div>
+      ${g ? `<span class="wc-g">${esc(g)}</span>` : ''}</div>`;
+  }).join('');
+  return `<div class="wv"><div class="tzgrow wv-row" id="${id}" style="--s:${sz}px">${cells}</div>
+    <div class="wv-parts" id="${id}-parts"></div></div>`;
+}
+function partsUnfold(c) {
+  const r = DEC.chars[c], inf = x => DEC.info[x] || {};
+  if (!r || !r.p.length) return `<div class="wvp-note"><b class="hz">${esc(c)}</b> ${r && r.t === 'pg' ? '— рисунок предмета, на части не делится' : '— на части не делится'}</div>`;
+  const tiles = r.p.map((x, i) => `<button class="wvp ${x === r.s ? 's' : x === r.m ? 'm' : ''}" data-open="${esc(x)}" style="animation-delay:${i * 70}ms">
+      <span class="py">${pyHtml(inf(x).py)}</span><span class="hz">${esc(x)}</span><small>${esc(shortG(inf(x).g))}</small>
+      ${x === r.s ? '<em>звук</em>' : x === r.m ? '<em>смысл</em>' : ''}</button>`).join('<span class="wvp-op">+</span>');
+  const why = r.t === 'pp' && r.s ? `звучит как ${esc(r.s)} ${pyHtml(inf(r.s).py)}, смысл от ${esc(r.m || '')} «${esc(shortG(inf(r.m).g))}»`
+    : r.t === 'id' ? 'смыслы частей складываются' : '';
+  return `<div class="wvp-row"><span class="hz wvp-c">${esc(c)}</span><span class="wvp-op">=</span>${tiles}</div>${why ? `<div class="wvp-why">${why}</div>` : ''}`;
+}
+// one line of small look-alikes
+function lookLine(hz) {
+  const items = [...new Set([...hz].filter(isHan))].flatMap(c => ((DEC.look || {})[c] || []).map(([x, idx]) => [c, x, idx]));
+  if (!items.length) return '';
+  return `<div class="ll"><span class="ll-t">не путай</span><div class="ll-list">${items.map(([c, x, idx]) => { const inf = DEC.info[x] || {};
+    return `<button class="ll-i" data-open="${esc(x)}"><span class="la-g" data-glyph="${esc(x)}" data-idx="${idx}"><span class="hz">${esc(x)}</span></span>
+      <small><span class="py">${pyHtml(inf.py)}</span> ${esc(shortG(inf.g))}</small></button>`; }).join('')}</div></div>`;
+}
+function exLines(w, n) {
+  return examples(w).slice(0, n).map(ex => `<div class="exl" data-say="${esc(ex.zh)}"><div class="zh">${esc(ex.zh)}</div>
+    <div class="exl-s"><span class="py">${pyHtml(ex.py)}</span> · ${esc(ex.ru)}</div></div>`).join('');
+}
+const tools = (hz, id) => `<div class="tl">${spkBtn(hz)}${slowBtn(hz)}${strokeBtn(id)}</div>`;
 // compact horizontal strip of look-alikes
 function lookStrip(hz) { const h = lookHtml(hz); return h ? `<div class="box"><h3>Не перепутай</h3><div class="la-strip">${h}</div></div>` : ''; }
 function lookHtml(hz) {
@@ -355,15 +393,15 @@ function renderCard() {
 }
 // full explanation after a mistake: stroke order plays by itself
 function sheet(w, ok) {
-  const ex = exampleHtml(w, 3);
-  screen(`<div class="status ${ok ? 'ok' : 'bad'}">${ok ? 'ВЕРНО' : 'ЗАПОМНИ'}</div>
-    ${hero(w, 'sr', Math.min(230, innerHeight * .28))}
-    <div class="big-py" data-say="${esc(w.hz)}">${pyHtml(w.py)}</div><div class="info-ru">${esc(w.ru)}</div>${enLine(w)}
-    <div class="icons">${spkBtn(w.hz)}${slowBtn(w.hz)}${strokeBtn('sr')}</div>
-    ${partsRow(w)}
-    ${ex ? `<div class="box"><h3>Примеры</h3>${ex}</div>` : ''}
-    ${lookStrip(w.hz)}`,
-    `<button class="btn primary" data-a="next">Дальше</button>`, 'top-al');
+  const n = [...w.hz].filter(isHan).length, room = innerHeight;
+  const boxMax = Math.min(n === 1 ? 190 : 150, room * (n === 1 ? .24 : .2));
+  screen(`<div class="status ${ok ? 'ok' : 'bad'}">${ok ? 'верно' : 'запомни'}</div>
+    ${wordView(w, 'sr', boxMax)}
+    <div class="wm">${esc(w.ru)}${S.settings.en && w.en ? ` <span class="big-en">${esc(w.en)}</span>` : ''}</div>
+    ${tools(w.hz, 'sr')}
+    <div class="exs">${exLines(w, room > 760 ? 2 : 1)}</div>
+    ${lookLine(w.hz)}`,
+    `<button class="btn primary" data-a="next">Дальше</button>`, 'top-al fit');
   SES.view = () => sheet(w, ok);
   paintGlyphs();
   speak(w.hz);
@@ -409,15 +447,15 @@ const CARDS = {
     setTimeout(() => speak(w.hz), 300);
   },
   flash(w) {
-    selfCard(w, `${charRow(w.hz)}<div class="hint" id="fh">Вспомни чтение и значение</div>`,
-      `<div class="big-py">${pyHtml(w.py)}</div><div class="big-ru">${esc(w.ru)}</div>${enLine(w)}${partsRow(w)}`, 'Показать',
-      () => $('#fh').remove());
+    selfCard(w, `<div id="fwrap">${charRow(w.hz)}</div><div class="hint" id="fh">Вспомни чтение и значение</div>`,
+      `<div class="big-ru">${esc(w.ru)}</div>${enLine(w)}`, 'Показать',
+      () => { $('#fh').remove(); $('#fwrap').innerHTML = wordView(w, 'fr', Math.min(200, innerHeight * .26)); });
   },
   pen(w) {
     selfCard(w, `<div class="big-ru">${esc(w.ru)}</div>${enLine(w)}
       <div class="icons" id="penTools">${spkBtn(w.hz, 'Послушать')}<button class="ib" data-a="pyhint">Пиньинь</button></div>
       <div class="hint" id="pyh">Напиши в тетради, потом проверь</div>`,
-      `<div data-say="${esc(w.hz)}">${charRow(w.hz, Math.min(280, innerHeight * .34), 'pr')}</div><div class="big-py">${pyHtml(w.py)}</div>${partsRow(w)}`,
+      wordView(w, 'pr', Math.min(220, innerHeight * .26)),
       'Проверить', () => { $('#pyh').remove(); $('#penTools').innerHTML = strokeBtn('pr') + spkBtn(w.hz); setTimeout(() => strokeOrder($('#pr')), 300); });
     $('[data-a=pyhint]').onclick = e => { $('#pyh').innerHTML = `<span class="big-py">${pyHtml(w.py)}</span>`; e.currentTarget.remove(); };
   },
@@ -603,16 +641,15 @@ function wordPage(hz, quiet) {
   const prevTab = TAB;
   page(`${back}
     <div style="display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center">
-      ${hero(w, 'wr', Math.min(240, innerHeight * .3))}
-      <div class="big-py" data-say="${esc(hz)}">${pyHtml(w.py)}</div><div class="info-ru">${esc(w.ru)}</div>${w.en ? `<div class="big-en">${esc(w.en)}</div>` : ''}
-      <div class="icons">${spkBtn(hz)}${slowBtn(hz)}${strokeBtn('wr')}</div>
-      ${partsRow(w)}
+      ${wordView(w, 'wr', Math.min([...hz].length === 1 ? 200 : 150, innerHeight * .24))}
+      <div class="wm">${esc(w.ru)}${w.en ? ` <span class="big-en">${esc(w.en)}</span>` : ''}</div>
+      ${tools(hz, 'wr')}
       <div class="tag">${w.lesson ? `<span class="dot c-${tierOf(w.lesson)}"></span>${w.custom ? 'мои слова' : 'урок ' + w.lesson} · ${s.t ? `уровень ${'●'.repeat(lv)}${'○'.repeat(MASTERED - lv)}` : 'ещё не тренировалось'}` : 'отдельный иероглиф'}</div>
     </div>
+    ${lookLine(hz)}
     ${xtHtml}
     ${ex ? `<div class="box"><h3>Примеры</h3>${ex}</div>` : ''}
     ${inWords.length ? `<div class="box"><h3>Встречается в словах</h3>${wordList(inWords)}</div>` : ''}
-    ${lookStrip(hz)}
     ${w.custom ? `<div class="box"><button class="btn ghost" data-a="del" style="color:var(--bad)">Удалить слово</button></div>` : ''}`);
   CUR = () => wordPage(hz);
   $('[data-a=back]').onclick = () => PREV.length ? PREV.pop()() : go(prevTab);
@@ -779,6 +816,18 @@ document.addEventListener('click', e => {
   const say = !slow && !(t.closest('[data-open]') && (!SES || SES.view)) && t.closest('[data-say]'); if (say) speak(say.dataset.say);
   const st = t.closest('[data-stroke]'); if (st) strokeOrder(document.getElementById(st.dataset.stroke));
   const tab = t.closest('[data-tab]'); if (tab) return go(tab.dataset.tab);
+  const wc = !t.closest('[data-open]') && t.closest('[data-wc]');
+  if (wc) {
+    const row = document.getElementById(wc.dataset.row), panel = document.getElementById(wc.dataset.row + '-parts');
+    const open = wc.classList.contains('on');
+    $$('.wc', row).forEach(x => x.classList.remove('on'));
+    speak(wc.dataset.wc);
+    if (open) { panel.classList.remove('open'); panel.innerHTML = ''; return; }
+    wc.classList.add('on');
+    const show = () => { panel.innerHTML = partsUnfold(wc.dataset.wc); panel.classList.remove('open'); void panel.offsetWidth; panel.classList.add('open'); };
+    show(); if (missingChars(wc.dataset.wc).length) ensureChars(wc.dataset.wc).then(a => a && wc.classList.contains('on') && show());
+    return;
+  }
   const pick = t.closest('[data-pick]');
   if (pick) {
     const row = pick.closest('.tzgrow'), c = pick.dataset.pick;
