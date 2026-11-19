@@ -159,7 +159,7 @@ let AUDIO = {}, audioEl = null;
 fetch('audio/index.json').then(r => r.ok ? r.json() : {}).then(j => AUDIO = j).catch(() => {});
 function speak(text, rate) {
   const t = text.replace(/…/g, '，').trim(), id = AUDIO[t];
-  if (id && S.settings.voiceSrc !== 'phone') {
+  if (id && S.settings.voiceSrc === 'rec') {
     if ('speechSynthesis' in window) speechSynthesis.cancel();
     if (audioEl) audioEl.pause();
     audioEl = new Audio(`audio/${id}.m4a`);
@@ -909,7 +909,7 @@ function settings() {
       <label>Тоны цветом <span class="tone-legend"><span class="t1">ā</span> <span class="t2">á</span> <span class="t3">ǎ</span> <span class="t4">à</span> <input type="checkbox" id="tc" ${S.settings.tc ? 'checked' : ''}></span></label>
     </div>
     <div class="set"><b>Голос</b>
-      <label>Озвучка <select id="vsrc"><option value="rec" ${S.settings.voiceSrc !== 'phone' ? 'selected' : ''}>Записанный голос (живее)</option><option value="phone" ${S.settings.voiceSrc === 'phone' ? 'selected' : ''}>Голос телефона</option></select></label>
+      <label>Озвучка <select id="vsrc"><option value="phone" ${S.settings.voiceSrc !== 'rec' ? 'selected' : ''}>Голос телефона (точнее)</option><option value="rec" ${S.settings.voiceSrc === 'rec' ? 'selected' : ''}>Записанный голос (живее, но бывают ошибки)</option></select></label>
       <label>Голос <select id="voice">${ZH_VOICES.length ? ZH_VOICES.map(v => `<option value="${esc(v.name)}" ${zhVoice && v.name === zhVoice.name ? 'selected' : ''}>${esc(v.name)}</option>`).join('') : '<option>по умолчанию</option>'}</select></label>
       <label>Скорость <select id="rate">${[[.6, 'очень медленно'], [.7, 'медленно'], [.8, 'спокойно'], [.9, 'почти обычно'], [1, 'обычно']].map(([r, n]) => `<option value="${r}" ${r === S.settings.rate ? 'selected' : ''}>${n}</option>`).join('')}</select></label>
       <button class="btn" data-say="妈，麻，马，骂。你好，我在学习汉语。">Проверить: mā má mǎ mà</button>
