@@ -317,3 +317,10 @@ nav.tabs button.on { color: var(--red); }
 .tl { flex-wrap: nowrap; gap: 6px; }
 .tl .ib { padding: 5px 10px; font-size: 12.5px; white-space: nowrap; }
 .tl .ib svg { width: 16px; height: 16px; }
+
+/* bigger, readable examples (readability over fitting on one screen) */
+.exs { gap: 10px; }
+.exs .exl .zh, .exl .zh { font-size: 23px; line-height: 1.4; }
+.exl-s, .exs .exl-s { font-size: 16px; line-height: 1.4; color: var(--ink); }
+.exl-s .py { font-size: 16px; }
+.exl { padding: 4px 0 4px 12px; border-left-width: 4px; }
